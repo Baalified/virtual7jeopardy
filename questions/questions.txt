@@ -1,0 +1,107 @@
+One Game is 6 Categories with 5 questions eadch
+We should be ready to play up to five games (4 rounds and final) - 30 categories - 150 questions
+
+-----------------
+- Abbreviations -
+-----------------
+ADF - Application Development Framework
+AJAX - Asynchronous JavaScript and XML
+JET - Oracle JavaScript Extension Toolkit
+SOAP - Simple Object Access Protocol
+REST - Representational State Transfer
+
+-----------
+- Oracles -
+-----------
+It ended on december 21st 2012 but the world did not - Mayan Calendar
+She bakes lovely oatmeal cookies - The Oracle from The Matrix
+He developed the Thoth Tarot deck - Aleister Crowley
+He predicted that "when the storm is over, the weather will improve" - Prolix from Asterix and the Soothsayer
+???
+
+-----------
+- Virtual -
+-----------
+Since the acquisition of Sun Microsystems in 2010 this is Oracles Main Desktop Virtualization Application - VirtualBox
+This 1995 gaming console was arguably the first virtual reality headset - Virtual Boy (Nintendo)
+This company -insert obscure fact- - Virtual7
+???
+???
+
+---------
+- Seven -
+---------
+The code number of her majesty's most famous spy - 007
+Brad Pitt and Morgan Freeman starred in this 1995 thriller - Seven
+A list containing the Lighthouse of Alexandria and the Temple of Artemis - Seven Wonders of (the Ancient) World
+This single form the album Elephant by the White Stripes won a Grammy Award for Best Rock Song - Seven Nation Army
+This former Borg drone joined the crew of the Federation starship Voyager - Seven of Nine
+
+----------------
+- Oracle Ports -
+----------------
+1521 - Oracle Net Listener (Database)
+7001 - WebLogic AdminServer
+9704 - BIEE Managed Server
+16200 - WCC / UCM Managed Server
+6200 - OPMN / Oracle Notification Service Remote Port
+
+
+
+--------
+- Math -
+--------
+This is 2^10 in decimal - 1024
+This is 2^10 in hexadecimal - 0x400
+The metric system prefix for 10^-6 - Micro
+The product of all integers form -10 to 10 - 0
+The next two terms in the sequence kilo, mega, giga, tera, peta - exa and zetta
+
+-------------------------
+- Programming Languages -
+-------------------------
+The de facto language for Web browser scripting - JavaScript
+The Linux kernel, Apache web server, and OpenSSL crypto toolkit are written in this - C (not C++)
+Referred to as "A fractal of bad design", you can thank this language for Wordpress, Drupal, MediaWiki and Facebook - PHP
+This very old programming language that was heavily used in business systems shares a name with the home place of humanity in Battlestar Galactica. - COBOL
+This Turing tarpit of an esoteric language consists of only 8 possible symbols and is known for its crude name that implies it will hurt your head - Brainfuck
+
+--------------
+- Code Names -
+--------------
+Jaguar, Panther, Tiger, Leopard, Snow Leopard, Lion, Mountain Lion - Mac OS X
+Hardy Heron, Jaunty Jackalope, Lucid Lynx, Natty Narwhal, Precise Pangolin, Trusty Tahr - Ubuntu
+Chicago, Daytona, Memphis, Whistler, Longhorn, Blackcomb, Blue - Microsoft Windows
+Yohan, Meron, Penryn, Sandy, Bridge, Haswell - Intel Processors
+Oak, Playground, Kestrel, Merlin, Tiger, Mustang, Dolphin - Java
+Cupcake, Donot, Eclair, Froyo, Gingerbread - Android
+
+---------------------------
+- Three letter extensions -
+---------------------------
+.csv - Comma Seperated Values
+.css - Cascading Style Sheets
+.pdf - Portable Document Format
+.xml - Extensible Markup Language
+.tar - Tape Archive
+
+-------------------
+- Name that state -
+-------------------
+404 - Not found
+200 - OK
+503 - Service unavailable
+301 - Moved permanently
+418 - I'm a teapot
+
+-----------------
+- Unix commands -
+-----------------
+This command returns all passed arguments - echo
+This program joins multiple files but is usualy only used to display the content - cat
+This program tells you if two files have the same content - diff / cmp
+This tool parses and transforms text using a simple programming language - sed
+This command repeats its output until killed using 100% of one cpu core - yes
+
+
+
