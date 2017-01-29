@@ -1,5 +1,5 @@
 One Game is 6 Categories with 5 questions eadch
-We should be ready to play up to five games (4 rounds and final) - 30 categories - 150 questions
+Would be nice to be ready to play up to five games (4 rounds and final) - 30 categories - 150 questions
 
 -----------------
 - Abbreviations -
@@ -107,3 +107,14 @@ This command repeats its output until killed using 100% of one cpu core - yes
 - Way Back Machine -
 --------------------
 see images folder
+
+----------------------
+- Customer Locations -
+----------------------
+see images folder
+
+-------------
+- Employees -
+-------------
+TODO: Take the quotes from last conference, ask who said it
+
