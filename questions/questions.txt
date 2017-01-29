@@ -114,7 +114,7 @@ see images folder
 see images folder
 
 -------------
-- Employees -
+- Who am I? -
 -------------
-TODO: Take the quotes from last conference, ask who said it
+TODO: Take the employees quotes from last conference, ask who said it
 
