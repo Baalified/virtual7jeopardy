@@ -103,5 +103,7 @@ This program tells you if two files have the same content - diff / cmp
 This tool parses and transforms text using a simple programming language - sed
 This command repeats its output until killed using 100% of one cpu core - yes
 
-
-
+--------------------
+- Way Back Machine -
+--------------------
+see images folder
