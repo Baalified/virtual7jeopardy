@@ -116,5 +116,17 @@ see images folder
 -------------
 - Who am I? -
 -------------
-TODO: Take the employees quotes from last conference, ask who said it
+I love it to laugh I also love to have deep conversations about politics or about the world. - Selim Kus
+I have turtles at home. - Manuela Di Miceli
+Big family: 4 sons, 3 grandchildren, and an extended family of 330 thousand Icelanders. I am a veteran of the cod wars and survivor of the banking crash - in general the kind of guy yer mamma always warned you about. - Páll Eggerz
+I like cooking and eating !!! Most of the time just eating. - Cosmin Giru
+I go every 2 years to WACKEN because of the Rock’n’Roll feeling and I would like to do a world tour again. - Roland Seidelt
 
+----------------------
+- Recursive acronyms -
+----------------------
+... Not Unix Not Unix Not Unix Not Unix Not Unix - GNU
+... Hypertext Processor Hypertext Processor Hypertext Processor Hypertext Processor - PHP
+... URL Request Library URL Request Library URL Request Library URL Request Library URL Request Library - cURL
+... Package Manager Package Manager Package Manager Package Manager Package Manager Package Manager - RPM
+... Installs Packages Installs Packages Installs Packages Installs Packages Installs Packages Installs Packages - PIP
