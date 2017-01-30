@@ -84,6 +84,7 @@ Cupcake, Donot, Eclair, Froyo, Gingerbread - Android
 .pdf - Portable Document Format
 .xml - Extensible Markup Language
 .tar - Tape Archive
+.hda - HyperData Format
 
 -------------------
 - Name that state -
