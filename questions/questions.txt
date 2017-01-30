@@ -1,6 +1,8 @@
 One Game is 6 Categories with 5 questions eadch
 Would be nice to be ready to play up to five games (4 rounds and final) - 30 categories - 150 questions
 
+Test
+
 -----------------
 - Abbreviations -
 -----------------
