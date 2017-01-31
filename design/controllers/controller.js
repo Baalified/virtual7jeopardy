@@ -1,176 +1,484 @@
 var v7jeopardy = angular.module('v7jeopardy', []);
 
 v7jeopardy.controller('AppCtrl', ['$scope', '$http', function($scope, $http) {
-  console.log("Hello World from controller");
-  
-  // Testdata
-  var gameDefinition = {
+  $scope.gamemaster=true;
+
+  // TESTDATA
+  var games = [
+    {
     name: "Round 1",
     categories: [
       {
-        id:"1",
-        name:"Name that state",
-        questions: [
-          {
-            id:"11"
-          },{
-            id:"12"
-          },{
-            id:"13"
-          },{
-            id:"14"
-          },{
-            id:"15"
-          }
-        ]
-      },
-      {
-        id:"2",
-        name:"Abbreviations",
-        questions: [
-          {
-            id:"21"
-          },{
-            id:"22"
-          },{
-            id:"23"
-          },{
-            id:"24"
-          },{
-            id:"25"
-          }
-        ]
-      },
-      {
-        id:"3",
-        name:"Oracle Ports",
-        questions: [
-          {
-            id:"31"
-          },{
-            id:"32"
-          },{
-            id:"33"
-          },{
-            id:"34"
-          },{
-            id:"35"
-          }
-        ]
-      },
-      {
-        id:"4",
         name:"Code Names",
         questions: [
           {
-            id:"41"
+            question:"Cupcake, Donut, Eclair, Froyo, Gingerbread, Honeycomb, Ice Cream Sandwich, Jelly Bean",
+            answer:"Android",
+            points:100,
+            played:false
           },{
-            id:"42"
+            question:"Hardy Heron, Jaunty Jackalope, Lucid Lynx, Natty Narwhal, Precise Pangolin, Xenial Xerus",
+            answer:"Ubuntu",
+            points:200,
+            played:false
           },{
-            id:"43"
+            question:"Jaguar, Panther, Tiger, Leopard, Snow Leopard, Lion, Mountain Lion",
+            answer:"Mac OS X",
+            points:300,
+            played:false
           },{
-            id:"44"
+            question:"Chicago, Daytona, Memphis, Whistler, Longhorn, Blackcomb, Blue",
+            answer:"Microsoft Windows",
+            points:400,
+            played:false
           },{
-            id:"45"
+            question:"Oak, Playground, Kestrel, Merlin, Tiger, Mustang, Dolphin",
+            answer:"Java",
+            points:500,
+            played:false
           }
         ]
       },
       {
-        id:"5",
         name:"Unix commands",
         questions: [
           {
-            id:"51"
+            question:"This command returns all passed arguments",
+            answer:"echo",
+            points:100,
+            played:false
           },{
-            id:"52"
+            question:"This program joins multiple files but is usualy only used to display the content",
+            answer:"cat",
+            points:200,
+            played:false
           },{
-            id:"53"
+            question:"This program tells you if two files have the same content",
+            answer:"diff or cmp",
+            points:300,
+            played:false
           },{
-            id:"54"
+            question:"This tool parses and transforms text using a simple programming language",
+            answer:"sed",
+            points:400,
+            played:false
           },{
-            id:"55"
+            question:"This command repeats its output until killed using 100% of one cpu core",
+            answer:"yes",
+            points:500,
+            played:false
           }
         ]
-      },
-      {
-        id:"6",
+      },{
         name:"Way Back Machine",
         questions: [
           {
-            id:"61"
+            question:"",
+            image:"images/waybackmachine/fb_20051127.jpg",
+            answer:"Facebook (2005-11-27)",
+            points:100,
+            played:false
           },{
-            id:"62"
+            question:"",
+            image:"images/waybackmachine/ebay_20000615.jpg",
+            answer:"Ebay (2000-06-15)",
+            points:200,
+            played:false
           },{
-            id:"63"
+            question:"",
+            image:"images/waybackmachine/amazon_19990827.jpg",
+            answer:"Amazon (1999-08-27)",
+            points:300,
+            played:false
           },{
-            id:"64"
+            question:"",
+            image:"images/waybackmachine/v7_20011130.jpg",
+            answer:"virtual7 (2001-11-30)",
+            points:400,
+            played:false
           },{
-            id:"65"
+            question:"",
+            image:"images/waybackmachine/oracle_19961219.jpg",
+            answer:"Oracle (1996-12-19)",
+            points:500,
+            played:false
+          }
+        ]
+      },{
+        name:"Who am I?",
+        questions: [
+          {
+            question:"I go every 2 years to WACKEN because of the Rock'n'Roll feeling and I would like to do a world tour again.",
+            answer:"Roland Seidelt",
+            points:100,
+            played:false
+          },{
+            question:"I love it to laugh I also love to have deep conversations about politics or about the world.",
+            answer:"Selim Kus",
+            points:200,
+            played:false
+          },{
+            question:"Big family: 4 sons, 3 grandchildren, and an extended family of 330 thousand Icelanders. I am a veteran of the cod wars and survivor of the banking crash - in general the kind of guy yer mamma always warned you about.",
+            answer:"Pall Eggerz",
+            points:300,
+            played:false
+          },{
+            question:"I have turtles at home.",
+            answer:"Manuela Di Miceli",
+            points:400,
+            played:false
+          },{
+            question:"I like cooking and eating !!! Most of the time just eating.",
+            answer:"Cosmin Giru",
+            points:500,
+            played:false
+          }
+        ]
+      },{
+        name:"Name that state",
+        questions: [
+          {
+            question:"404",
+            answer:"Not found",
+            points:100,
+            played:false
+          },{
+            question:"200",
+            answer:"OK",
+            points:200,
+            played:false
+          },{
+            question:"503",
+            answer:"Service unavailable",
+            points:300,
+            played:false
+          },{
+            question:"301",
+            answer:"Move permanently",
+            points:400,
+            played:false
+          },{
+            question:"418",
+            answer:"I'm a teapot",
+            points:500,
+            played:false
+          }
+        ]
+      },{
+        name:"Abbreviations",
+        questions: [
+          {
+            question:"ADF",
+            answer:"Application Development Framework",
+            points:100,
+            played:false
+          },{
+            question:"AJAX",
+            answer:"Asynchronous JavaScript and XML",
+            points:200,
+            played:false
+          },{
+            question:"JET",
+            answer:"(Oracle) JavaScript Extension Toolkit",
+            points:300,
+            played:false
+          },{
+            question:"SOAP",
+            answer:"Simple Object Access Protocol",
+            points:400,
+            played:false
+          },{
+            question:"REST",
+            answer:"Representational State Transfer",
+            points:500,
+            played:false
           }
         ]
       }
-    ]
-  };
-  
-  // Testdata
-  var gameState = {
-    playedquestions: ["22","24","44","63"],
-    players: [
+    ],
+    players: [ ]
+  },
+  {
+    name: "Round 2",
+    categories: [
       {
-        name: "Marcus",
-        color: "green",
-        score: 600
+        name:"Blablablubb",
+        questions: [
+          {
+            question:"404",
+            answer:"Not found",
+            points:100,
+            played:false
+          },{
+            question:"200",
+            answer:"OK",
+            points:200,
+            played:false
+          },{
+            question:"503",
+            answer:"Service unavailable",
+            points:300,
+            played:false
+          },{
+            question:"301",
+            answer:"Move permanently",
+            points:400,
+            played:false
+          },{
+            question:"418",
+            answer:"I'm a teapot",
+            points:500,
+            played:false
+          }
+        ]
       },
       {
-        name: "Tobias",
-        color: "red",
-        score: -400
-      },
-      {
-        name: "Manuela",
-        color: "darkviolet",
-        score: 500
-      },
-      {
-        name: "Cosmin",
-        color: "Orange",
-        score: 0
+        name:"Name that state",
+        questions: [
+          {
+            question:"404",
+            answer:"Not found",
+            points:100,
+            played:false
+          },{
+            question:"200",
+            answer:"OK",
+            points:200,
+            played:false
+          },{
+            question:"503",
+            answer:"Service unavailable",
+            points:300,
+            played:false
+          },{
+            question:"301",
+            answer:"Move permanently",
+            points:400,
+            played:false
+          },{
+            question:"418",
+            answer:"I'm a teapot",
+            points:500,
+            played:false
+          }
+        ]
+      },{
+        name:"Name that state",
+        questions: [
+          {
+            question:"404",
+            answer:"Not found",
+            points:100,
+            played:false
+          },{
+            question:"200",
+            answer:"OK",
+            points:200,
+            played:false
+          },{
+            question:"503",
+            answer:"Service unavailable",
+            points:300,
+            played:false
+          },{
+            question:"301",
+            answer:"Move permanently",
+            points:400,
+            played:false
+          },{
+            question:"418",
+            answer:"I'm a teapot",
+            points:500,
+            played:false
+          }
+        ]
+      },{
+        name:"Name that state",
+        questions: [
+          {
+            question:"404",
+            answer:"Not found",
+            points:100,
+            played:false
+          },{
+            question:"200",
+            answer:"OK",
+            points:200,
+            played:false
+          },{
+            question:"503",
+            answer:"Service unavailable",
+            points:300,
+            played:false
+          },{
+            question:"301",
+            answer:"Move permanently",
+            points:400,
+            played:false
+          },{
+            question:"418",
+            answer:"I'm a teapot",
+            points:500,
+            played:false
+          }
+        ]
+      },{
+        name:"Name that state",
+        questions: [
+          {
+            question:"404",
+            answer:"Not found",
+            points:100,
+            played:false
+          },{
+            question:"200",
+            answer:"OK",
+            points:200,
+            played:false
+          },{
+            question:"503",
+            answer:"Service unavailable",
+            points:300,
+            played:false
+          },{
+            question:"301",
+            answer:"Move permanently",
+            points:400,
+            played:false
+          },{
+            question:"418",
+            answer:"I'm a teapot",
+            points:500,
+            played:false
+          }
+        ]
+      },{
+        name:"Name that state",
+        questions: [
+          {
+            question:"404",
+            answer:"Not found",
+            points:100,
+            played:false
+          },{
+            question:"200",
+            answer:"OK",
+            points:200,
+            played:false
+          },{
+            question:"503",
+            answer:"Service unavailable",
+            points:300,
+            played:false
+          },{
+            question:"301",
+            answer:"Move permanently",
+            points:400,
+            played:false
+          },{
+            question:"418",
+            answer:"I'm a teapot",
+            points:500,
+            played:false
+          }
+        ]
       }
-    ]
-  };
+    ],
+    players: [ ]
+  }
+  ];
+  
+  var game;
   
   var refreshBoard = function() {
-    console.log("Categories: ");
-    console.log(gameDefinition);
-    
-    $scope.categories = gameDefinition.categories;
-    $scope.playedquestions = gameState.playedquestions;
-    $scope.players = gameState.players;
-    $scope.activequestion = gameState.activequestion;
+    $scope.currentgame = game;
+    $scope.games = games;
   };
   
   refreshBoard();
   
-  $scope.choseQuestion = function(id) {
-    // Mark question as played
-    gameState.playedquestions.push(id);
-    // Mark question as active question
-    gameState.activequestion = {id: id};
+  $scope.choseQuestion = function(question) {
+    // If there is an active question already, return
+    if(game.activequestion)
+      return
     
-    // TODO: Send gameState Update to server via socket.io
+    // Mark question as active question
+    question.played=true;
+    game.activequestion = question;
+    
+    // TODO: Send game Update to server via socket.io
     // Server will put actual question and answer on
-    // gameState.activequestion.question/answer and publish via socket.io
+    // game.activequestion.question/answer and publish via socket.io
     
     //temp test stuff
-    gameState.players[2].score += 100;
-    gameState.activequestion.question = "This command returns all passed arguments";
-    gameState.activequestion.answer = "echo";
     refreshBoard();
   };
   
-  // TODO: Socket.io receive gameState update
+  $scope.closeQuestion = function() {
+    delete game.activequestion;
+    delete game.activeplayer;
+    // TODO: Send game Update to server via socket.io
+    
+    //temp - will be triggered by socket.io receiving game
+    refreshBoard();
+  };
+  
+  $scope.reopenQuestion = function() {
+    delete game.activeplayer
+    // TODO: Send game Update to server via socket.io
+    
+    //temp - will be triggered by socket.io receiving game
+    refreshBoard();
+  };
+  
+  $scope.correctAnswer = function() {
+    // increase points of active player, close question
+    game.activeplayer.score += game.activequestion.points;
+    $scope.closeQuestion();
+  };
+  
+  $scope.wrongAnswer = function() {
+    // decrease points of active player, reopen question
+    game.activeplayer.score -= game.activequestion.points;
+    $scope.reopenQuestion();
+  };
+  
+  $scope.buzz = function(player) {
+    if(game.activequestion && !game.activeplayer) {
+      game.activeplayer = player;
+      refreshBoard();
+    }
+  }
+  
+  $scope.loadGame = function(selgame) {
+    game = selgame;
+    $scope.showloadgame = false;
+    
+    // TODO: Send game Update to server via socket.io
+    
+    //temp - will be triggered by socket.io receiving game
+    refreshBoard();
+  }
+  
+  $scope.saveGame = function() {
+    $scope.showeditplayers = false;
+    
+    // TODO: Send game Update to server via socket.io
+    
+    //temp - will be triggered by socket.io receiving game
+    refreshBoard();
+  }
+  
+  $scope.addPlayer = function() {
+    if(game) {
+      game.players.push($scope.newplayer)
+      $scope.newplayer = "";
+    }
+  }
+  
+  // TODO: Socket.io receive game update
   // Only one receive function should be enough as every
-  // event should send all gameState data and all gameState data
+  // event should send all game data and all game data
   // will be processed on clients on each event
   // This will keep clients in sync and recovering from server/client
   // failure very easy.

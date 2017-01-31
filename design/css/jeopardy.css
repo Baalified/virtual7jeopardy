@@ -147,3 +147,16 @@ html,body {
     font-size:4vw;
     padding:20px;
   }
+  
+  .gmanswer{
+    font-size:3vw;
+  }
+  
+  .gmbar {
+    padding-top:5px;
+    padding-bottom:5px;
+  }
+  
+  .gmbar button {
+    font-size:1vw;
+  }
