@@ -3,6 +3,7 @@ var v7jeopardy = angular.module('v7jeopardy', []);
 v7jeopardy.controller('AppCtrl', ['$scope', '$http', function($scope, $http) {
   console.log("Hello World from controller");
   
+  // Testdata
   var gameDefinition = {
     name: "Round 1",
     categories: [
@@ -111,6 +112,7 @@ v7jeopardy.controller('AppCtrl', ['$scope', '$http', function($scope, $http) {
     ]
   };
   
+  // Testdata
   var gameState = {
     playedquestions: ["22","24","44","63"],
     players: [
@@ -149,12 +151,28 @@ v7jeopardy.controller('AppCtrl', ['$scope', '$http', function($scope, $http) {
   refreshBoard();
   
   $scope.choseQuestion = function(id) {
+    // Mark question as played
     gameState.playedquestions.push(id);
+    // Mark question as active question
+    gameState.activequestion = {id: id};
+    
+    // TODO: Send gameState Update to server via socket.io
+    // Server will put actual question and answer on
+    // gameState.activequestion.question/answer and publish via socket.io
+    
     //temp test stuff
     gameState.players[2].score += 100;
   };
+  
+  // TODO: Socket.io receive gameState update
+  // Only one receive function should be enough as every
+  // event should send all gameState data and all gameState data
+  // will be processed on clients on each event
+  // This will keep clients in sync and recovering from server/client
+  // failure very easy.
 
 }]).filter('range', function() {
+  // Range filter for implementing sequence 0..4 in Angular ng-repeat tag
   return function(input, total) {
     total = parseInt(total);
 
