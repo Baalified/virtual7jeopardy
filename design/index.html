@@ -15,25 +15,69 @@
   </head>
   <body ng-app="v7jeopardy">
     <div ng-controller="AppCtrl" style="width:100%; height:100%;">
-      <div class="openquestion">
-        <div class="openquestiontext">I am the TERMINATOR and make always a good mood, ask my colleagues. I am
-  single, but I have 26 kids, all girls. How does it work? I am a soccer youth coach. I like
-  to go to Cafes, a good cappuccino has never harm.</div>
+      <!--
+        ################################
+        # Active Question Floating div #
+        ################################
+        # ng-hide="!activequestion" to #
+        # only show the div if an      #
+        # activequestion is in the     #
+        # gameState                    #
+        ################################
+      --> 
+      <div class="openquestion" ng-hide="!activequestion">
+        <div class="openquestiontext" >{{activequestion.question}}</div>
       </div>
+      
+      <!--
+        ##############
+        # Game Board #
+        ##############
+      -->
       <div class="container board">
         <div class="row boardrow">
+          <!--
+            ng-repeat="category in categories"
+            For each available category, add a div with the category name 
+          -->
           <div class="col category" ng-repeat="category in categories">
             <div class="categorytext">{{category.name}}</div>
           </div>
         </div>
+        <!--
+          ng-repeat="i in [] | range:5"
+          Use the range filter defined in controller.js tom implement a repeat from 0 to 4 to
+          create five rows for the five questions
+        -->
         <div class="row boardrow" ng-repeat="i in [] | range:5">
+          <!--
+            ng-repeat="category in categories"
+            Again, for each category (in each row), add a box for the question
+          -->
           <div class="col question" ng-repeat="category in categories">
+            <!--
+              ng-click="choseQuestion(category.questions[i].id)"
+              Execute defined function - only for GameMasters
+              
+              ng-hide="playedquestions.indexOf(category.questions[i].id) !== -1"
+              Hide the question, if it was already played (id exists in gameState.playedquestions)
+            -->
             <div class="questionpoints" ng-click="choseQuestion(category.questions[i].id)" ng-hide="playedquestions.indexOf(category.questions[i].id) !== -1">{{(i+1)*100}}</div>
           </div>
         </div>
       </div>
+      
+      <!--
+        ###########################
+        # Player Names and Scores #
+        ###########################
+      -->
       <div class="container players">
         <div class="row playerrow">
+          <!--
+            ng-repeat="player in players"
+            For each player in the gameState, add a colored player box with name and score
+          -->
           <div class="col playercol" ng-repeat="player in players">
             <div class="player" style="background-color:{{player.color}};color:black;">
               <div class="playername">{{player.name}}</div>

@@ -146,6 +146,7 @@ v7jeopardy.controller('AppCtrl', ['$scope', '$http', function($scope, $http) {
     $scope.categories = gameDefinition.categories;
     $scope.playedquestions = gameState.playedquestions;
     $scope.players = gameState.players;
+    $scope.activequestion = gameState.activequestion;
   };
   
   refreshBoard();
@@ -162,6 +163,9 @@ v7jeopardy.controller('AppCtrl', ['$scope', '$http', function($scope, $http) {
     
     //temp test stuff
     gameState.players[2].score += 100;
+    gameState.activequestion.question = "This command returns all passed arguments";
+    gameState.activequestion.answer = "echo";
+    refreshBoard();
   };
   
   // TODO: Socket.io receive gameState update
