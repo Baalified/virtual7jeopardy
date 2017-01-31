@@ -1,4 +1,15 @@
-# virtual7jeopardy
+# Installing the gameserver
+
+Change to gameserver directory
+
+Run 'npm install' to install required nodejs modules
+
+Run npm server.js to start server
+
+Access applciation on http://localhost:3000/ (Contestant View) or http://localhost:3000/gm (Gamemaster View)
+
+
+# Tutorials and Links
 Tutorial Team Chat with ExpressJS, Socket.io and AngularJS
 https://fdietz.github.io/2015/04/13/day-1-how-to-build-your-own-team-chat-in-five-days.html
 

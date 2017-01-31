@@ -71,12 +71,12 @@ This Turing tarpit of an esoteric language consists of only 8 possible symbols a
 --------------
 - Code Names -
 --------------
+Cupcake, Donot, Eclair, Froyo, Gingerbread - Android
 Jaguar, Panther, Tiger, Leopard, Snow Leopard, Lion, Mountain Lion - Mac OS X
 Hardy Heron, Jaunty Jackalope, Lucid Lynx, Natty Narwhal, Precise Pangolin, Trusty Tahr - Ubuntu
 Chicago, Daytona, Memphis, Whistler, Longhorn, Blackcomb, Blue - Microsoft Windows
 Yohan, Meron, Penryn, Sandy, Bridge, Haswell - Intel Processors
-Oak, Playground, Kestrel, Merlin, Tiger, Mustang, Dolphin - Java
-Cupcake, Donot, Eclair, Froyo, Gingerbread - Android
+Oak, Playground, Kestrel, Merlin, Tiger, Mustang, Dolphin - Java ???
 
 ---------------------------
 - Three letter extensions -

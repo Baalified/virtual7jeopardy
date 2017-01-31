@@ -20,7 +20,7 @@ app.get("/gm", function(req, res) {
 io.on('connection', function(socket){
   console.log('a client connected');
   
-  var gameslist = games.find().toArray(function(err, docs) {
+  games.find().toArray(function(err, docs) {
     console.log(docs);
     socket.emit('initGamesList', docs);
     socket.emit('setgm', socket.handshake.headers.referer.endsWith("/gm"));
