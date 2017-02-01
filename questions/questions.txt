@@ -1,6 +1,8 @@
 One Game is 6 Categories with 5 questions eadch
 Would be nice to be ready to play up to five games (4 rounds and final) - 30 categories - 150 questions
 
+Banned from round 1 (categories: Code Names, Unix Commands, Way Back Machine, Who am I, Name that state, Abbreviations): Björn, Miriam, Sabrina
+
 Test bestanden!!!
 
 -----------------
@@ -13,7 +15,7 @@ SOAP - Simple Object Access Protocol
 REST - Representational State Transfer
 
 -----------
-- Oracles -
+? Oracles ?
 -----------
 It ended on december 21st 2012 but the world did not - Mayan Calendar
 She bakes lovely oatmeal cookies - The Oracle from The Matrix
@@ -106,6 +108,15 @@ This program tells you if two files have the same content - diff / cmp
 This tool parses and transforms text using a simple programming language - sed
 This command repeats its output until killed using 100% of one cpu core - yes
 
+(alternative:)
+This command locates an executable file in your shell's search path - which
+By default, this program prints the last 10 lines of a file - tail
+Program used to search compressed files for a regular expression - zgrep
+To keep from writing to the .bash_history file, invoke this command - unset HISTFILE
+Changing a files extended attributes such as making a file immutable, can be done with this command - chattr
+
+
+
 --------------------
 - Way Back Machine -
 --------------------
@@ -121,7 +132,7 @@ see images folder
 -------------
 I love it to laugh I also love to have deep conversations about politics or about the world. - Selim Kus
 I have turtles at home. - Manuela Di Miceli
-Big family: 4 sons, 3 grandchildren, and an extended family of 330 thousand Icelanders. I am a veteran of the cod wars and survivor of the banking crash - in general the kind of guy yer mamma always warned you about. - Páll Eggerz
+Big family: 4 sons, 3 grandchildren, and an extended family of 330 thousand Icelanders. - Páll Eggerz
 I like cooking and eating !!! Most of the time just eating. - Cosmin Giru
 I go every 2 years to WACKEN because of the Rock’n’Roll feeling and I would like to do a world tour again. - Roland Seidelt
 
@@ -133,3 +144,22 @@ I go every 2 years to WACKEN because of the Rock’n’Roll feeling and I would 
 ... URL Request Library URL Request Library URL Request Library URL Request Library URL Request Library - cURL
 ... Package Manager Package Manager Package Manager Package Manager Package Manager Package Manager - RPM
 ... Installs Packages Installs Packages Installs Packages Installs Packages Installs Packages Installs Packages - PIP
+
+---------------------
+- Top Level Domains - ("Old" country code TLDs only)
+---------------------
+.es - Spain
+.dk - Denmark
+.no - Norway
+.va - Vatican City
+.su - Soviet Union
+
+---------------------
+- Top Level Domains - ("Old" country code TLDs only - HARD)
+---------------------
+.pf - French Polynesia
+.ky - Cayman Islands
+.fk - Falkland Islands
+.mk - Macedonia
+.cx - Christmas Islands
+
