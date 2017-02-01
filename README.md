@@ -4,7 +4,9 @@ Change to gameserver directory
 
 Run 'npm install' to install required nodejs modules
 
-Run npm server.js to start server
+Run 'node db_populate_testdata.js' to initialize database with test data
+
+Run 'node server.js' to start server
 
 Access applciation on http://localhost:3000/ (Contestant View) or http://localhost:3000/gm (Gamemaster View)
 
