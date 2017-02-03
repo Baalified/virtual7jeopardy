@@ -21,12 +21,12 @@ io.on('text', function(socket){
 	console.log('ist text online?');
 });
 
-io.on('open', function(socket){
+io.on('connection', function(socket){
   console.log('a client connected');
   
   games.find().toArray(function(err, docs) {
     console.log(docs);
-    socket.emit('initGamesList', docs);
+    socket.emit('initGamesList', JSON.stringify(docs));
     socket.emit('setgm', socket.handshake.headers.referer.endsWith("/gm"));
   });
   

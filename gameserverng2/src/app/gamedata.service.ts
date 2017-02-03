@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
-import {Subject} from 'rxjs/Subject';
-import { WebsocketService } from './websocket.service';
-import 'rxjs/add/operator/map';
+import { Subject } from 'rxjs/Subject';
+import { Observable } from 'rxjs/Observable';
+import * as io from 'socket.io-client';
 
 export interface Games {
 	name: string,
@@ -25,18 +25,28 @@ export class GamedataService {
 
   public games: Subject<Games>  = new Subject<Games>();
 
-	constructor(private wsService: WebsocketService) {
-
-    this.games = <Subject<Games>>this.wsService
-      .connect()
-      .map((response: MessageEvent): Games => {
-				let data = JSON.parse(response.data);
-				return {
-          name : data.name,
-					categories: data.categories
-				}
-			});
-
+	private url = 'ws://localhost:3000';  
+  private socket;
+  
+  sendMessage(message){
+    this.socket.emit('add-message', message);    
   }
+  
+  getGames() {
+    let observable = new Observable(observer => {
+      console.log("Connecting socket...");
+      this.socket = io(this.url);
+      this.socket.on('initGamesList', (data) => {
+        console.log('initGamesList');
+        this.games = JSON.parse(data);
+        console.log(this.games);
+        observer.next(this.games[0]);
+      });
+      return () => {
+        this.socket.disconnect();
+      };  
+    })     
+    return observable;
+  }  
 
 }

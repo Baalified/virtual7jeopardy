@@ -8,7 +8,7 @@ import { GamedataService, Games } from './gamedata.service';
 })
 export class AppComponent {
   title = 'app works!';
-  games: Games[] = [];
+  games = [];
   constructor(private gamedataService: GamedataService) {
 
   }
@@ -16,8 +16,8 @@ export class AppComponent {
   ngOnInit() {
     this.title = 'title is changed from ' + this.title + ' to this! :-)';
 
-    this.gamedataService.games.subscribe(games => {
-      
+    this.gamedataService.getGames().subscribe(games => {
+      console.log(games);
       this.games.push(games);
     });
   }
