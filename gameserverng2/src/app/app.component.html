@@ -1,3 +1,10 @@
 <h1>
   {{title}}
 </h1>
+<button (click)='clickThis()'>button</button>
+<div class="games">
+			<h2>Games:</h2>
+			<p *ngFor="let game of games">
+				<strong>({{game.name}})</strong> 
+      </p>
+		</div>

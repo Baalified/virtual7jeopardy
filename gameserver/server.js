@@ -17,7 +17,11 @@ app.get("/gm", function(req, res) {
   res.sendFile(__dirname + "/public/index.html");
 });
 
-io.on('connection', function(socket){
+io.on('text', function(socket){
+	console.log('ist text online?');
+});
+
+io.on('open', function(socket){
   console.log('a client connected');
   
   games.find().toArray(function(err, docs) {

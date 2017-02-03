@@ -5,6 +5,9 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+import { WebsocketService } from './websocket.service';
+import { GamedataService } from './gamedata.service';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -14,7 +17,7 @@ import { AppComponent } from './app.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [GamedataService, WebsocketService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
