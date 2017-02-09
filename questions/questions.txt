@@ -163,3 +163,49 @@ I go every 2 years to WACKEN because of the Rock’n’Roll feeling and I would 
 .mk - Macedonia
 .cx - Christmas Islands
 
+--------------------
+- Oh my it's an AI -
+--------------------
+He feels sorry for dave for not being able to do what he's been asked - HAL (2001 a space odyssey)
+This golden boy is not afraid to suggest new strategies even if it means defeat - C-3PO (Star Wars)
+Do not trust her when it comes to bakery products - GLaDOS (Portal)
+He is Just A Rather Very Intelligent System belonging to a genius, billionaire, playboy, philanthropist - J.A.R.V.I.S. (Iron Man)
+Named after IBMs first CEO this AI was specifically developed to answer questions on Jeopardy - Watson
+
+---------------
+- Hello World -
+---------------
+public class HelloWorld 
+{
+  public static void main (String[] args)
+  {
+    System.out.println("Hello World!");
+  }
+} - Java
+
+<script>
+  alert('Hello, World!');
+</script> - JavaScript
+
+org 100h
+start:
+mov dx,hello_world
+mov ah,09h
+int 21h
+mov al, 0
+mov ah,4Ch
+int 21h
+section .data
+hello_world: db 'hello, world', 13, 10, '$' - x86 ASM
+
+++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>.+++. - Brainfuck
+ 
+HAI
+CAN HAS STDIO?
+VISIBLE "HAI WORLD!"
+KTHXBYE - LOLCODE
+
+----------------
+- Text to song - (Multiple rounds)
+----------------
+see audio folder
