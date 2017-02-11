@@ -1,0 +1,11 @@
+.categories {
+    border: 1px;
+}
+
+.round, .list {
+    float: left;
+}
+
+.columns {
+    width: 100%
+}

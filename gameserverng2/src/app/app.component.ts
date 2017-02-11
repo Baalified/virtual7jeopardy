@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { GamedataService, Games } from './gamedata.service';
+import { GamedataService, Games, Categories, Questions } from './gamedata.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -8,23 +9,42 @@ import { GamedataService, Games } from './gamedata.service';
 })
 export class AppComponent {
   title = 'app works!';
-  games = [];
+  games: Array<Games> = [];
+  gameID: number = -1;
+  actualGame: Games;
+  actualCategories: Categories;
   constructor(private gamedataService: GamedataService) {
 
   }
 
   ngOnInit() {
     this.title = 'title is changed from ' + this.title + ' to this! :-)';
-
+    
     this.gamedataService.getGames().subscribe(games => {
-      console.log(games);
-      this.games.push(games);
+      console.log("games:");
+      games.forEach(game => {
+        console.log(game);
+        this.games.push(game);
+      });
     });
   }
+
   clickThis() {
     console.log('clickThis');
-    this.gamedataService.games.next();
+    //this.gamedataService.games.next();
   }
 
-    
+  setRound(round: number) {
+    console.log(round);
+    this.gameID = round;
+
+    this.games.forEach(game => {
+      console.log(game);
+      if (game._id == this.gameID){
+        console.log("hier?");
+        this.actualCategories = game.categories;
+      }
+    });
+    console.log(this.actualCategories);
+  }
 }

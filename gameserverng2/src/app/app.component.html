@@ -2,9 +2,21 @@
   {{title}}
 </h1>
 <button (click)='clickThis()'>button</button>
-<div class="games">
-			<h2>Games:</h2>
-			<p *ngFor="let game of games">
-				<strong>({{game.name}})</strong> 
-      </p>
+<div>
+	<h2>Game: #{{gameID}}</h2>
+	<div *ngFor="let game of games">
+		<button class="round" md-button (click)="setRound(game._id)">{{game.name}}</button>
+	</div>
+<br /> <br />
+		<div *ngIf="gameID >= 0" id="test" class="columns">
+			<div *ngFor="let category of actualCategories">
+				<md-list class="list">
+					<h3>{{category.name}}</h3>
+					<md-list-item *ngFor="let question of category.questions">
+						<h4 md-line><button md-button>{{question.points}}</button></h4>
+					</md-list-item>
+				</md-list>
+			</div>
 		</div>
+</div>
+
