@@ -10,9 +10,12 @@ import { AppComponent } from './app.component';
 import { WebsocketService } from './websocket.service';
 import { GamedataService } from './gamedata.service';
 
+import { DialogResultExampleDialog } from './dialog/dialog.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DialogResultExampleDialog
   ],
   imports: [
     BrowserModule,
@@ -22,6 +25,6 @@ import { GamedataService } from './gamedata.service';
     MaterialModule.forRoot()
   ],
   providers: [GamedataService, WebsocketService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, DialogResultExampleDialog]
 })
 export class AppModule { }

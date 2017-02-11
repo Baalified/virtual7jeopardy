@@ -1,0 +1,9 @@
+<h1 md-dialog-title>Dialog</h1>
+<div md-dialog-content>
+    Answer: {{answer}}<br />
+    Question: {{question}}
+</div>
+<div md-dialog-actions>
+  <button md-button (click)="dialogRef.close('richtig')">Richtig</button>
+  <button md-button (click)="dialogRef.close('falsch')">Falsch</button>
+</div>

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { GamedataService, Games, Categories, Questions } from './gamedata.service';
 import { CommonModule } from '@angular/common';
+import {MdDialog, MdDialogRef} from '@angular/material';
+import { DialogResultExampleDialog } from './dialog/dialog.component';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +15,10 @@ export class AppComponent {
   gameID: number = -1;
   actualGame: Games;
   actualCategories: Categories;
-  constructor(private gamedataService: GamedataService) {
+
+  selectedOption: string;
+
+  constructor(private gamedataService: GamedataService, public dialog: MdDialog ) {
 
   }
 
@@ -46,5 +51,15 @@ export class AppComponent {
       }
     });
     console.log(this.actualCategories);
+  }
+
+  openDialog(answer: string, question: string) {
+    console.log("openDialog");
+    let dialogRef = this.dialog.open(DialogResultExampleDialog);
+    dialogRef.componentInstance.setAnswer(answer, question);
+    
+    dialogRef.afterClosed().subscribe(result => {
+      this.selectedOption = result;
+    });
   }
 }

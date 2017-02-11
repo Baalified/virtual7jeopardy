@@ -3,7 +3,7 @@
 </h1>
 <button (click)='clickThis()'>button</button>
 <div>
-	<h2>Game: #{{gameID}}</h2>
+	<h2>Game: #{{gameID}}</h2>({{selectedOption}})
 	<div *ngFor="let game of games">
 		<button class="round" md-button (click)="setRound(game._id)">{{game.name}}</button>
 	</div>
@@ -13,7 +13,7 @@
 				<md-list class="list">
 					<h3>{{category.name}}</h3>
 					<md-list-item *ngFor="let question of category.questions">
-						<h4 md-line><button md-button>{{question.points}}</button></h4>
+						<h4 md-line><button md-button (click)="openDialog(question.answer, question.question)">{{question.points}}</button></h4>
 					</md-list-item>
 				</md-list>
 			</div>
