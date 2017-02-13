@@ -45,7 +45,6 @@ export class AppComponent {
   submitTest(formData: any) {
     console.log(formData.testText);
     this.gamedataService.sendMessage(formData.testText);
-    
   }
 
   setRound(round: number) {

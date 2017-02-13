@@ -32,13 +32,13 @@ io.on('connection', function(socket){
     socket.emit('setgm', socket.handshake.headers.referer.endsWith("/gm"));
   });
   
-  socket.on('add-message', function (text){
+  socket.on('add-message', (text) => {
   	console.log("add-message: " + text);
   	testText = text;
-  	socket.emit('get-message', testText);
+  	//falsch: socket.emit('get-message', testText);
+  	io.emit('get-message', testText);
   });
-  
-  io.emit('get-message', testText);
+
   
   socket.on('gamedata', function(gamedata) {
     console.log("Publishing Gamedata...");

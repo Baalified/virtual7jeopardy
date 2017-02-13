@@ -50,7 +50,7 @@ export class GamedataService {
       this.socket.on('get-message', (data) => {
           console.log('get-message');
           this.testText = data;
-          console.log(data);
+          console.log(data + " == " + this.testText);
           observer.next(this.testText);
       });
       return () => {
