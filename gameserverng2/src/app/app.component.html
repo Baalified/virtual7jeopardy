@@ -1,7 +1,20 @@
 <h1>
   {{title}}
 </h1>
-<button (click)='clickThis()'>button</button>
+<form (ngSubmit)="submitTest(testForm.value)" #testForm="ngForm">
+	<md-input-container>
+	<input 
+		md-input 
+		type="text" 
+		id="webSocketText"
+		placeholder="Eingabe bitte :-)"
+		name="testText" ngModel>
+	</md-input-container>
+	<button 
+		type="submit"
+		md-button>button
+	</button> {{webSocketTestText}}
+</form>
 <div>
 	<h2>Game: #{{gameID}}</h2>({{selectedOption}})
 	<div *ngFor="let game of games">

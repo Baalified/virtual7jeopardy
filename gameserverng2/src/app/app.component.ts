@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { GamedataService, Games, Categories, Questions } from './gamedata.service';
 import { CommonModule } from '@angular/common';
-import {MdDialog, MdDialogRef} from '@angular/material';
+import { MdDialog, MdDialogRef } from '@angular/material';
 import { DialogResultExampleDialog } from './dialog/dialog.component';
 
 @Component({
@@ -18,6 +18,8 @@ export class AppComponent {
 
   selectedOption: string;
 
+  webSocketTestText= "das ist der WebSocket Test Text";
+
   constructor(private gamedataService: GamedataService, public dialog: MdDialog ) {
 
   }
@@ -32,11 +34,18 @@ export class AppComponent {
         this.games.push(game);
       });
     });
+
+    this.gamedataService.getMessage().subscribe(text => {
+      console.log("in getMessage()");
+      console.log(text);
+      this.webSocketTestText = text;
+    });
   }
 
-  clickThis() {
-    console.log('clickThis');
-    //this.gamedataService.games.next();
+  submitTest(formData: any) {
+    console.log(formData.testText);
+    this.gamedataService.sendMessage(formData.testText);
+    
   }
 
   setRound(round: number) {

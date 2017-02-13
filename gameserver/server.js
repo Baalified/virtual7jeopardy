@@ -9,6 +9,8 @@ var io=require("socket.io")(http);
 var db=new tingodb.Db(__dirname + '/db', {});
 var games = db.collection("games");
 
+var testText = "Das ist ein Test Text 456";
+
 app.use(express.static(__dirname + "/public"));
 app.use(bodyParser.json());
 
@@ -29,6 +31,14 @@ io.on('connection', function(socket){
     socket.emit('initGamesList', JSON.stringify(docs));
     socket.emit('setgm', socket.handshake.headers.referer.endsWith("/gm"));
   });
+  
+  socket.on('add-message', function (text){
+  	console.log("add-message: " + text);
+  	testText = text;
+  	socket.emit('get-message', testText);
+  });
+  
+  io.emit('get-message', testText);
   
   socket.on('gamedata', function(gamedata) {
     console.log("Publishing Gamedata...");

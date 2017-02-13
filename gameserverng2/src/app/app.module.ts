@@ -24,7 +24,8 @@ import { DialogResultExampleDialog } from './dialog/dialog.component';
     CommonModule,
     MaterialModule.forRoot()
   ],
+  entryComponents: [DialogResultExampleDialog],
   providers: [GamedataService, WebsocketService],
-  bootstrap: [AppComponent, DialogResultExampleDialog]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

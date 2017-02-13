@@ -1,4 +1,4 @@
-import {Injectable} from '@angular/core';
+import {Injectable, NgZone} from '@angular/core';
 import { Subject } from 'rxjs/Subject';
 import { Observable } from 'rxjs/Observable';
 import * as io from 'socket.io-client';
@@ -28,17 +28,43 @@ export class GamedataService {
   //public games: Subject<Games>  = new Subject<Games>();
   public games: Games[];
 
+  zone: NgZone;
 	private url = 'ws://localhost:3000';  
-  private socket;
+  private socket: SocketIOClient.Socket;
+
+  testText: string;
   
-  sendMessage(message){
-    this.socket.emit('add-message', message);    
+  constructor(){
+    this.socket = io.connect(this.url);
   }
+
+  sendMessage(message){
+    this.socket.emit('add-message', message);   
+  }
+
+  // nur zum test
+  getMessage() {
+    let observable = new Observable<string>(observer => {
+      console.log("Message: Connecting socket...");
+      //this.socket = io(this.url);
+      this.socket.on('get-message', (data) => {
+          console.log('get-message');
+          this.testText = data;
+          console.log(data);
+          observer.next(this.testText);
+      });
+      return () => {
+        this.socket.disconnect();
+      };  
+    })    
+    return observable;
+  }
+
   
   getGames() {
     let observable = new Observable<Games[]>(observer => {
-      console.log("Connecting socket...");
-      this.socket = io(this.url);
+      console.log("Game: Connecting socket...");
+      //this.socket = io(this.url);
       this.socket.on('initGamesList', (data) => {
         console.log('initGamesList');
         this.games = JSON.parse(data);
