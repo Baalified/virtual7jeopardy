@@ -50,10 +50,11 @@ v7jeopardy.controller('AppCtrl', ['$scope', '$http', '$location', 'socketio', fu
   };
   
   $scope.buzz = function(player) {
-    if($scope.currentgame.activequestion && !$scope.currentgame.activeplayer) {
-      $scope.currentgame.activeplayer = player;
-      emitGameData();
-    }
+//    if($scope.currentgame.activequestion && !$scope.currentgame.activeplayer) {
+//      $scope.currentgame.activeplayer = player;
+//      emitGameData();
+//    }
+    socketio.emit('buzz', {'player':player});
   }
   
   var emitGameData = function() {
@@ -62,6 +63,15 @@ v7jeopardy.controller('AppCtrl', ['$scope', '$http', '$location', 'socketio', fu
   
   socketio.on('gamedata', function(game) {
     $scope.currentgame = game;
+  });
+
+  socketio.on('buzz', function(buzzdata) {
+    console.log('Received buzz.');
+    if($scope.currentgame.activequestion && !$scope.currentgame.activeplayer) {
+      $scope.currentgame.activeplayer = $scope.currentgame.players[buzzdata.player];
+      console.log('Active player set.');
+      //emitGameData();
+    }
   });
   
   socketio.on('setgm', function(gm) {

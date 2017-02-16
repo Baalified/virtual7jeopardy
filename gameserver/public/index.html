@@ -42,19 +42,16 @@
             <tr>
               <th>Name</th>
               <th>Score</th>
-              <th>Color</th>
             </tr>
           </thead>
           <tbody>
             <tr ng-repeat="player in currentgame.players">
               <td style="font-size:1vw"><input class="form-controll" ng-model="player.name"/></td>
               <td style="font-size:1vw"><input class="form-controll" ng-model="player.score"/></td>
-              <td style="font-size:1vw"><input class="form-controll" ng-model="player.color"/></td>
             </tr>
             <tr>
               <td style="font-size:1vw"><input class="form-controll" ng-model="newplayer.name"/></td>
               <td style="font-size:1vw"><input class="form-controll" ng-model="newplayer.score"/></td>
-              <td style="font-size:1vw"><input class="form-controll" ng-model="newplayer.color"/></td>
             </tr>
             <tr>
               <td/>
@@ -127,13 +124,13 @@
           <a href="#" class="btn btn-warning btn-lg" ng-click="closeQuestion()">
             <span class="glyphicon glyphicon-stop"></span> Close question (no points +/-)
           </a>
-          <a href="#" class="btn btn-info btn-lg" ng-click="reopenQuestion()" ng-disabled="!activeplayer">
+          <a href="#" class="btn btn-info btn-lg" ng-click="reopenQuestion()" ng-disabled="!currentgame.activeplayer">
             <span class="glyphicon glyphicon-repeat"></span> Reopen question (no points +/-)
           </a>
-          <a href="#" class="btn btn-success btn-lg" ng-click="correctAnswer()" ng-disabled="!activeplayer">
+          <a href="#" class="btn btn-success btn-lg" ng-click="correctAnswer()" ng-disabled="!currentgame.activeplayer">
             <span class="glyphicon glyphicon-ok"></span> Correct answer
           </a>
-          <a href="#" class="btn btn-danger btn-lg" ng-click="wrongAnswer()" ng-disabled="!activeplayer">
+          <a href="#" class="btn btn-danger btn-lg" ng-click="wrongAnswer()" ng-disabled="!currentgame.activeplayer">
             <span class="glyphicon glyphicon-remove"></span> Wrong answer
           </a>
         </div>
@@ -190,7 +187,7 @@
           -->
           <div class="col playercol" ng-repeat="player in currentgame.players">
             <!-- TEMP click to buzz (ng-click is temp) -->
-            <div class="player" style="background-color:{{player.color}};color:black;" ng-click="buzz(player)">
+            <div class="player" style="background-color:{{currentgame.activeplayer==player && ('green') || ('lightgrey')}};color:black;" ng-click="buzz($index)">
               <div class="playername">{{player.name}}</div>
               <div class="playerscore">{{player.score}}</div>
             </div>

@@ -11,6 +11,8 @@ var games = db.collection("games");
 
 var testText = "Das ist ein Test Text 456";
 
+var curGameData;
+
 app.use(express.static(__dirname + "/public"));
 app.use(bodyParser.json());
 
@@ -28,8 +30,9 @@ io.on('connection', function(socket){
   
   games.find().toArray(function(err, docs) {
     console.log(docs);
-    socket.emit('initGamesList', JSON.stringify(docs));
-    socket.emit('setgm', socket.handshake.headers.referer.endsWith("/gm"));
+    socket.emit('initGamesList', docs);
+    socket.emit('setgm', socket.handshake.headers.referer && socket.handshake.headers.referer.endsWith("/gm"));
+    socket.emit('gamedata', curGameData);
   });
   
   socket.on('add-message', (text) => {
@@ -37,6 +40,12 @@ io.on('connection', function(socket){
   	testText = text;
   	//falsch: socket.emit('get-message', testText);
   	io.emit('get-message', testText);
+  });
+
+  socket.on('buzz', function(buzzdata) {
+    console.log("BUZZ!");
+    console.log(buzzdata);
+    io.emit('buzz', buzzdata);
   });
 
   
@@ -49,6 +58,7 @@ io.on('connection', function(socket){
         console.log(doc);
       });
     io.emit('gamedata', gamedata);
+    curGameData=gamedata;
   });
   
 });
