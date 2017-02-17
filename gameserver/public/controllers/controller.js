@@ -1,6 +1,7 @@
 
 
 var v7jeopardy = angular.module('v7jeopardy', []);
+var buzzerSound = new Audio("sounds/gamesounds/buzzer.mp3");
 
 v7jeopardy.controller('AppCtrl', ['$scope', '$http', '$location', 'socketio', function($scope, $http, $location, socketio) {
   $scope.gamemaster=false;
@@ -50,10 +51,11 @@ v7jeopardy.controller('AppCtrl', ['$scope', '$http', '$location', 'socketio', fu
   };
   
   $scope.buzz = function(player) {
-    if($scope.currentgame.activequestion && !$scope.currentgame.activeplayer) {
-      $scope.currentgame.activeplayer = player;
-      emitGameData();
-    }
+//    if($scope.currentgame.activequestion && !$scope.currentgame.activeplayer) {
+//      $scope.currentgame.activeplayer = player;
+//      emitGameData();
+//    }
+    socketio.emit('buzz', {'player':player});
   }
   
   var emitGameData = function() {
@@ -62,6 +64,16 @@ v7jeopardy.controller('AppCtrl', ['$scope', '$http', '$location', 'socketio', fu
   
   socketio.on('gamedata', function(game) {
     $scope.currentgame = game;
+  });
+
+  socketio.on('buzz', function(buzzdata) {
+    console.log('Received buzz.');
+    if($scope.currentgame.activequestion && !$scope.currentgame.activeplayer) {
+      $scope.currentgame.activeplayer = $scope.currentgame.players[buzzdata.player];
+      console.log('Active player set.');
+      buzzerSound.play();
+      //emitGameData();
+    }
   });
   
   socketio.on('setgm', function(gm) {
