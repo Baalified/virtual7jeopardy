@@ -31,12 +31,10 @@ io.on('connection', function(socket){
   games.find().toArray(function(err, docs) {
     console.log(docs);
     socket.emit('initGamesList', docs);
-<<<<<<< HEAD
-    socket.emit('setgm', socket.handshake.headers.referer.endsWith("/gm"));
-=======
-    socket.emit('setgm', socket.handshake.headers.referer && socket.handshake.headers.referer.endsWith("/gm"));
+
+    socket.emit('setgm', socket.handshake.headers.referer &&
+    	socket.handshake.headers.referer.endsWith("/gm"));
     socket.emit('gamedata', curGameData);
->>>>>>> d57667fc4c558e29876bb5baff70df256394474e
   });
   
   socket.on('add-message', (text) => {
