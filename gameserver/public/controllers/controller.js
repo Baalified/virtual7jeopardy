@@ -1,6 +1,7 @@
 
 
 var v7jeopardy = angular.module('v7jeopardy', []);
+var buzzerSound = new Audio("sounds/gamesounds/buzzer.mp3");
 
 v7jeopardy.controller('AppCtrl', ['$scope', '$http', '$location', 'socketio', function($scope, $http, $location, socketio) {
   $scope.gamemaster=false;
@@ -70,6 +71,7 @@ v7jeopardy.controller('AppCtrl', ['$scope', '$http', '$location', 'socketio', fu
     if($scope.currentgame.activequestion && !$scope.currentgame.activeplayer) {
       $scope.currentgame.activeplayer = $scope.currentgame.players[buzzdata.player];
       console.log('Active player set.');
+      buzzerSound.play();
       //emitGameData();
     }
   });
