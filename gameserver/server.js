@@ -28,7 +28,7 @@ io.on('connection', function(socket){
   
   games.find().toArray(function(err, docs) {
     console.log(docs);
-    socket.emit('initGamesList', JSON.stringify(docs));
+    socket.emit('initGamesList', docs);
     socket.emit('setgm', socket.handshake.headers.referer.endsWith("/gm"));
   });
   

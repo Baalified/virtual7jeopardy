@@ -67,7 +67,7 @@ export class GamedataService {
       //this.socket = io(this.url);
       this.socket.on('initGamesList', (data) => {
         console.log('initGamesList');
-        this.games = JSON.parse(data);
+        this.games = data;
         console.log(this.games);
         observer.next(this.games);
       });
