@@ -69,6 +69,13 @@ io.on('connection', function(socket){
 
     updateBuzzerState();
   });
+
+  // Reload Games List
+  socket.on("getGameList", function() {
+    games.find().toArray(function(err, docs) {
+      io.emit('initGamesList', docs);
+    });
+  });
   
 });
 

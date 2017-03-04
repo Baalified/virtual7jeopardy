@@ -98,8 +98,18 @@ v7jeopardy.controller('AppCtrl', ['$scope', '$http', '$location', 'socketio', fu
       $scope.newplayer = "";
     }
   }
+
+  $scope.reloadGames = function() {
+    socketio.emit("getGameList");
+  }
   
-  
+  $scope.buzzerTest = function() {
+    console.log("buzzerTest()");
+    if(!$scope.currentgame.activequestion) {
+      $scope.currentgame.activequestion = {question: 'BUZZERTEST', answer: '', points: 0, player: false};
+      emitGameData();
+    }
+  }
   
 }]).filter('range', function() {
   // Range filter for implementing sequence 0..4 in Angular ng-repeat tag
