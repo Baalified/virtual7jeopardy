@@ -38,14 +38,14 @@ v7jeopardy.controller('AppCtrl', ['$scope', '$http', '$location', 'socketio', fu
   
   $scope.correctAnswer = function() {
     // increase points of active player, close question
-    $scope.currentgame.activeplayer.score += $scope.currentgame.activequestion.points;
+    $scope.currentgame.activeplayer.score = parseInt($scope.currentgame.activeplayer.score) + parseInt($scope.currentgame.activequestion.points);
     $scope.closeQuestion();
     emitGameData();
   };
   
   $scope.wrongAnswer = function() {
     // decrease points of active player, reopen question
-    $scope.currentgame.activeplayer.score -= $scope.currentgame.activequestion.points;
+    $scope.currentgame.activeplayer.score = parseInt($scope.currentgame.activeplayer.score) - parseInt($scope.currentgame.activequestion.points);
     $scope.reopenQuestion();
     emitGameData();
   };
