@@ -91,14 +91,14 @@ if(gpio) {
   ];
 
   buzzers.forEach(function(buzzer, idx) {
-    gpio.setup(buzzer.buzzpin, gpio.DIR_OUT);
+    gpio.setup(buzzer.buzzpin, gpio.DIR_IN, gpio.EDGE_BOTH);
     gpio.setup(buzzer.lightpin, gpio.DIR_OUT);
   });
 
   // Listen for state changes in GPIO and buzz if appropriate
   gpio.on("change", function(channel, value) {
-    if(value == true) {
-      if(curGameData.activequestion && !curGameData.activeplayer) {
+    if(value == false) {
+      if(curGameData && curGameData.activequestion && !curGameData.activeplayer) {
         buzzers.forEach(function(buzzer, idx) {
           if(buzzer.buzzpin == channel) {
             io.emit("buzz", idx);
@@ -110,7 +110,7 @@ if(gpio) {
 }
 
 function updateBuzzerState() {
-  if(!gpio)
+  if(!curGameData || !gpio)
     return;
 
   // If there is no active question, disable Buzzers and turn all lights off
@@ -130,7 +130,7 @@ function updateBuzzerState() {
 
 // Turn lights on all Buzzers off - if keepOn is supplied, keep that buzzers light on
 function lightsOff(keepOn) {
-  if(!gpio)
+  if(!curGameData || !gpio)
     return;
   buzzers.forEach(function(buzzer, idx) {
     if(idx !== keepOn) {
@@ -146,7 +146,7 @@ function lightsOff(keepOn) {
 
 // Turn lights on all Buzzers on - if keepOn is supplied, keep that buzzers light on
 function lightsOn() {
-  if(!gpio)
+  if(!curGameData || !gpio)
     return;
   buzzers.forEach(function(buzzer, idx) {
     // Surrounding with try/catch as gpio can throw exceptions when not fully initialized yet
