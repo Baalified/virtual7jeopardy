@@ -64,9 +64,33 @@ io.on('connection', function(socket){
     io.emit('gamedata', gamedata);
     // ...update Game State in runtime server
     curGameData=gamedata;
+
+    updateBuzzerState();
   });
   
 });
+
+if(gpio) {
+  var buzzers = [
+    {
+      buzzpin: 12,
+      lightpin: 11
+    }
+  ];
+}
+
+gpio.setup(buzzers[0].lightpin, gpio.DIR_OUT);
+gpio.write(buzzers[0].lightpin, true);
+
+function updateBuzzerState() {
+  if(!gpio)
+    return;
+  
+  // If there is no active question, disable Buzzers and turn all lights off
+  if(!curGameData.activequestion) {
+
+  }
+}
 
 http.listen(3000, function(){
   console.log('listening on *:3000');
