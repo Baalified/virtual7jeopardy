@@ -47,6 +47,7 @@ io.on('connection', function(socket){
   socket.on('buzz', function(buzzdata) {
     console.log("BUZZ!");
     console.log(buzzdata);
+    curGameData.activeplayer = curGameData.players[buzzdata.player];
     io.emit('buzz', buzzdata);
   });
 
@@ -101,6 +102,7 @@ if(gpio) {
       if(curGameData && curGameData.activequestion && !curGameData.activeplayer) {
         buzzers.forEach(function(buzzer, idx) {
           if(buzzer.buzzpin == channel) {
+            curGameData.activeplayer = curGameData.players[idx];
             io.emit("buzz", {player: idx});
           }
         });
@@ -133,7 +135,7 @@ function lightsOff(keepOn) {
   if(!curGameData || !gpio)
     return;
   buzzers.forEach(function(buzzer, idx) {
-    if(idx !== keepOn) {
+    if(idx != keepOn) {
       // Surrounding with try/catch as gpio can throw exceptions when not fully initialized yet
       try {
         gpio.write(buzzer.lightpin, false);
