@@ -49,6 +49,7 @@ io.on('connection', function(socket){
     console.log(buzzdata);
     io.emit('buzz', buzzdata);
     curGameData.activeplayer = curGameData.players[buzzdata.player];
+    lightsOff(buzzdata.player);
   });
 
   // When an update to the current Game State is received...
