@@ -101,7 +101,7 @@ if(gpio) {
       if(curGameData && curGameData.activequestion && !curGameData.activeplayer) {
         buzzers.forEach(function(buzzer, idx) {
           if(buzzer.buzzpin == channel) {
-            io.emit("buzz", idx);
+            io.emit("buzz", {player: idx});
           }
         });
       }
