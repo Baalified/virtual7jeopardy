@@ -102,6 +102,7 @@ if(gpio) {
         buzzers.forEach(function(buzzer, idx) {
           if(buzzer.buzzpin == channel) {
             io.emit("buzz", {player: idx});
+            lightsOff(idx);
           }
         });
       }
