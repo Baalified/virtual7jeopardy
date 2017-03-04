@@ -75,21 +75,87 @@ if(gpio) {
     {
       buzzpin: 12,
       lightpin: 11
+    },
+    {
+      buzzpin: 13,
+      lightpin: 15
+    },
+    {
+      buzzpin: 16,
+      lightpin: 18
+    },
+    {
+      buzzpin: 22,
+      lightpin: 32
     }
   ];
-}
 
-gpio.setup(buzzers[0].lightpin, gpio.DIR_OUT);
-gpio.write(buzzers[0].lightpin, true);
+  buzzers.forEach(function(buzzer, idx) {
+    gpio.setup(buzzer.buzzpin, gpio.DIR_OUT);
+    gpio.setup(buzzer.lightpin, gpio.DIR_OUT);
+  });
+
+  // Listen for state changes in GPIO and buzz if appropriate
+  gpio.on("change", function(channel, value) {
+    if(value == true) {
+      if(curGameData.activequestion && !curGameData.activeplayer) {
+        buzzers.forEach(function(buzzer, idx) {
+          if(buzzer.buzzpin == channel) {
+            io.emit("buzz", idx);
+          }
+        });
+      }
+    }
+  });
+}
 
 function updateBuzzerState() {
   if(!gpio)
     return;
-  
+
   // If there is no active question, disable Buzzers and turn all lights off
   if(!curGameData.activequestion) {
-
+    lightsOff();
   }
+
+  // If there is an active question but no active Player yet, turn all lights on
+  if(curGameData.activequestion && !curGameData.activeplayer) {
+    lightsOn();
+  }
+
+  if(curGameData.activequestion && curGameData.activeplayer) {
+    lightsOff( curGameData.players.indexOf(curGameData.activeplayer) );
+  }
+}
+
+// Turn lights on all Buzzers off - if keepOn is supplied, keep that buzzers light on
+function lightsOff(keepOn) {
+  if(!gpio)
+    return;
+  buzzers.forEach(function(buzzer, idx) {
+    if(idx !== keepOn) {
+      // Surrounding with try/catch as gpio can throw exceptions when not fully initialized yet
+      try {
+        gpio.write(buzzer.lightpin, false);
+      }catch(e){
+        console.log(e);
+      }
+    }
+  });
+}
+
+// Turn lights on all Buzzers on - if keepOn is supplied, keep that buzzers light on
+function lightsOn() {
+  if(!gpio)
+    return;
+  buzzers.forEach(function(buzzer, idx) {
+    // Surrounding with try/catch as gpio can throw exceptions when not fully initialized yet
+    try {
+      gpio.write(buzzer.lightpin, true);
+    }catch(e){
+      console.log(e);
+    }
+  });
 }
 
 http.listen(3000, function(){

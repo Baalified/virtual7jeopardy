@@ -72,7 +72,7 @@ v7jeopardy.controller('AppCtrl', ['$scope', '$http', '$location', 'socketio', fu
       $scope.currentgame.activeplayer = $scope.currentgame.players[buzzdata.player];
       console.log('Active player set.');
       buzzerSound.play();
-      //emitGameData();
+      emitGameData();
     }
   });
   
