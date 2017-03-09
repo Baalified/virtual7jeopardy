@@ -118,6 +118,14 @@
       <div class="openquestion" ng-hide="!currentgame.activequestion">
         <div class="openquestiontext" >{{currentgame.activequestion.question}}</div>
         <img src="{{currentgame.activequestion.image}}" style="max-width:90%; max-height:90%; width:auto; height:auto; zoom:2;" ng-hide="!currentgame.activequestion.image"/>
+        <div class="container" ng-hide="!currentgame.activequestion.audio || !gamemaster" style="width:90%;">
+          <img src="images/gameimages/play.jpg" style="width:200px; height:200px; position:absolute; left:200px;" ng-click="audioQuestionPlay()"/>
+          <img src="images/gameimages/stop.svg" style="width:200px; height:200px; position:absolute; right:200px;" ng-click="audioQuestionStop()"/>
+        </div>
+        <div class="container openquestiontext" ng-hide="!currentgame.activequestion.audio || gamemaster" style="width:90%;">
+          Listen...<br/>
+          <img src="images/gameimages/listen.png" ng-hide="gamemaster"/>
+        </div>
         <div class="container" ng-hide="!gamemaster" style="background-color:white;position:absolute;bottom:0px;padding:10px;width:100%;">
           <div class="gmanswer">
             {{currentgame.activequestion.answer}}
