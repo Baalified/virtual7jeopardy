@@ -234,3 +234,12 @@ This meme raised awareness of Amyotrophic Laterla Sclerosis - (ALS) Ice Bucket C
 Looking forward to a special video on youtube? Dont get your hopes up too much as you might be greeted by this musical meme. - Rickrolling
 This talented infant became famous in the 90s as one of the first viral videos - Dancing Baby
 The song was originaly called Я очень рад, ведь я, наконец, возвращаюсь домой - Trololo
+
+------------------
+- I saw the sign -
+------------------
+^ - Circumflex
+° - Degree
+~ - Tilde
+@ - At
+# - Hash
