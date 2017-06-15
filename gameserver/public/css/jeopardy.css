@@ -126,7 +126,7 @@ html,body {
   div.openquestion {
     position:absolute;
     top:100px;
-    bottom:100px;
+    bottom:15%;
     left:150px;
     right:150px;
     border:20px solid black;
@@ -155,8 +155,38 @@ html,body {
   .gmbar {
     padding-top:5px;
     padding-bottom:5px;
+    width:100% !important; 
   }
   
   .gmbar button {
     font-size:1vw;
+    margin-left:10px;
+    margin-right:10px;
+  }
+
+  .splash {
+    position:absolute;
+    left:0px;
+    right:0px;
+    top:0px;
+    bottom:0px;
+    background-color: black;
+    z-index: 1000;
+  }
+
+  .splash img{
+    position:absolute;
+    left:0px;
+    right:0px;
+    top:0px;
+    bottom:0px;
+    z-index: 1000;
+  }
+
+  .openquestion .btn {
+    margin:5px;
+  }
+
+  openquestionsolution {
+    z-index: 900;
   }

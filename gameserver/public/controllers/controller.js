@@ -1,11 +1,60 @@
 
 
 var v7jeopardy = angular.module('v7jeopardy', []);
-var buzzerSound = new Audio("sounds/gamesounds/buzzer.mp3");
+var buzzerSound = new Audio("sounds/gamesounds/buzzer.wav");
+var themeSong = new Audio("sounds/themesong.mp3");
 var questionSound = new Audio();
 
 v7jeopardy.controller('AppCtrl', ['$scope', '$http', '$location', 'socketio', function($scope, $http, $location, socketio) {
   $scope.gamemaster=false;
+
+
+  $scope.themePlay = function() {
+    socketio.emit("themePlay");
+  };
+  socketio.on("themePlay", function() {
+    themeSong.load(themeSong.src);
+    themeSong.play();
+  });
+
+  $scope.themeStop = function() {
+    socketio.emit("themeStop");
+  };
+  socketio.on("themeStop", function() {
+    themeSong.pause();
+  });
+
+  $scope.themeToggle = function() {
+    if(themeSong.volume == 1) {
+      socketio.emit("themeToggle", 0.5);
+    }else{
+      socketio.emit("themeToggle", 1);
+    }
+  };
+  socketio.on("themeToggle", function(vol) {
+    themeSong.volume = vol;
+  });
+
+  $scope.toggleSplash = function() {
+    socketio.emit("toggleSplash", !$scope.splashscreen);
+  };
+
+  socketio.on('toggleSplash', function(splash) {
+    $scope.splashscreen=splash;
+  });
+
+  $scope.showSolution = function(){
+    socketio.emit("showSolution");
+  }
+
+  socketio.on("showSolution", function() {
+    if($scope.currentgame.activequestion.audio_answer) {
+      questionSound.src = $scope.currentgame.activequestion.audio_answer;
+      questionSound.load();
+      questionSound.play();
+    }
+    $scope.currentgame.activequestion.showsolution=true;
+  });
   
   /* Getting the initial Games List.
   The list will be emitted when the client connects. */
@@ -83,6 +132,8 @@ v7jeopardy.controller('AppCtrl', ['$scope', '$http', '$location', 'socketio', fu
   
   socketio.on('gamedata', function(game) {
     $scope.currentgame = game;
+    if(!game.activequestion)
+      questionSound.pause();
   });
 
   socketio.on('buzz', function(buzzdata) {
