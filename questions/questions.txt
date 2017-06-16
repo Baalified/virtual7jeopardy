@@ -1,7 +1,38 @@
 One Game is 6 Categories with 5 questions eadch
 Would be nice to be ready to play up to five games (4 rounds and final) - 30 categories - 150 questions
 
-Banned from round 1 (categories: Code Names, Unix Commands, Way Back Machine, Who am I, Name that state, Abbreviations): Björn, Miriam, Sabrina
+Banned from round 1 (categories: Code Names, Unix Commands, Way Back Machine, Who am I, Name that state, Abbreviations): Björn, Miriam, Sabrina, Roger, Tobi M., Micha
+
+
+
+
+==============
+= Teilnehmer =
+==============
+
+Technische Fragen:
+- Michael Augustin
+- Cristian Bolat
+- Marco Hornung
+- Cipi
+- Arkadi
+- Adrian Bartos
+- Deszö
+
+
+Andere:
+- Roland
+- Tobias M.
+- Markus K.
+- Björn
+- Miriam
+- Roger
+
+
+
+
+
+
 
 Test bestanden!!!
 
@@ -13,6 +44,9 @@ AJAX - Asynchronous JavaScript and XML
 JET - Oracle JavaScript Extension Toolkit
 SOAP - Simple Object Access Protocol
 REST - Representational State Transfer
+
+BASIC - ???
+
 
 -----------
 ? Oracles ?
@@ -52,13 +86,25 @@ This former Borg drone joined the crew of the Federation starship Voyager - Seve
 
 
 
+- default ports
+
+80 - HTTP
+22 - SSH
+21 - FTP Control
+25 - SMTP
+110 - POP3
+
+
+
+
+
 -----------
 - Numbers -
 -----------
 This is 2^10 in decimal - 1024
-This is 2^10 in hexadecimal - 0x400
-The metric system prefix for 10^-6 - Micro
 The product of all integers form -10 to 10 - 0
+The metric system prefix for 10^-6 - Micro
+This is 2^10 in hexadecimal - 0x400
 The next two terms in the sequence kilo, mega, giga, tera, peta - exa and zetta
 
 -------------------------
@@ -77,8 +123,16 @@ Cupcake, Donot, Eclair, Froyo, Gingerbread - Android
 Jaguar, Panther, Tiger, Leopard, Snow Leopard, Lion, Mountain Lion - Mac OS X
 Hardy Heron, Jaunty Jackalope, Lucid Lynx, Natty Narwhal, Precise Pangolin, Trusty Tahr - Ubuntu
 Chicago, Daytona, Memphis, Whistler, Longhorn, Blackcomb, Blue - Microsoft Windows
-Yohan, Meron, Penryn, Sandy, Bridge, Haswell - Intel Processors
+(Yohan, Meron, Penryn, Sandy, Bridge, Haswell - Intel Processors)
 Oak, Playground, Kestrel, Merlin, Tiger, Mustang, Dolphin - Java ???
+
+Pentium, Xeon, Celeron, Core i*, Atom - Intel Processors
+K5, K6, Athlon, Opteron, Phenom, Ryzen - AMD Processors
+NV1, Riva, Vanta, Geforce, GoForce, Quadro - Nvidia GPUs
+Wonder, Mach, Rage, Radeon, FireGL - ATI GPUs
+ISA, VLB, PCI, PCIe, AGP - Extension slots
+
+
 
 ---------------------------
 - Three letter extensions -
@@ -243,3 +297,107 @@ The song was originaly called Я очень рад, ведь я, наконец,
 ~ - Tilde
 @ - At
 # - Hash
+
+
+What am I?
+TODO - SHA Hash
+TODO - MD5 Hash
+TODO - Base64
+
+
+
+-------------
+- App Icons -
+-------------
+Winamp
+ICQ
+AOL IM
+Firefox
+Thunderbird
+
+
+
+
+----------------
+- Applications -
+----------------
+
+
+
+
+-----------------
+- Bilder Mashup -
+-----------------
+
+
+
+
+
+----------------------
+- Games -------------
+---------
+
+This Hedgehog moves at the speed of sound - Sonic
+Tetris
+Super Mario
+Pong
+Pacman
+Frogger
+Zelda
+Warcraft
+Diablo
+Snake
+
+------------
+- Consoles -
+------------
+NES
+PlayStation
+Dreamcast
+Atari 2600
+Game Cube
+
+
+
+------------
+Handhelds
+--------------
+Game Boy
+Sega GameGear
+Atari Lynx
+PSP
+???
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----
+- Lucas Arts Games
+----
+
+Day of the Tentacle
+Secret of Monkey Island
+Maniac Mansion
+Zak McCracken
+Indiana Jones
+
+
+
+Prozessoren
+-------

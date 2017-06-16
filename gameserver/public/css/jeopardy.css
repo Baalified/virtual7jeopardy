@@ -29,7 +29,10 @@ html,body {
     color:yellow;
     cursor:pointer;
     height:100%;
-    
+  }
+  
+  div.played {
+    color:grey !important;
   }
   
   div.categorytext {

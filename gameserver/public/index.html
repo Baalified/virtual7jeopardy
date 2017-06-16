@@ -178,7 +178,7 @@
               ng-hide="playedquestions.indexOf(category.questions[i].id) !== -1"
               Hide the question, if it was already played (id exists in gameState.playedquestions)
             -->
-            <div class="questionpoints" ng-click="!gamemaster || choseQuestion(category.questions[i])" ng-hide="category.questions[i].played">{{(i+1)*100}}</div>
+            <div class="questionpoints" ng-click="!gamemaster || choseQuestion(category.questions[i])" ng-hide="category.questions[i].played && !gamemaster" ng-class="{true:'played', false:''}[category.questions[i].played==true]">{{(i+1)*100}}</div>
           </div>
         </div>
       </div>
