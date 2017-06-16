@@ -12,6 +12,7 @@ var tingodb=require('tingodb')();
 var app=express();
 var http = require('http').Server(app);
 var io=require("socket.io")(http);
+var exec = require('child_process').exec;
 
 // Initializing Database and Table games
 var db=new tingodb.Db(__dirname + '/db', {});
@@ -129,6 +130,7 @@ if(gpio) {
   ];
 
   buzzers.forEach(function(buzzer, idx) {
+    exec("python set_pull_up.py "+buzzer.buzzpin);
     gpio.setup(buzzer.buzzpin, gpio.DIR_IN, gpio.EDGE_BOTH);
     gpio.setup(buzzer.lightpin, gpio.DIR_OUT);
   });
