@@ -210,7 +210,7 @@
             <!-- TEMP click to buzz (ng-click is temp) -->
             <div class="player" style="background-color:{{currentgame.activeplayer==player && ('green') || ('lightgrey')}};color:black;" ng-click="buzz($index)">
               <div class="playername">{{player.name}}</div>
-              <div class="playerscore">{{player.score}}</div>
+              <div class="playerscore">{{player.score}}<a ng-hide="!gamemaster"> ({{player.answers}})</a></div>
             </div>
           </div>
         </div>

@@ -251,19 +251,23 @@ games.insert(
     "players":[
       {
         "name":"Michael Augustin",
-        "score":0
+        "score":0,
+        "answers":0
       },
       {
         "name":"Marco Hornung",
-        "score":0
+        "score":0,
+        "answers":0
       },
       {
         "name":"Christian Bolat",
-        "score":0
+        "score":0,
+        "answers":0
       },
       {
         "name":"Arkadiusz Gmyrek",
-        "score":0
+        "score":0,
+        "answers":0
       }
     ]
   },
@@ -532,19 +536,23 @@ games.insert(
     "players":[
       {
         "name":"Miriam Maier",
-        "score":0
+        "score":0,
+        "answers":0
       },
       {
         "name":"Anton Thome",
-        "score":0
+        "score":0,
+        "answers":0
       },
       {
         "name":"Roger Austin",
-        "score":0
+        "score":0,
+        "answers":0
       },
       {
         "name":"Adrian Bartos",
-        "score":0
+        "score":0,
+        "answers":0
       }
     ]
   },
@@ -784,19 +792,23 @@ games.insert(
     "players":[
       {
         "name":"Jochen Rieg",
-        "score":0
+        "score":0,
+        "answers":0
       },
       {
         "name":"Roland Seidelt",
-        "score":0
+        "score":0,
+        "answers":0
       },
       {
         "name":"Björn Möllers",
-        "score":0
+        "score":0,
+        "answers":0
       },
       {
         "name":"Guillermo Orranita",
-        "score":0
+        "score":0,
+        "answers":0
       }
     ]
   },
@@ -1070,19 +1082,23 @@ games.insert(
     "players":[
       {
         "name":"Ciprian Iancu",
-        "score":0
+        "score":0,
+        "answers":0
       },
       {
         "name":"Markus Koske",
-        "score":0
+        "score":0,
+        "answers":0
       },
       {
         "name":"Tobias Melcher",
-        "score":0
+        "score":0,
+        "answers":0
       },
       {
         "name":"Dezsö Kovacs",
-        "score":0
+        "score":0,
+        "answers":0
       }
     ]
   }

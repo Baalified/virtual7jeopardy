@@ -107,6 +107,7 @@ v7jeopardy.controller('AppCtrl', ['$scope', '$http', '$location', 'socketio', fu
   $scope.correctAnswer = function() {
     // increase points of active player, close question
     $scope.currentgame.activeplayer.score = parseInt($scope.currentgame.activeplayer.score) + parseInt($scope.currentgame.activequestion.points);
+    $scope.currentgame.activeplayer.answers++;
     $scope.closeQuestion();
     emitGameData();
   };
