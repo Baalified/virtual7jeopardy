@@ -19,6 +19,10 @@
   </head>
   <body ng-app="v7jeopardy">
     <div ng-controller="AppCtrl" style="width:100%; height:100%;">
+
+      <div class="splash" ng-hide="gamemaster || !splashscreen">
+        <img src="images/splashscreen.jpg"/>
+      </div>
     
       <!--
         ####################
@@ -29,6 +33,10 @@
         <button class="btn" ng-click="reloadGames(); showeditplayers = false; showloadgame = !showloadgame;">Load Game</button>
         <button class="btn" ng-click="showeditplayers = !showeditplayers; showloadgame = false;">Edit Players</button>
         <button class="btn" ng-click="buzzerTest()">Buzzer Test</button>
+        <button class="btn" ng-click="themePlay()">Play Theme</button>
+        <button class="btn" ng-click="themeToggle()">Toggle Theme Volume</button>
+        <button class="btn" ng-click="themeStop()">Stop Theme</button>
+        <button class="btn" ng-click="toggleSplash()" style="background-color:{{splashscreen && ('lightgreen') || ('lightgrey')}}">Toggle Splash</button>
       </div>
       
       <!--
@@ -116,31 +124,35 @@
         ################################
       --> 
       <div class="openquestion" ng-hide="!currentgame.activequestion">
-        <div class="openquestiontext" >{{currentgame.activequestion.question}}</div>
-        <img src="{{currentgame.activequestion.image}}" style="max-width:90%; max-height:90%; width:auto; height:auto; zoom:2;" ng-hide="!currentgame.activequestion.image"/>
+        <div class="openquestiontext" ng-hide="currentgame.activequestion.showsolution">{{currentgame.activequestion.question}}</div>
+        <img src="{{currentgame.activequestion.image}}" style="max-width:90%; max-height:90%; width:auto; height:auto; zoom:3;" ng-hide="!currentgame.activequestion.image || currentgame.activequestion.showsolution"/>
         <div class="container" ng-hide="!currentgame.activequestion.audio || !gamemaster" style="width:90%;">
           <img src="images/gameimages/play.jpg" style="width:200px; height:200px; position:absolute; left:200px;" ng-click="audioQuestionPlay()"/>
           <img src="images/gameimages/stop.svg" style="width:200px; height:200px; position:absolute; right:200px;" ng-click="audioQuestionStop()"/>
         </div>
-        <div class="container openquestiontext" ng-hide="!currentgame.activequestion.audio || gamemaster" style="width:90%;">
+        <div class="container openquestiontext" ng-hide="!currentgame.activequestion.audio || gamemaster || currentgame.activequestion.showsolution" style="width:90%;">
           Listen...<br/>
           <img src="images/gameimages/listen.png" ng-hide="gamemaster"/>
         </div>
+        <img src="{{currentgame.activequestion.image_answer}}" ng-hide="gamemaster || !currentgame.activequestion.showsolution" style="max-width:90%; max-height:90%; width:auto; height:auto; zoom:2;"/>
         <div class="container" ng-hide="!gamemaster" style="background-color:white;position:absolute;bottom:0px;padding:10px;width:100%;">
           <div class="gmanswer">
             {{currentgame.activequestion.answer}}
           </div>
           <a href="#" class="btn btn-warning btn-lg" ng-click="closeQuestion()">
-            <span class="glyphicon glyphicon-stop"></span> Close question (no points +/-)
+            <span class="glyphicon glyphicon-stop"></span> Close question
           </a>
           <a href="#" class="btn btn-info btn-lg" ng-click="reopenQuestion()" ng-disabled="!currentgame.activeplayer">
-            <span class="glyphicon glyphicon-repeat"></span> Reopen question (no points +/-)
+            <span class="glyphicon glyphicon-repeat"></span> Reopen question
           </a>
           <a href="#" class="btn btn-success btn-lg" ng-click="correctAnswer()" ng-disabled="!currentgame.activeplayer">
             <span class="glyphicon glyphicon-ok"></span> Correct answer
           </a>
           <a href="#" class="btn btn-danger btn-lg" ng-click="wrongAnswer()" ng-disabled="!currentgame.activeplayer">
             <span class="glyphicon glyphicon-remove"></span> Wrong answer
+          </a>
+          <a href="#" class="btn btn-success btn-lg" ng-click="showSolution()" ng-disabled="!currentgame.activequestion.audio_answer && !currentgame.activequestion.image_answer">
+            <span class="glyphicon glyphicon-ok"></span> Show Solution
           </a>
         </div>
       </div>

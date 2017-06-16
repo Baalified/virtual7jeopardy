@@ -60,6 +60,7 @@ He predicted that "when the storm is over, the weather will improve" - Prolix fr
 -----------
 - Virtual -
 -----------
+An emulated computer system running inside a so called hypervisor - Virtual Machine
 Since the acquisition of Sun Microsystems in 2010 this is Oracles Main Desktop Virtualization Application - VirtualBox
 This 1995 gaming console was arguably the first virtual reality headset - Virtual Boy (Nintendo)
 This company -insert obscure fact- - Virtual7
@@ -400,4 +401,25 @@ Indiana Jones
 
 
 Prozessoren
--------
+-------# - Hash
+
+
+
+-----------------
+- Serien Rollen -
+-----------------
+Leslie Winkle, Stuart Bloom, Penny, Howard Wolowitz, Leonard Hofstadter, Sheldon Cooper - The Big Bang Theory
+Gendry, Jorah Mormont, Davos Seewert, Arya Stark, Jon Schnee, Tyrion Lannister - Game of Thrones
+Steve Harrington, Barbara Holland, Dustin Henderson, Jim Hopper, Will Byers, Jane Ives - Stranger Things
+Dorothy Halligan, Lucky, Trevor Ochmonek, Brian Tanner, William Tanner, Gordon Shumway - ALF
+Sasha Williams, Tara Chambler, Glenn Rhee, Daryl Dixon, Michonne, Rick Grimes - The Walking Dead
+Douglas Milford, Mike Nelson, Hank Jennings, Bobby Briggs, Dale Cooper, Laura Palmer - Twin Peaks
+Janice Rand, Pavel Checkov, Nyota Uhura, Montgomery Scott, Commander Spock, Captain Kirk - Star Trek
+Stella Zinman, Quinn Garvey, Lily Aldrin, Marshall Eriksen, Robin Schebartsky, Barney Stinson - How I met your mother
+Valerie Gordon, Larry Zito, Trudy Joplin, Martin Castillo, Ricardo Tubbs, Sonny Crockett - Miami Vice
+Jackie Sharp, Tom Hammerschmidt, Linda Vasquez, Peter Russo, Doug Stamper, Francis Underwood - House of Cards
+Bob Rooney, Ike Foreman, Jefferson D'Arcy, Marcy Rhoades, Kelly Bundy, Al Bundy - Eine schrecklich nette Familie (englisch TODO)
+Ethan Kanin, James Heller, Morris O'Brian, Nina Myers, David Palmer, Jack Bauer - 24
+George Merkert, Tyrus Kitt, Todd Alquist, Hank Schrader, Jesse Pinkman, Walter White - Breaking Bad
+
+

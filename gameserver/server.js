@@ -57,11 +57,12 @@ io.on('connection', function(socket){
     console.log("Publishing Gamedata...");
     console.log(gamedata);
     // ...save Game State in Database
-    games.save(gamedata, function(err, doc){
+    // TEMP FOR TESTING - DISABLE SAVING
+    /*games.save(gamedata, function(err, doc){
         console.log("Saved");
         console.log(err);
         console.log(doc);
-      });
+      });*/
     // ...publish Game State to all clients connected
     io.emit('gamedata', gamedata);
     // ...update Game State in runtime server
@@ -83,6 +84,26 @@ io.on('connection', function(socket){
   
   socket.on("audioQuestionStop", function() {
     io.emit('audioQuestionStop');
+  });
+
+  socket.on("toggleSplash", function(splash) {
+    io.emit('toggleSplash', splash);
+  });
+
+  socket.on("showSolution", function() {
+    io.emit("showSolution");
+  });
+
+  socket.on("themePlay", function() {
+    io.emit("themePlay");
+  });
+
+  socket.on("themeStop", function() {
+    io.emit("themeStop");
+  });
+
+  socket.on("themeToggle", function(vol) {
+    io.emit('themeToggle', vol);
   });
   
 });
