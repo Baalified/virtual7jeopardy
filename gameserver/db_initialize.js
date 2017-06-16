@@ -949,45 +949,45 @@ games.insert(
         ]
       },
       {
-        "name":"Who are they? (TODO)",
+        "name":"Who are they?",
         "questions":[
           {
             "question":"",
-            "image":"images/whoarethey/Micha_Bjoern_Jochen.jpg",
-            "image_answer":"images/whoarethey/Micha_Bjoern_Jochen_solution.jpg",
-            "answer":"Micha, Björn, Jochen",
+            "image":"images/whoarethey/Ero_Mihai_Oliver.jpg",
+            "image_answer":"images/whoarethey/Ero_Mihai_Oliver_solution.jpg",
+            "answer":"Ero, Mihai, Oliver",
             "points":100,
             "played":false
           },
           {
             "question":"",
-            "image":"images/whoarethey/Caro_Francie_Michael.jpg",
-            "image_answer":"images/whoarethey/Caro_Francie_Michael_solution.jpg",
-            "answer":"Caro, Francie, Michael Augustin",
+            "image":"images/whoarethey/Guillermo_Enno_Vlad.jpg",
+            "image_answer":"images/whoarethey/Guillermo_Enno_Vlad_solution.jpg",
+            "answer":"Guillermo, Enno, Vlad",
             "points":200,
             "played":false
           },
           {
             "question":"",
-            "image":"images/whoarethey/Marcus_Markus_Marcus.jpg",
-            "image_answer":"images/whoarethey/Marcus_Markus_Marcus_solution.jpg",
-            "answer":"Marcus Weiss, Markus Koske, Marcus Hammer",
+            "image":"images/whoarethey/Selim_Tom_Roland.jpg",
+            "image_answer":"images/whoarethey/Selim_Tom_Roland_solution.jpg",
+            "answer":"Selim, Tom, Roland",
             "points":300,
             "played":false
           },
           {
             "question":"",
-            "image":"images/whoarethey/Oskar_Halil_Jens.jpg",
-            "image_answer":"images/whoarethey/Oskar_Halil_Jens_solution.jpg",
-            "answer":"Oskar, Halil, Jens",
+            "image":"images/whoarethey/Cristian_Cosmin_Danny.jpg",
+            "image_answer":"images/whoarethey/Cristian_Cosmin_Danny_solution.jpg",
+            "answer":"Cristian Bolat, Cosmin, Danny",
             "points":400,
             "played":false
           },
           {
             "question":"",
-            "image":"images/whoarethey/Sebastian_Cipi_Anton.jpg",
-            "image_answer":"images/whoarethey/Sebastian_Cipi_Anton_solution.jpg",
-            "answer":"Sebastian Faust, Cipi, Anton",
+            "image":"images/whoarethey/Pall_SebastianD_TobiL.jpg",
+            "image_answer":"images/whoarethey/Pall_SebastianD_TobiL_solution.jpg",
+            "answer":"Pall, Sebastian Dorn, Tobi Laube",
             "points":500,
             "played":false
           }
