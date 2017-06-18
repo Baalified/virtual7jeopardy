@@ -969,9 +969,9 @@ games.insert(
           },
           {
             "question":"",
-            "image":"images/whoarethey/Selim_Tom_Roland.jpg",
-            "image_answer":"images/whoarethey/Selim_Tom_Roland_solution.jpg",
-            "answer":"Selim, Tom, Roland",
+            "image":"images/whoarethey/Pall_SebastianD_TobiL.jpg",
+            "image_answer":"images/whoarethey/Pall_SebastianD_TobiL_solution.jpg",
+            "answer":"Pall, Sebastian Dorn, Tobi Laube",
             "points":300,
             "played":false
           },
@@ -985,9 +985,9 @@ games.insert(
           },
           {
             "question":"",
-            "image":"images/whoarethey/Pall_SebastianD_TobiL.jpg",
-            "image_answer":"images/whoarethey/Pall_SebastianD_TobiL_solution.jpg",
-            "answer":"Pall, Sebastian Dorn, Tobi Laube",
+            "image":"images/whoarethey/Selim_Tom_Roland.jpg",
+            "image_answer":"images/whoarethey/Selim_Tom_Roland_solution.jpg",
+            "answer":"Selim, Tom, Roland",
             "points":500,
             "played":false
           }
