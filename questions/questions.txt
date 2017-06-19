@@ -438,3 +438,32 @@ Ethan Kanin, James Heller, Morris O'Brian, Nina Myers, David Palmer, Jack Bauer 
 George Merkert, Tyrus Kitt, Todd Alquist, Hank Schrader, Jesse Pinkman, Walter White - Breaking Bad
 
 
+
+
+
+
+blue_suede_shoes
+born_to_be_wild
+careless_whisper
+--clint_eastwood
+help
+hold_the_line
+i_dont_want_to_miss_a_thing
+mad_world
+my_way
+--nothing_else_matters
+sandstorm
+smells_like_teenspirit
+something_stupid
+--stayin_alive
+--we_didnt_start_the_fire
+
+
+
+
+
+2001_space_odyssey
+james_bond
+jurassic_park
+lion_king
+mission_impossible

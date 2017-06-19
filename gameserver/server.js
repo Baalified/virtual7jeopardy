@@ -58,12 +58,11 @@ io.on('connection', function(socket){
     console.log("Publishing Gamedata...");
     console.log(gamedata);
     // ...save Game State in Database
-    // TEMP FOR TESTING - DISABLE SAVING
-    /*games.save(gamedata, function(err, doc){
+    games.save(gamedata, function(err, doc){
         console.log("Saved");
         console.log(err);
         console.log(doc);
-      });*/
+      });
     // ...publish Game State to all clients connected
     io.emit('gamedata', gamedata);
     // ...update Game State in runtime server

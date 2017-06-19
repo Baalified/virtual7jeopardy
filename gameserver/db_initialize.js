@@ -909,40 +909,40 @@ games.insert(
         ]
       },
       {
-        "name":"Way Back Machine (TODO)",
+        "name":"Way Back Machine",
         "questions":[
           {
             "question":"",
-            "image":"images/waybackmachine/youtube.png",
+            "image":"images/waybackmachine/youtube_20050813.jpg",
             "answer":"Youtube (2005-08-13)",
             "points":100,
             "played":false
           },
           {
             "question":"",
-            "image":"images/waybackmachine/twitter.png",
-            "answer":"Twitter (2007-20-04)",
+            "image":"images/waybackmachine/twitter_20070420.jpg",
+            "answer":"Twitter (2007-04-20)",
             "points":200,
             "played":false
           },
           {
             "question":"",
-            "image":"images/waybackmachine/myspace.png",
-            "answer":"Myspace (2004-01-11)",
+            "image":"images/waybackmachine/myspace_20041101.jpg",
+            "answer":"Myspace (2004-11-01)",
             "points":300,
             "played":false
           },
           {
             "question":"",
-            "image":"images/waybackmachine/microsoft.png",
-            "answer":"Microsoft (1999-03-02)",
+            "image":"images/waybackmachine/microsoft_19990203.jpg",
+            "answer":"Microsoft (1999-02-03)",
             "points":400,
             "played":false
           },
           {
             "question":"",
-            "image":"images/waybackmachine/TODO.png",
-            "answer":"TODO (????-??-??)",
+            "image":"images/waybackmachine/yahoo_19961220.jpg",
+            "answer":"Yahoo! (1996-12-20)",
             "points":500,
             "played":false
           }
@@ -1097,6 +1097,276 @@ games.insert(
       },
       {
         "name":"Dezsö Kovacs",
+        "score":0,
+        "answers":0
+      }
+    ]
+  },
+  /**
+ * FIANLE
+ */
+  {
+    "name":"FINALE",
+    "categories":[
+      {
+        "name":"Numbers",
+        "questions":[
+          {
+            "question":"2^10 in decimal",
+            "answer":"1024",
+            "points":100,
+            "played":false
+          },
+          {
+            "question":"The product of all integers form -10 to 10",
+            "answer":"0",
+            "points":200,
+            "played":false
+          },
+          {
+            "question":"The metric system prefix for 10^-6",
+            "answer":"Micro",
+            "points":300,
+            "played":false
+          },
+          {
+            "question":"This is 2^10 in hexadecimal",
+            "answer":"0x400",
+            "points":400,
+            "played":false
+          },
+          {
+            "question":"The next two terms in the sequence kilo, mega, giga, tera, peta",
+            "answer":"Exa, Zetta",
+            "points":500,
+            "played":false
+          }
+        ]
+      },
+      {
+        "name":"Text 2 Song",
+        "questions":[
+          {
+            "question":"",
+            "audio":"sounds/texttosong/clint_eastwood.mp3",
+            "answer":"Gorillaz - Clint Eastwood",
+            "audio_answer":"sounds/texttosong/clint_eastwood_solution.mp3",
+            "image_answer":"sounds/texttosong/clint_eastwood_solution.jpg",
+            "points":100,
+            "played":false
+          },
+          {
+            "question":"",
+            "audio":"sounds/texttosong/nothing_else_matters.mp3",
+            "answer":"Metallica - Nothin else matters",
+            "audio_answer":"sounds/texttosong/nothing_else_matters_solution.mp3",
+            "image_answer":"sounds/texttosong/nothing_else_matters_solution.jpg",
+            "points":200,
+            "played":false
+          },
+          {
+            "question":"",
+            "audio":"sounds/texttosong/stayin_alive.mp3",
+            "answer":"Bee Gees - Stayin Alive",
+            "audio_answer":"sounds/texttosong/stayin_alive_solution.mp3",
+            "image_answer":"sounds/texttosong/stayin_alive_solution.jpg",
+            "points":300,
+            "played":false
+          },
+          {
+            "question":"",
+            "audio":"sounds/texttosong/we_didnt_start_the_fire.mp3",
+            "answer":"Billy Joel - We didn't start the fire",
+            "audio_answer":"sounds/texttosong/we_didnt_start_the_fire_solution_chorus.mp3",
+            "image_answer":"sounds/texttosong/we_didnt_start_the_fire_solution.jpg",
+            "points":400,
+            "played":false
+          },
+          {
+            "question":"",
+            "audio":"sounds/texttosong/smells_like_teenspirit.mp3",
+            "answer":"Nirvana - Smells like teenspirit",
+            "audio_answer":"sounds/texttosong/smells_like_teenspirit_solution_chorus.mp3",
+            "image_answer":"sounds/texttosong/smells_like_teenspirit_solution.jpg",
+            "points":500,
+            "played":false
+          }
+        ]
+      },
+      {
+        "name":"Those Guys",
+        "questions":[
+          {
+            "question":"Janice Rand, Pavel Checkov, Nyota Uhura, Montgomery Scott, Commander Spock, Captain Kirk",
+            "answer":"Star Trek",
+            "points":100,
+            "played":false
+          },
+          {
+            "question":"Sasha Williams, Tara Chambler, Glenn Rhee, Daryl Dixon, Michonne, Rick Grimes",
+            "answer":"The walking dead",
+            "points":200,
+            "played":false
+          },
+          {
+            "question":"Jackie Sharp, Tom Hammerschmidt, Linda Vasquez, Peter Russo, Doug Stamper, Francis Underwood",
+            "answer":"House of Cards",
+            "points":300,
+            "played":false
+          },
+          {
+            "question":"George Merkert, Tyrus Kitt, Todd Alquist, Hank Schrader, Jesse Pinkman, Walter White",
+            "answer":"Breaking Bad",
+            "points":400,
+            "played":false
+          },
+          {
+            "question":"Valerie Gordon, Larry Zito, Trudy Joplin, Martin Castillo, Ricardo Tubbs, Sonny Crockett",
+            "answer":"Miami Vice",
+            "points":500,
+            "played":false
+          }
+        ]
+      },
+      {
+        "name":"Movie Themes",
+        "questions":[
+          {
+            "question":"",
+            "audio":"sounds/bwmoviethemes/lion_king.mp3",
+            "answer":"The lion king",
+            "audio_answer":"sounds/bwmoviethemes/lion_king_solution.mp3",
+            "image_answer":"sounds/bwmoviethemes/lion_king_solution.jpg",
+            "points":100,
+            "played":false
+          },
+          {
+            "question":"",
+            "audio":"sounds/bwmoviethemes/mission_impossible.mp3",
+            "answer":"Mission Impossible",
+            "audio_answer":"sounds/bwmoviethemes/mission_impossible_solution.mp3",
+            "image_answer":"sounds/bwmoviethemes/mission_impossible_solution.jpg",
+            "points":200,
+            "played":false
+          },
+          {
+            "question":"",
+            "audio":"sounds/bwmoviethemes/james_bond.mp3",
+            "answer":"James Bond",
+            "audio_answer":"sounds/bwmoviethemes/james_bond_solution.mp3",
+            "image_answer":"sounds/bwmoviethemes/james_bond_solution.jpg",
+            "points":300,
+            "played":false
+          },
+          {
+            "question":"",
+            "audio":"sounds/bwmoviethemes/jurassic_park.mp3",
+            "answer":"Jurassic Park",
+            "audio_answer":"sounds/bwmoviethemes/jurassic_park_solution.mp3",
+            "image_answer":"sounds/bwmoviethemes/jurassic_park_solution.png",
+            "points":400,
+            "played":false
+          },
+          {
+            "question":"",
+            "audio":"sounds/bwmoviethemes/2001_space_odyssey.mp3",
+            "answer":"2001 A Space Odyssey",
+            "audio_answer":"sounds/bwmoviethemes/2001_space_odyssey_solution.mp3",
+            "image_answer":"sounds/bwmoviethemes/2001_space_odyssey_solution.jpg",
+            "points":500,
+            "played":false
+          }
+        ]
+      },
+      {
+        "name":"Oracle Ports",
+        "questions":[
+          {
+            "question":"1521",
+            "answer":"Oracle Net Listener (Database)",
+            "points":100,
+            "played":false
+          },
+          {
+            "question":"7001",
+            "answer":"WebLogic AdminServer",
+            "points":200,
+            "played":false
+          },
+          {
+            "question":"9704",
+            "answer":"BIEE Managed Server",
+            "points":300,
+            "played":false
+          },
+          {
+            "question":"16200",
+            "answer":"WCC Managed Server",
+            "points":400,
+            "played":false
+          },
+          {
+            "question":"6200",
+            "answer":"OPMN / Oracle Notification Service Remote Port",
+            "points":500,
+            "played":false
+          }
+        ]
+      },
+      {
+        "name":"Who Am I?",
+        "questions":[
+          {
+            "question":"Riding my motorbike and do handicraft with it",
+            "answer":"Oskar Anders",
+            "points":100,
+            "played":false
+          },
+          {
+            "question":"To crochet headbands and beanies, to sew Bags",
+            "answer":"Denise Bender",
+            "points":200,
+            "played":false
+          },
+          {
+            "question":"Ask Google, They know everything!",
+            "answer":"Timo Hahn",
+            "points":300,
+            "played":false
+          },
+          {
+            "question":"I hate cooking! It makes just everything dirty...",
+            "answer":"Marcus Hammer",
+            "points":400,
+            "played":false
+          },
+          {
+            "question":"I like collecting returnable bottles, as I learned, that treats might be inside",
+            "answer":"Homer",
+            "points":500,
+            "played":false
+          }
+        ]
+      }
+    ],
+    "players":[
+      {
+        "name":"Winner Round 1",
+        "score":0,
+        "answers":0
+      },
+      {
+        "name":"Winner Round 2",
+        "score":0,
+        "answers":0
+      },
+      {
+        "name":"Winner Round 3",
+        "score":0,
+        "answers":0
+      },
+      {
+        "name":"Winner Round 4",
         "score":0,
         "answers":0
       }
