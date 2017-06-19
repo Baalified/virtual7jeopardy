@@ -193,8 +193,8 @@ games.insert(
             "played":false
           },
           {
-            "question":"503",
-            "answer":"Service unavailable",
+            "question":"500",
+            "answer":"Internal Server Error",
             "points":300,
             "played":false
           },
