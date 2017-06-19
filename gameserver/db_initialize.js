@@ -148,30 +148,35 @@ games.insert(
           {
             "question":"I go every 2 years to WACKEN because of the Rock'n'Roll feeling and I would like to do a world tour again.",
             "answer":"Roland Seidelt",
+            "image_answer":"images/employees/roland.jpg",
             "points":100,
             "played":false
           },
           {
             "question":"I love it to laugh I also love to have deep conversations about politics or about the world.",
             "answer":"Selim Kus",
+            "image_answer":"images/employees/selim.jpg",
             "points":200,
             "played":false
           },
           {
             "question":"...In general the kind of guy yer mamma always warned you about.",
             "answer":"Pall Eggerz",
+            "image_answer":"images/employees/pall.jpg",
             "points":300,
             "played":false
           },
           {
             "question":"I have turtles at home.",
             "answer":"Manuela Di Miceli",
+            "image_answer":"images/employees/manuela.jpg",
             "points":400,
             "played":false
           },
           {
             "question":"I like cooking and eating !!! Most of the time just eating.",
             "answer":"Cosmin Giru",
+            "image_answer":"images/employees/cosmin.jpg",
             "points":500,
             "played":false
           }
@@ -684,13 +689,13 @@ games.insert(
             "played":false
           },
           {
-            "question":"A list containing the Lighthouse of Alexandria and the Temple of Artemis",
+            "question":"A list containing the Lighthouse of Alexandria and the Temple of Artemis among others",
             "answer":"Seven Wonders of (the Ancient) World",
             "points":300,
             "played":false
           },
           {
-            "question":"This single form the album Elephant by the White Stripes won a Grammy Award for Best Rock Song",
+            "question":"This single from the album \"Elephant\" by the White Stripes won a Grammy Award for Best Rock Song",
             "answer":"Seven Nations Army",
             "points":400,
             "played":false
@@ -1319,30 +1324,35 @@ games.insert(
           {
             "question":"Riding my motorbike and do handicraft with it",
             "answer":"Oskar Anders",
+            "image_answer":"images/employees/oskar.jpg",
             "points":100,
             "played":false
           },
           {
             "question":"To crochet headbands and beanies, to sew Bags",
             "answer":"Denise Bender",
+            "image_answer":"images/employees/denise.jpg",
             "points":200,
             "played":false
           },
           {
             "question":"Ask Google, They know everything!",
             "answer":"Timo Hahn",
+            "image_answer":"images/employees/timo.jpg",
             "points":300,
             "played":false
           },
           {
             "question":"I hate cooking! It makes just everything dirty...",
             "answer":"Marcus Hammer",
+            "image_answer":"images/employees/marcus_hammer.jpg",
             "points":400,
             "played":false
           },
           {
             "question":"I like collecting returnable bottles, as I learned, that treats might be inside",
             "answer":"Homer",
+            "image_answer":"images/employees/homer.jpg",
             "points":500,
             "played":false
           }

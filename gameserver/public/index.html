@@ -134,7 +134,7 @@
           Listen...<br/>
           <img src="images/gameimages/listen.png" ng-hide="gamemaster"/>
         </div>
-        <img src="{{currentgame.activequestion.image_answer}}" ng-hide="gamemaster || !currentgame.activequestion.showsolution" style="max-width:90%; max-height:90%; width:auto; height:auto; zoom:2;"/>
+        <img src="{{currentgame.activequestion.image_answer}}" ng-hide="!currentgame.activequestion.showsolution" style="max-width:90%; max-height:90%; width:auto; height:auto; zoom:2;"/>
         <div class="container" ng-hide="!gamemaster" style="background-color:white;position:absolute;bottom:0px;padding:10px;width:100%;">
           <div class="gmanswer">
             {{currentgame.activequestion.answer}}
