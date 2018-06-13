@@ -4,6 +4,7 @@ var v7jeopardy = angular.module('v7jeopardy', []);
 var buzzerSound = new Audio("sounds/gamesounds/buzzer.wav");
 var themeSong = new Audio("sounds/themesong.mp3");
 var questionSound = new Audio();
+var disableSoundOnGm = true;
 
 v7jeopardy.controller('AppCtrl', ['$scope', '$http', '$location', 'socketio', function($scope, $http, $location, socketio) {
   $scope.gamemaster=false;
@@ -13,8 +14,10 @@ v7jeopardy.controller('AppCtrl', ['$scope', '$http', '$location', 'socketio', fu
     socketio.emit("themePlay");
   };
   socketio.on("themePlay", function() {
-    themeSong.load(themeSong.src);
-    themeSong.play();
+    if(disableSoundOnGm && !$scope.gamemaster) {
+      themeSong.load(themeSong.src);
+      themeSong.play();
+    }
   });
 
   $scope.themeStop = function() {
@@ -49,9 +52,11 @@ v7jeopardy.controller('AppCtrl', ['$scope', '$http', '$location', 'socketio', fu
 
   socketio.on("showSolution", function() {
     if($scope.currentgame.activequestion.audio_answer) {
-      questionSound.src = $scope.currentgame.activequestion.audio_answer;
-      questionSound.load();
-      questionSound.play();
+      if(disableSoundOnGm && !$scope.gamemaster) {
+        questionSound.src = $scope.currentgame.activequestion.audio_answer;
+        questionSound.load();
+        questionSound.play();
+      }
     }
     $scope.currentgame.activequestion.showsolution=true;
   });
@@ -80,9 +85,11 @@ v7jeopardy.controller('AppCtrl', ['$scope', '$http', '$location', 'socketio', fu
   };
   
   socketio.on('audioQuestionPlay', function(gm) {
-    questionSound.src = $scope.currentgame.activequestion.audio;
-    questionSound.load();
-    questionSound.play();
+    if(disableSoundOnGm && !$scope.gamemaster) {
+      questionSound.src = $scope.currentgame.activequestion.audio;
+      questionSound.load();
+      questionSound.play();
+    }
   });
   
   socketio.on('audioQuestionStop', function(gm) {
@@ -143,7 +150,9 @@ v7jeopardy.controller('AppCtrl', ['$scope', '$http', '$location', 'socketio', fu
       $scope.currentgame.activeplayer = $scope.currentgame.players[buzzdata.player];
       console.log('Active player set.');
       $scope.audioQuestionStop();
-      buzzerSound.play();
+      if(disableSoundOnGm && !$scope.gamemaster) {
+        buzzerSound.play();
+      }
       //emitGameData();
     }
   });
