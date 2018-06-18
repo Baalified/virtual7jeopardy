@@ -103,40 +103,35 @@ games.insert(
         ]
       },
       {
-        "name":"Way Back Machine",
+        "name":"Fußballer Zitate",
         "questions":[
           {
-            "question":"",
-            "image":"images/waybackmachine/fb_20051127.jpg",
-            "answer":"Facebook (2005-11-27)",
+            "question":"Struuuunz. Was erlauben Struuuunz?",
+            "answer":"Giovanni Trappatoni",
             "points":100,
             "played":false
           },
           {
-            "question":"",
-            "image":"images/waybackmachine/ebay_20000615.jpg",
-            "answer":"Ebay (2000-06-15)",
+            "question":"Mailand oder Madrid - Hauptsache Italien!",
+            "answer":"Andreas Möller",
             "points":200,
             "played":false
           },
           {
-            "question":"",
-            "image":"images/waybackmachine/amazon_19990827.jpg",
-            "answer":"Amazon (1999-08-27)",
+            "question":"Das habe ich ihm dann auch verbal gesagt.",
+            "answer":"Mario Basler",
             "points":300,
             "played":false
           },
           {
-            "question":"",
-            "image":"images/waybackmachine/v7_20011130.jpg",
-            "answer":"virtual7 (2001-11-30)",
+            "question":"Das Chancenplus war ausgeglichen.",
+            "answer":"Lothar Matthäus",
             "points":400,
             "played":false
           },
           {
-            "question":"",
-            "image":"images/waybackmachine/oracle_19961219.jpg",
-            "answer":"Oracle (1996-12-19)",
+            "question":"Football is a simple game; 22 men chase a ball for 90 minutes and at the end, the Germans always win.",
+            "answer":"Gery Lineker",
             "points":500,
             "played":false
           }
@@ -146,107 +141,77 @@ games.insert(
         "name":"Who am I?",
         "questions":[
           {
-            "question":"I go every 2 years to WACKEN because of the Rock'n'Roll feeling and I would like to do a world tour again.",
-            "answer":"Roland Seidelt",
-            "image_answer":"images/employees/roland.jpg",
+            "question":"Together with my girlfriend we are taking part in World Ultimate Club Championship in July.",
+            "answer":"Filip Stepniak",
+            "image_answer":"images/employees/filip.jpg",
             "points":100,
             "played":false
           },
           {
-            "question":"I love it to laugh I also love to have deep conversations about politics or about the world.",
-            "answer":"Selim Kus",
-            "image_answer":"images/employees/selim.jpg",
+            "question":"He runs 6.41 km with an average pace 4:38 minutes / km.",
+            "answer":"Tom Seidel",
+            "image_answer":"images/employees/tom.jpg",
             "points":200,
             "played":false
           },
           {
-            "question":"...In general the kind of guy yer mamma always warned you about.",
-            "answer":"Pall Eggerz",
-            "image_answer":"images/employees/pall.jpg",
+            "question":"Most of my time I try to hike through the Sauerland or use my motorcycle.",
+            "answer":"Enno Schulte",
+            "image_answer":"images/employees/enno.jpg",
             "points":300,
             "played":false
           },
           {
-            "question":"I have turtles at home.",
-            "answer":"Manuela Di Miceli",
-            "image_answer":"images/employees/manuela.jpg",
+            "question":"I’m a morning person – so 5 o’clock is no big deal. Let me know if I stress you with this.",
+            "answer":"Micha Prinz-Hübert",
+            "image_answer":"images/employees/micha.jpg",
             "points":400,
             "played":false
           },
           {
-            "question":"I like cooking and eating !!! Most of the time just eating.",
-            "answer":"Cosmin Giru",
-            "image_answer":"images/employees/cosmin.jpg",
+            "question":"I can ride my bike with no handlebars.",
+            "answer":"Tobias Melcher",
+            "image_answer":"images/employees/tobiasmelcher.jpg",
             "points":500,
             "played":false
           }
         ]
       },
       {
-        "name":"Name that state",
+        "name":"Autos",
         "questions":[
           {
-            "question":"404",
-            "answer":"Not found",
+            "question":"",
+			"image":"images/2018/Autos/smartroadster.jpg",
+            "answer":"Smart Roadster",
             "points":100,
             "played":false
           },
           {
-            "question":"200",
-            "answer":"OK",
+            "question":"",
+			"image":"images/2018/Autos/vwpolo.jpg",
+            "answer":"VW Polo",
             "points":200,
             "played":false
           },
           {
-            "question":"500",
-            "answer":"Internal Server Error",
+            "question":"",
+            "image":"images/2018/Autos/mercedesaklasse.jpg",
+			"answer":"Mercedes A Klasse",
             "points":300,
             "played":false
           },
           {
-            "question":"301",
-            "answer":"Moved permanently",
+            "question":"",
+			"image":"images/2018/Autos/bugattichiron.jpg",
+            "answer":"Bugatti Chiron",
             "points":400,
             "played":false
           },
           {
-            "question":"418",
-            "answer":"I'm a teapot",
-            "points":500,
-            "played":false
-          }
-        ]
-      },
-      {
-        "name":"Abbreviations",
-        "questions":[
-          {
-            "question":"ADF",
-            "answer":"Application Development Framework",
-            "points":100,
-            "played":false
-          },
-          {
-            "question":"AJAX",
-            "answer":"Asynchronous JavaScript and XML",
-            "points":200,
-            "played":false
-          },
-          {
-            "question":"JET",
-            "answer":"(Oracle) JavaScript Extension Toolkit",
-            "points":300,
-            "played":false
-          },
-          {
-            "question":"SOAP",
-            "answer":"Simple Object Access Protocol",
-            "points":400,
-            "played":false
-          },
-          {
-            "question":"REST",
-            "answer":"Representational State Transfer",
+            "question":"",
+			"image":"images/2018/Autos/ferrarilaferrari.jpg",
+            "answer":"La Ferrari",
             "points":500,
             "played":false
           }
@@ -255,22 +220,22 @@ games.insert(
     ],
     "players":[
       {
-        "name":"Michael Augustin",
+        "name":"Player 1",
         "score":0,
         "answers":0
       },
       {
-        "name":"Marco Hornung",
+        "name":"Player 2",
         "score":0,
         "answers":0
       },
       {
-        "name":"Christian Bolat",
+        "name":"Player 3",
         "score":0,
         "answers":0
       },
       {
-        "name":"Arkadiusz Gmyrek",
+        "name":"Player 4",
         "score":0,
         "answers":0
       }
@@ -283,255 +248,192 @@ games.insert(
     "name":"Round 2",
     "categories":[
       {
-        "name":"Hello World",
+        "name":"Sidekicks",
         "questions":[
           {
-            "question":"",
-            "image":"images/helloworld/javascript.png",
-            "answer":"JavaScript",
+            "question":"Luigi",
+            "answer":"Mario",
             "points":100,
             "played":false
           },
           {
-            "question":"",
-            "image":"images/helloworld/java.png",
-            "answer":"Java",
+            "question":"Mini-Me",
+            "answer":"Dr Evil",
             "points":200,
             "played":false
           },
           {
-            "question":"",
-            "image":"images/helloworld/x86asm.png",
-            "answer":"ASM (x86)",
+            "question":"Tails",
+            "answer":"Sonic",
             "points":300,
             "played":false
           },
           {
-            "question":"",
-            "image":"images/helloworld/brainfuck.png",
-            "answer":"Brainfuck",
+            "question":"Passepartout",
+            "answer":"Phileas Fogg",
             "points":400,
             "played":false
           },
           {
-            "question":"",
-            "image":"images/helloworld/lolcode.png",
-            "answer":"Lolcode",
+            "question":"Wong",
+            "answer":"Doctor Strange",
             "points":500,
             "played":false
           }
         ]
       },
       {
-        "name":"Oh my it's an AI",
+        "name":"Lyrik",
         "questions":[
           {
-            "question":"He feels sorry for dave for not being able to do what he's been asked",
-            "answer":"HAL (2001 a space odyssey)",
+            "question":"",
+			"image":"images/2018/lyrik/hotelcalifornia.png",
+            "answer":"Hotel California",
             "points":100,
             "played":false
           },
           {
-            "question":"This golden boy is not afraid to suggest new strategies even if it means defeat",
-            "answer":"C-3PO (Star Wars)",
+            "question":"",
+			"image":"images/2018/lyrik/dancingqueen.png",
+            "answer":"Dancing Queen",
             "points":200,
             "played":false
           },
           {
-            "question":"Do not trust her when it comes to bakery products",
-            "answer":"GLaDOS (Portal)",
+            "question":"",
+			"image":"images/2018/lyrik/smoothcriminal.png",
+            "answer":"Smooth Criminal",
             "points":300,
             "played":false
           },
           {
-            "question":"He is \"Just A Rather Very Intelligent System\" belonging to a genius, billionaire, playboy, philanthropist",
-            "answer":"J.A.R.V.I.S. (Iron Man)",
+            "question":"",
+			"image":"images/2018/lyrik/eyeofthetiger.png",
+            "answer":"Eye of the tiger",
             "points":400,
             "played":false
           },
           {
-            "question":"Named after IBMs first CEO this AI was specifically developed to answer questions on Jeopardy",
-            "answer":"Watson",
+            "question":"",
+			"image":"images/2018/lyrik/summerjam.png",
+            "answer":"Summer Jam",
             "points":500,
             "played":false
           }
         ]
       },
       {
-        "name":"Text 2 Song",
+        "name":"Logos",
         "questions":[
           {
             "question":"",
-            "audio":"sounds/texttosong/basket_case.mp3",
-            "answer":"Green Day - Basket Case",
-            "audio_answer":"sounds/texttosong/basket_case_solution.mp3",
-            "image_answer":"sounds/texttosong/basket_case_solution.jpg",
+            "image":"images/2018/KlassischeLogos/amazon.jpg",
+            "answer":"Amazon",
+            "image_answer":"images/2018/KlassischeLogos/amazonsolution.jpg",
             "points":100,
             "played":false
           },
           {
             "question":"",
-            "audio":"sounds/texttosong/walking_on_sunshine.mp3",
-            "answer":"Katrina & The Waves - Walking On Sunshine",
-            "audio_answer":"sounds/texttosong/walking_on_sunshine_solution_chorus.mp3",
-            "image_answer":"sounds/texttosong/walking_on_sunshine_solution.jpg",
+            "image":"images/2018/KlassischeLogos/burgerking.jpg",
+            "answer":"Burger King",
+            "image_answer":"images/2018/KlassischeLogos/burgerkingsolution.jpg",
             "points":200,
             "played":false
           },
           {
             "question":"",
-            "audio":"sounds/texttosong/never_gonna_give_you_up.mp3",
-            "answer":"Rick Astley - Never Gonna Give You Up",
-            "audio_answer":"sounds/texttosong/never_gonna_give_you_up_solution_chorus.mp3",
-            "image_answer":"sounds/texttosong/never_gonna_give_you_up_solution.jpg",
+            "image":"images/2018/KlassischeLogos/firefox.jpg",
+            "answer":"Firefox",
+            "image_answer":"images/2018/KlassischeLogos/firefoxsolution.jpg",
             "points":300,
             "played":false
           },
           {
             "question":"",
-            "audio":"sounds/texttosong/in_the_end.mp3",
-            "answer":"Linkin Park - In The End",
-            "audio_answer":"sounds/texttosong/in_the_end_solution_chorus.mp3",
-            "image_answer":"sounds/texttosong/in_the_end_solution.jpg",
+            "image":"images/2018/KlassischeLogos/twitter.jpg",
+            "answer":"Twitter",
+            "image_answer":"images/2018/KlassischeLogos/twittersolution.jpg",
             "points":400,
             "played":false
           },
           {
             "question":"",
-            "audio":"sounds/texttosong/chop_suey.mp3",
-            "answer":"System of a down - Chop Suey",
-            "audio_answer":"sounds/texttosong/chop_suey_solution.mp3",
-            "image_answer":"sounds/texttosong/chop_suey_solution.jpg",
+            "image":"images/2018/KlassischeLogos/samsung.jpg",
+            "answer":"Samsung",
+            "image_answer":"images/2018/KlassischeLogos/samsungsolution.jpg",
             "points":500,
             "played":false
           }
         ]
       },
       {
-        "name":"Who are they?",
+        "name":"FIFA WM Rekorde",
         "questions":[
           {
-            "question":"",
-            "image":"images/whoarethey/Micha_Bjoern_Jochen.jpg",
-            "image_answer":"images/whoarethey/Micha_Bjoern_Jochen_solution.jpg",
-            "answer":"Micha, Björn, Jochen",
+            "question":"Der jüngste Torschütze mit 17 Jahren (1958)",
+            "answer":"Pelé",
             "points":100,
             "played":false
           },
           {
-            "question":"",
-            "image":"images/whoarethey/Caro_Francie_Michael.jpg",
-            "image_answer":"images/whoarethey/Caro_Francie_Michael_solution.jpg",
-            "answer":"Caro, Francie, Michael Augustin",
+            "question":"Den Rekord für die meisten Teilnahmen (20) hält diese Mannschaft",
+            "answer":"Brasilien",
             "points":200,
             "played":false
           },
           {
-            "question":"",
-            "image":"images/whoarethey/Marcus_Markus_Marcus.jpg",
-            "image_answer":"images/whoarethey/Marcus_Markus_Marcus_solution.jpg",
-            "answer":"Marcus Weiss, Markus Koske, Marcus Hammer",
+            "question":"Dieser Spieler hält mit 25 Einsätzen den Rekord für die meisten WM Einsätze",
+            "answer":"Lothar Matthäus",
             "points":300,
             "played":false
           },
           {
-            "question":"",
-            "image":"images/whoarethey/Oskar_Halil_Jens.jpg",
-            "image_answer":"images/whoarethey/Oskar_Halil_Jens_solution.jpg",
-            "answer":"Oskar, Halil, Jens",
+            "question":"In Minute 121 erzielte dieser Spieler 2006 das späteste Tor bei einer Weltmeisterschaft",
+            "answer":"Alessandro Del Piero",
             "points":400,
             "played":false
           },
           {
-            "question":"",
-            "image":"images/whoarethey/Sebastian_Cipi_Anton.jpg",
-            "image_answer":"images/whoarethey/Sebastian_Cipi_Anton_solution.jpg",
-            "answer":"Sebastian Faust, Cipi, Anton",
+            "question":"Dieser ehemalige kolumbianische Nationalspieler Hält seit seinem Einsatz 2014 den Rekord als ältester WM Spieler",
+            "answer":"Faryd Mendragón",
             "points":500,
             "played":false
           }
         ]
       },
       {
-        "name":"TV Themes",
+        "name":"Emoji 2 Song",
         "questions":[
           {
             "question":"",
-            "audio":"sounds/bwtvthemes/twd.mp3",
-            "answer":"The walking dead",
-            "audio_answer":"sounds/bwtvthemes/twd_solution.mp3",
-            "image_answer":"sounds/bwtvthemes/twd_solution.jpg",
+			"image":"images/2018/emojisongs/99luftbalons.jpg",
+            "answer":"99 Luftbalons",
             "points":100,
             "played":false
           },
           {
             "question":"",
-            "audio":"sounds/bwtvthemes/jeopardy.mp3",
-            "answer":"Jeopardy!",
-            "audio_answer":"sounds/bwtvthemes/jeopardy_solution.mp3",
-            "image_answer":"sounds/bwtvthemes/jeopardy_solution.jpg",
+			"image":"images/2018/emojisongs/highwaytohell.jpg",
+            "answer":"Highway to Hell",
             "points":200,
             "played":false
-          },
-          {
+          },{
             "question":"",
-            "audio":"sounds/bwtvthemes/got.mp3",
-            "answer":"Game of Thrones",
-            "audio_answer":"sounds/bwtvthemes/got_solution.mp3",
-            "image_answer":"sounds/bwtvthemes/got_solution.jpg",
+			"image":"images/2018/emojisongs/iceicebaby.jpg",
+            "answer":"Ice Ice Baby",
             "points":300,
             "played":false
-          },
-          {
+          },{
             "question":"",
-            "audio":"sounds/bwtvthemes/drwho.mp3",
-            "answer":"Dr Who",
-            "audio_answer":"sounds/bwtvthemes/drwho_solution.mp3",
-            "image_answer":"sounds/bwtvthemes/drwho_solution.png",
+			"image":"images/2018/emojisongs/videokilledtheradiostar.jpg",
+            "answer":"Video killed the Radiostar",
             "points":400,
             "played":false
-          },
-          {
+          },{
             "question":"",
-            "audio":"sounds/bwtvthemes/gummibears.mp3",
-            "answer":"The Gummibears",
-            "audio_answer":"sounds/bwtvthemes/gummibears_solution.mp3",
-            "image_answer":"sounds/bwtvthemes/gummibears_solution.jpg",
-            "points":500,
-            "played":false
-          }
-        ]
-      },
-      {
-        "name":"Three letter extensions",
-        "questions":[
-          {
-            "question":".csv",
-            "answer":"Comma Seperated Values",
-            "points":100,
-            "played":false
-          },
-          {
-            "question":".css",
-            "answer":"Cascading Style Sheets",
-            "points":200,
-            "played":false
-          },
-          {
-            "question":".pdf",
-            "answer":"Portable Document Format",
-            "points":300,
-            "played":false
-          },
-          {
-            "question":".xml",
-            "answer":"Extensible Markup Language",
-            "points":400,
-            "played":false
-          },
-          {
-            "question":".tar",
-            "answer":"Tape Archive",
+			"image":"images/2018/emojisongs/novemberrain.jpg",
+            "answer":"November Rain",
             "points":500,
             "played":false
           }
@@ -540,22 +442,22 @@ games.insert(
     ],
     "players":[
       {
-        "name":"Miriam Maier",
+        "name":"Player 1",
         "score":0,
         "answers":0
       },
       {
-        "name":"Anton Thome",
+        "name":"Player 2",
         "score":0,
         "answers":0
       },
       {
-        "name":"Roger Austin",
+        "name":"Player 3",
         "score":0,
         "answers":0
       },
       {
-        "name":"Adrian Bartos",
+        "name":"Player 4",
         "score":0,
         "answers":0
       }
@@ -568,226 +470,175 @@ games.insert(
     "name":"Round 3",
     "categories":[
       {
-        "name":"TLDs",
+        "name":"Netflix",
         "questions":[
           {
-            "question":".es",
-            "answer":"Spain",
+            "question":"Die sechste und letzte Staffel dieser Serie muss ohne ihren Hauptdarsteller auskommen. Dieser wurde der sexuellen Belästigung beschuldigt und daraufhin aus der Serie ausgeschlossen.",
+            "answer":"House of Cards",
             "points":100,
             "played":false
           },
           {
-            "question":".dk",
-            "answer":"Denmark",
+            "question":"Eine Kriminal- und Historien-Dramaserie über Drogenkartelle in den 1980er und 1990er Jahren in Kolumbien",
+            "answer":"Narcos",
             "points":200,
             "played":false
           },
           {
-            "question":".no",
-            "answer":"Norway",
+            "question":"Eine britische Science-Fiction-Serie, die verschiedenartige Auswirkungen der Verwendung von Technik und Medien auf die Gesellschaft thematisiert",
+            "answer":"Black Mirror",
             "points":300,
             "played":false
           },
           {
-            "question":".va",
-            "answer":"Vatikan City",
+            "question":"Die erste durch Netflix in Deutschland produzierte Serie",
+            "answer":"Dark",
             "points":400,
             "played":false
           },
           {
-            "question":".su",
-            "answer":"Soviet Union",
+            "question":"Die Fortsetzung einer erfolgreichen Sitcom aus den 80er und 90er Jahren jedoch ohne Mary-Kate und Ashley Olsen",
+            "answer":"Fuller House",
             "points":500,
             "played":false
           }
         ]
       },
       {
-        "name":"Those Guys",
+        "name":"Marvel",
         "questions":[
           {
-            "question":"Leslie Winkle, Stuart Bloom, Penny, Howard Wolowitz, Leonard Hofstadter, Sheldon Cooper",
-            "answer":"The Big Bang Theory",
+            "question":"Dieser aus Asgard stammende Avenger kann Blitz und Donner kontrollieren",
+            "answer":"Thor",
             "points":100,
             "played":false
           },
           {
-            "question":"Stella Zinman, Quinn Garvey, Lily Aldrin, Marshall Eriksen, Robin Schebartsky, Barney Stinson",
-            "answer":"How I met your mother",
+            "question":"Ein Schild aus Vibranium ist treuer Begleiter dieses übermenschlich starken Superhelden",
+            "answer":"Captain America",
             "points":200,
             "played":false
           },
           {
-            "question":"Ethan Kanin, James Heller, Morris O'Brian, Nina Myers, David Palmer, Jack Bauer",
-            "answer":"24",
+            "question":"Trotz einer Hautkrebs-Erkrankung ist dieser Superheld unsterblich",
+            "answer":"Deadpool",
             "points":300,
             "played":false
           },
           {
-            "question":"Dorothy Halligan, Lucky, Trevor Ochmonek, Brian Tanner, William Tanner, Gordon Shumway",
-            "answer":"ALF",
+            "question":"Dieser Superheld ist in der Lage seine Größe zu variieren",
+            "answer":"Ant Man",
             "points":400,
             "played":false
           },
           {
-            "question":"Steve Harrington, Barbara Holland, Dustin Henderson, Jim Hopper, Will Byers, Jane Ives",
-            "answer":"Stranger Things",
+            "question":"Nicolas Cage spielte diesen von Mephistopheles verfluchten Kopfgeldjäger",
+            "answer":"Ghost Rider",
             "points":500,
             "played":false
           }
         ]
       },
       {
-        "name":"Virtual",
+        "name":"DSGVO",
         "questions":[
           {
-            "question":"An emulated computer system running inside a so called hypervisor",
-            "answer":"Virtual Machine",
+            "question":"Unter anderem Name, Adresse, Größe, IP-Adresse",
+            "answer":"Personenbezogene Daten",
             "points":100,
             "played":false
           },
           {
-            "question":"Since the acquisition of Sun Microsystems in 2010 this is Oracles Main Desktop Virtualization Application",
-            "answer":"VirtualBox",
+            "question":"Die englische Bezeichnung für die DSGVO",
+            "answer":"GDPR",
             "points":200,
             "played":false
           },
           {
-            "question":"",
-            "image":"images/virtual7.png",
-            "answer":"Virtual7",
+            "question":"Erhebung, Verarbeitung oder Nutzung personenbezogener Daten durch einen Auftragnehmer, der die Daten im Auftrag des Verantwortlichen verarbeitet",
+            "answer":"Auftragsdatenverarbeitung",
             "points":300,
             "played":false
           },
           {
-            "question":"An LDAP service that provides a single, abstracted view of enterprise directory servers and databases from a variety of vendors",
-            "answer":"Oracle Virtual Directory",
+            "question":"Innerhalb dieser Frist muss ein Datenverstoß gemeldet werden",
+            "answer":"72 Stunden",
             "points":400,
             "played":false
           },
           {
-            "question":"This 1995 nintendo gaming console was arguably the first virtual reality headset",
-            "answer":"VirtualBoy",
+            "question":"Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit in Baden-Württemberg",
+            "answer":"Dr Stefan Brink",
             "points":500,
             "played":false
           }
         ]
       },
       {
-        "name":"Seven",
+        "name":"Fußballer Zitate",
         "questions":[
           {
-            "question":"The code number of her majesty's most famous spy",
-            "answer":"007",
+            "question":"Der Ball ist rund.",
+            "answer":"Sepp Herberger",
             "points":100,
             "played":false
           },
           {
-            "question":"Brad Pitt and Morgan Freeman starred in this 1995 thriller",
-            "answer":"Seven",
+            "question":"Das nächste Spiel ist immer das nächste.",
+            "answer":"Matthias Sammer",
             "points":200,
             "played":false
           },
           {
-            "question":"A list containing the Lighthouse of Alexandria and the Temple of Artemis among others",
-            "answer":"Seven Wonders of (the Ancient) World",
+            "question":"Das Tor steht in der Mitte.",
+            "answer":"Franz Beckenbauer",
             "points":300,
             "played":false
           },
           {
-            "question":"This single from the album \"Elephant\" by the White Stripes won a Grammy Award for Best Rock Song",
-            "answer":"Seven Nations Army",
+            "question":"Das wird alles von den Medien hochsterilisiert.",
+            "answer":"Bruno Labbadia",
             "points":400,
             "played":false
           },
           {
-            "question":"This former Borg drone joined the crew of the Federation starship Voyager",
-            "answer":"Seven of Nine",
+            "question":"Da kam dann das Elfmeterschießen. Wir hatten alle die Hosen voll, aber bei mir lief's ganz flüssig.",
+            "answer":"Paul Breitner",
             "points":500,
             "played":false
           }
         ]
       },
       {
-        "name":"Movie Themes",
+        "name":"Apple",
         "questions":[
           {
-            "question":"",
-            "audio":"sounds/bwmoviethemes/pulp_fiction.mp3",
-            "answer":"Pulp Fiction",
-            "audio_answer":"sounds/bwmoviethemes/pulp_fiction_solution.mp3",
-            "image_answer":"sounds/bwmoviethemes/pulp_fiction_solution.png",
+            "question":"April 1976",
+            "answer":"Apple-Gründung",
             "points":100,
             "played":false
           },
           {
-            "question":"",
-            "audio":"sounds/bwmoviethemes/star_wars.mp3",
-            "answer":"Star Wars",
-            "audio_answer":"sounds/bwmoviethemes/star_wars_solution.mp3",
-            "image_answer":"sounds/bwmoviethemes/star_wars_solution.png",
+            "question":"Januar 2007",
+            "answer":"Vorstellung erstes iPhone/Apple TV",
             "points":200,
             "played":false
           },
           {
-            "question":"",
-            "audio":"sounds/bwmoviethemes/ghostbusters.mp3",
-            "answer":"Ghostbusters",
-            "audio_answer":"sounds/bwmoviethemes/ghostbusters_solution.mp3",
-            "image_answer":"sounds/bwmoviethemes/ghostbusters_solution.jpg",
+            "question":"Oktober 2001",
+            "answer":"Vorstellung erster iPod",
             "points":300,
             "played":false
           },
           {
-            "question":"",
-            "audio":"sounds/bwmoviethemes/bttf.mp3",
-            "answer":"Back to the future",
-            "audio_answer":"sounds/bwmoviethemes/bttf_solution.mp3",
-            "image_answer":"sounds/bwmoviethemes/bttf_solution.jpg",
+            "question":"September 1985",
+            "answer":"Steve Jobs verlässt Apple",
             "points":400,
             "played":false
           },
           {
-            "question":"",
-            "audio":"sounds/bwmoviethemes/terminator.mp3",
-            "answer":"The Terminator",
-            "audio_answer":"sounds/bwmoviethemes/terminator_solution.mp3",
-            "image_answer":"sounds/bwmoviethemes/terminator_solution.jpg",
-            "points":500,
-            "played":false
-          }
-        ]
-      },
-      {
-        "name":"Recursive Acronyms",
-        "questions":[
-          {
-            "question":"... Not Unix Not Unix Not Unix Not Unix Not Unix",
-            "answer":"GNU",
-            "points":100,
-            "played":false
-          },
-          {
-            "question":"... Hypertext Processor Hypertext Processor Hypertext Processor Hypertext Processor",
-            "answer":"PHP",
-            "points":200,
-            "played":false
-          },
-          {
-            "question":"... URL Request Library URL Request Library URL Request Library URL Request Library URL Request Library",
-            "answer":"cURL",
-            "points":300,
-            "played":false
-          },
-          {
-            "question":"... Package Manager Package Manager Package Manager Package Manager Package Manager Package Manager",
-            "answer":"RPM",
-            "points":400,
-            "played":false
-          },
-          {
-            "question":"... Installs Packages Installs Packages Installs Packages Installs Packages Installs Packages Installs Packages",
-            "answer":"PIP",
+            "question":"Mai 1998",
+            "answer":"Vorstellung erster iMac",
             "points":500,
             "played":false
           }
@@ -796,22 +647,22 @@ games.insert(
     ],
     "players":[
       {
-        "name":"Jochen Rieg",
+        "name":"Player 1",
         "score":0,
         "answers":0
       },
       {
-        "name":"Roland Seidelt",
+        "name":"Player 2",
         "score":0,
         "answers":0
       },
       {
-        "name":"Björn Möllers",
+        "name":"Player 3",
         "score":0,
         "answers":0
       },
       {
-        "name":"Guillermo Orranita",
+        "name":"Player 4",
         "score":0,
         "answers":0
       }
@@ -824,260 +675,205 @@ games.insert(
     "name":"Round 4",
     "categories":[
       {
-        "name":"Text 2 Song",
+        "name":"Bootlogos",
         "questions":[
           {
             "question":"",
-            "audio":"sounds/texttosong/all_star.mp3",
-            "answer":"Smash Mouth - Allstar",
-            "audio_answer":"sounds/texttosong/all_star_solution_chorus.mp3",
-            "image_answer":"sounds/texttosong/all_star_solution.jpg",
+            "image":"images/2018/Bootlogos/windows98.jpg",
+            "answer":"Windows 98",
             "points":100,
             "played":false
           },
           {
             "question":"",
-            "audio":"sounds/texttosong/final_countdown.mp3",
-            "answer":"Europe - Final Countdown",
-            "audio_answer":"sounds/texttosong/final_countdown_solution.mp3",
-            "image_answer":"sounds/texttosong/final_countdown_solution.jpg",
+            "image":"images/2018/Bootlogos/macos.jpg",
+            "answer":"Mac OS",
             "points":200,
             "played":false
           },
           {
             "question":"",
-            "audio":"sounds/texttosong/highway_to_hell.mp3",
-            "answer":"ACDC - Highway to Hell",
-            "audio_answer":"sounds/texttosong/highway_to_hell_solution.mp3",
-            "image_answer":"sounds/texttosong/highway_to_hell_solution.jpg",
+            "image":"images/2018/Bootlogos/ubuntu.jpg",
+            "answer":"Ubuntu",
             "points":300,
             "played":false
           },
           {
             "question":"",
-            "audio":"sounds/texttosong/last_christmas.mp3",
-            "answer":"Wham - Last Christmas",
-            "audio_answer":"sounds/texttosong/last_christmas_solution.mp3",
-            "image_answer":"sounds/texttosong/last_christmas_solution.jpg",
+            "image":"images/2018/Bootlogos/cyanogenmod.jpg",
+            "answer":"Cyanogenmod",
             "points":400,
             "played":false
           },
           {
             "question":"",
-            "audio":"sounds/texttosong/scatman.mp3",
-            "answer":"Scatman John - Scatman",
-            "audio_answer":"sounds/texttosong/scatman_solution.mp3",
-            "image_answer":"sounds/texttosong/scatman_solution.jpg",
+            "image":"images/2018/Bootlogos/gentoo.jpg",
+            "answer":"Gentoo",
             "points":500,
             "played":false
           }
         ]
       },
       {
-        "name":"Iconic Icons",
+        "name":"CEOs",
         "questions":[
           {
-            "question":"",
-            "image":"images/icons/winamp.jpg",
-            "answer":"Winamp",
+            "question":"Marcus Weiss",
+            "answer":"virtual7",
             "points":100,
             "played":false
           },
           {
-            "question":"",
-            "image":"images/icons/ICQ.jpg",
-            "answer":"ICQ",
+            "question":"Larry Page",
+            "answer":"Google",
             "points":200,
             "played":false
           },
           {
-            "question":"",
-            "image":"images/icons/firefox.jpg",
-            "answer":"Firefox",
+            "question":"Elon Musk",
+            "answer":"Paypal/Tesla/SpaceX/Hyperloop",
             "points":300,
             "played":false
           },
           {
-            "question":"",
-            "image":"images/icons/aolim.png",
-            "answer":"AOL Instant Messanger",
+            "question":"Jeff Bezos",
+            "answer":"Amazon",
             "points":400,
             "played":false
           },
           {
-            "question":"",
-            "image":"images/icons/napster.gif",
-            "answer":"Napster",
+            "question":"Richard Branson",
+            "answer":"Virgin (Airlines/Group/Racing/...)",
             "points":500,
             "played":false
           }
         ]
       },
       {
-        "name":"Way Back Machine",
+        "name":"T Shirts",
         "questions":[
           {
             "question":"",
-            "image":"images/waybackmachine/youtube_20050813.jpg",
-            "answer":"Youtube (2005-08-13)",
+            "image":"images/2018/lastexittonowhere/terminator.jpg",
+            "answer":"Terminator",
             "points":100,
             "played":false
           },
           {
             "question":"",
-            "image":"images/waybackmachine/twitter_20070420.jpg",
-            "answer":"Twitter (2007-04-20)",
+            "image":"images/2018/lastexittonowhere/2001aspaceodyssey.jpg",
+            "answer":"2001 Odyssee im Weltraum",
             "points":200,
             "played":false
           },
           {
             "question":"",
-            "image":"images/waybackmachine/myspace_20041101.jpg",
-            "answer":"Myspace (2004-11-01)",
+            "image":"images/2018/lastexittonowhere/ghostbusters.jpg",
+            "answer":"Ghostbusters",
             "points":300,
             "played":false
           },
           {
             "question":"",
-            "image":"images/waybackmachine/microsoft_19990203.jpg",
-            "answer":"Microsoft (1999-02-03)",
+            "image":"images/2018/lastexittonowhere/bttf2.jpg",
+            "answer":"Zurück in die Zukunft 2",
             "points":400,
             "played":false
           },
           {
             "question":"",
-            "image":"images/waybackmachine/yahoo_19961220.jpg",
-            "answer":"Yahoo! (1996-12-20)",
+            "image":"images/2018/lastexittonowhere/strangerthings.jpg",
+            "answer":"Stranger Things",
             "points":500,
             "played":false
           }
         ]
       },
       {
-        "name":"Who are they?",
+        "name":"Emoji 2 Song",
         "questions":[
           {
             "question":"",
-            "image":"images/whoarethey/Ero_Mihai_Oliver.jpg",
-            "image_answer":"images/whoarethey/Ero_Mihai_Oliver_solution.jpg",
-            "answer":"Ero, Mihai, Oliver",
+            "image":"images/2018/emojisongs/walkingonsunshine.jpg",
+            "answer":"Walking on sunshine",
             "points":100,
             "played":false
           },
           {
             "question":"",
-            "image":"images/whoarethey/Guillermo_Enno_Vlad.jpg",
-            "image_answer":"images/whoarethey/Guillermo_Enno_Vlad_solution.jpg",
-            "answer":"Guillermo, Enno, Vlad",
+            "image":"images/2018/emojisongs/einszweipolizei.jpg",
+            "answer":"Eins Zwei Polizei",
             "points":200,
             "played":false
           },
           {
             "question":"",
-            "image":"images/whoarethey/Pall_SebastianD_TobiL.jpg",
-            "image_answer":"images/whoarethey/Pall_SebastianD_TobiL_solution.jpg",
-            "answer":"Pall, Sebastian Dorn, Tobi Laube",
+            "image":"images/2018/emojisongs/pokerface.jpg",
+            "answer":"Pokerface",
             "points":300,
             "played":false
           },
           {
             "question":"",
-            "image":"images/whoarethey/Cristian_Cosmin_Danny.jpg",
-            "image_answer":"images/whoarethey/Cristian_Cosmin_Danny_solution.jpg",
-            "answer":"Cristian Bolat, Cosmin, Danny",
+            "image":"images/2018/emojisongs/atemlosdurchdienacht.jpg",
+            "answer":"Atemlos durch die Nacht",
             "points":400,
             "played":false
           },
           {
             "question":"",
-            "image":"images/whoarethey/Selim_Tom_Roland.jpg",
-            "image_answer":"images/whoarethey/Selim_Tom_Roland_solution.jpg",
-            "answer":"Selim, Tom, Roland",
+            "image":"images/2018/emojisongs/partyrockanthem.jpg",
+            "answer":"Party Rock Anthem",
             "points":500,
             "played":false
           }
         ]
       },
       {
-        "name":"Unix Commands",
-        "questions":[
-          {
-            "question":"This command returns all passed arguments",
-            "answer":"echo",
-            "points":100,
-            "played":false
-          },
-          {
-            "question":"This program joins multiple files but is usualy only used to display the content",
-            "answer":"cat",
-            "points":200,
-            "played":false
-          },
-          {
-            "question":"This program tells you if two files have the same content",
-            "answer":"diff, cmp",
-            "points":300,
-            "played":false
-          },
-          {
-            "question":"This tool parses and transforms text using a simple programming language",
-            "answer":"sed",
-            "points":400,
-            "played":false
-          },
-          {
-            "question":"This command repeats its output until killed using 100% of one cpu core",
-            "answer":"yes",
-            "points":500,
-            "played":false
-          }
-        ]
-      },
-      {
-        "name":"Movie Themes",
+        "name":"Themes",
         "questions":[
           {
             "question":"",
-            "audio":"sounds/bwmoviethemes/et.mp3",
-            "answer":"E.T.",
-            "audio_answer":"sounds/bwmoviethemes/et_solution.mp3",
-            "image_answer":"sounds/bwmoviethemes/et_solution.jpg",
+            "audio":"sounds/2018/themes/ghostbusters.mp3",
+            "answer":"Ghostbusters",
+            "audio_answer":"sounds/2018/themes/ghostbusters.mp3",
+            "image_answer":"sounds/2018/themes/ghostbusters.jpg",
             "points":100,
             "played":false
           },
           {
             "question":"",
-            "audio":"sounds/bwmoviethemes/forrest_gump.mp3",
-            "answer":"Forrest Gump",
-            "audio_answer":"sounds/bwmoviethemes/forrest_gump_solution.mp3",
-            "image_answer":"sounds/bwmoviethemes/forrest_gump_solution.jpg",
+            "audio":"sounds/2018/themes/rocky.mp3",
+            "answer":"Rocky",
+            "audio_answer":"sounds/2018/themes/rocky.mp3",
+            "image_answer":"sounds/2018/themes/rocky.jpg",
             "points":200,
             "played":false
           },
           {
             "question":"",
-            "audio":"sounds/bwmoviethemes/indiana_jones.mp3",
-            "answer":"Indiana Jones",
-            "audio_answer":"sounds/bwmoviethemes/indiana_jones_solution.mp3",
-            "image_answer":"sounds/bwmoviethemes/indiana_jones_solution.jpg",
+            "audio":"sounds/2018/themes/ateam.mp3",
+            "answer":"The A-Team",
+            "audio_answer":"sounds/2018/themes/ateam.mp3",
+            "image_answer":"sounds/2018/themes/ateam.jpg",
             "points":300,
             "played":false
           },
           {
             "question":"",
-            "audio":"sounds/bwmoviethemes/godfather.mp3",
-            "answer":"The Godfather",
-            "audio_answer":"sounds/bwmoviethemes/godfather_solution.mp3",
-            "image_answer":"sounds/bwmoviethemes/godfather_solution.jpg",
+            "audio":"sounds/2018/themes/austinpowers.mp3",
+            "answer":"Austin Powers",
+            "audio_answer":"sounds/2018/themes/austinpowers.mp3",
+            "image_answer":"sounds/2018/themes/austinpowers.jpg",
             "points":400,
             "played":false
           },
           {
             "question":"",
-            "audio":"sounds/bwmoviethemes/jaws.mp3",
-            "answer":"Jaws",
-            "audio_answer":"sounds/bwmoviethemes/jaws_solution.mp3",
-            "image_answer":"sounds/bwmoviethemes/jaws_solution.jpg",
+            "audio":"sounds/2018/themes/dexter.mp3",
+            "answer":"Dexter",
+            "audio_answer":"sounds/2018/themes/dexter.mp3",
+            "image_answer":"sounds/2018/themes/dexter.jpg",
             "points":500,
             "played":false
           }
@@ -1086,22 +882,22 @@ games.insert(
     ],
     "players":[
       {
-        "name":"Ciprian Iancu",
+        "name":"Player 1",
         "score":0,
         "answers":0
       },
       {
-        "name":"Markus Koske",
+        "name":"Player 2",
         "score":0,
         "answers":0
       },
       {
-        "name":"Tobias Melcher",
+        "name":"Player 3",
         "score":0,
         "answers":0
       },
       {
-        "name":"Dezsö Kovacs",
+        "name":"Player 4",
         "score":0,
         "answers":0
       }
@@ -1114,245 +910,240 @@ games.insert(
     "name":"FINALE",
     "categories":[
       {
-        "name":"Numbers",
+        "name":"Sidekicks",
         "questions":[
           {
-            "question":"2^10 in decimal",
-            "answer":"1024",
+            "question":"Ratchet",
+            "answer":"Clank",
             "points":100,
             "played":false
           },
           {
-            "question":"The product of all integers form -10 to 10",
-            "answer":"0",
+            "question":"War Machine",
+            "answer":"Iron Man",
             "points":200,
             "played":false
           },
           {
-            "question":"The metric system prefix for 10^-6",
-            "answer":"Micro",
+            "question":"Bucky",
+            "answer":"Captain America",
             "points":300,
             "played":false
           },
           {
-            "question":"This is 2^10 in hexadecimal",
-            "answer":"0x400",
+            "question":"Alyx Vance",
+            "answer":"Gordon Freeman",
             "points":400,
             "played":false
           },
           {
-            "question":"The next two terms in the sequence kilo, mega, giga, tera, peta",
-            "answer":"Exa, Zetta",
+            "question":"Hit-Girl",
+            "answer":"Big Daddy (Kickass)",
             "points":500,
             "played":false
           }
         ]
       },
       {
-        "name":"Text 2 Song",
+        "name":"Logos",
         "questions":[
           {
             "question":"",
-            "audio":"sounds/texttosong/clint_eastwood.mp3",
-            "answer":"Gorillaz - Clint Eastwood",
-            "audio_answer":"sounds/texttosong/clint_eastwood_solution.mp3",
-            "image_answer":"sounds/texttosong/clint_eastwood_solution.jpg",
+            "image":"images/2018/KlassischeLogos/playboy.jpg",
+            "answer":"Playboy",
+			"image_answer":"images/2018/KlassischeLogos/playboysolution.jpg",
             "points":100,
             "played":false
           },
           {
             "question":"",
-            "audio":"sounds/texttosong/nothing_else_matters.mp3",
-            "answer":"Metallica - Nothin else matters",
-            "audio_answer":"sounds/texttosong/nothing_else_matters_solution.mp3",
-            "image_answer":"sounds/texttosong/nothing_else_matters_solution.jpg",
+            "image":"images/2018/KlassischeLogos/ard.jpg",
+            "answer":"ARD",
+			"image_answer":"images/2018/KlassischeLogos/ardsolution.jpg",
             "points":200,
             "played":false
           },
           {
             "question":"",
-            "audio":"sounds/texttosong/stayin_alive.mp3",
-            "answer":"Bee Gees - Stayin Alive",
-            "audio_answer":"sounds/texttosong/stayin_alive_solution.mp3",
-            "image_answer":"sounds/texttosong/stayin_alive_solution.jpg",
+            "image":"images/2018/KlassischeLogos/canon.jpg",
+            "answer":"Canon",
+			"image_answer":"images/2018/KlassischeLogos/canonsolution.jpg",
             "points":300,
             "played":false
           },
           {
             "question":"",
-            "audio":"sounds/texttosong/we_didnt_start_the_fire.mp3",
-            "answer":"Billy Joel - We didn't start the fire",
-            "audio_answer":"sounds/texttosong/we_didnt_start_the_fire_solution_chorus.mp3",
-            "image_answer":"sounds/texttosong/we_didnt_start_the_fire_solution.jpg",
+            "image":"images/2018/KlassischeLogos/Apple.jpg",
+            "answer":"Apple",
+			"image_answer":"images/2018/KlassischeLogos/AppleSolution.jpg",
             "points":400,
             "played":false
           },
           {
             "question":"",
-            "audio":"sounds/texttosong/smells_like_teenspirit.mp3",
-            "answer":"Nirvana - Smells like teenspirit",
-            "audio_answer":"sounds/texttosong/smells_like_teenspirit_solution_chorus.mp3",
-            "image_answer":"sounds/texttosong/smells_like_teenspirit_solution.jpg",
+            "image":"images/2018/KlassischeLogos/nokia.jpg",
+            "answer":"Nokia",
+			"image_answer":"images/2018/KlassischeLogos/nokiasolution.jpg",
             "points":500,
             "played":false
           }
         ]
       },
       {
-        "name":"Those Guys",
+        "name":"Lyrik",
         "questions":[
           {
-            "question":"Janice Rand, Pavel Checkov, Nyota Uhura, Montgomery Scott, Commander Spock, Captain Kirk",
-            "answer":"Star Trek",
+            "question":"",
+			"image":"images/2018/lyrik/houseoftherisingsun.png",
+            "answer":"House of the rising Sun",
             "points":100,
             "played":false
           },
           {
-            "question":"Sasha Williams, Tara Chambler, Glenn Rhee, Daryl Dixon, Michonne, Rick Grimes",
-            "answer":"The walking dead",
+            "question":"",
+			"image":"images/2018/lyrik/everybreatheyoutake.png",
+            "answer":"Every Breathe you take",
             "points":200,
             "played":false
           },
           {
-            "question":"Jackie Sharp, Tom Hammerschmidt, Linda Vasquez, Peter Russo, Doug Stamper, Francis Underwood",
-            "answer":"House of Cards",
+            "question":"",
+			"image":"images/2018/lyrik/bad.png",
+            "answer":"Bad",
             "points":300,
             "played":false
           },
           {
-            "question":"George Merkert, Tyrus Kitt, Todd Alquist, Hank Schrader, Jesse Pinkman, Walter White",
-            "answer":"Breaking Bad",
+            "question":"",
+			"image":"images/2018/lyrik/heyjude.png",
+            "answer":"Hey Jude",
             "points":400,
             "played":false
           },
           {
-            "question":"Valerie Gordon, Larry Zito, Trudy Joplin, Martin Castillo, Ricardo Tubbs, Sonny Crockett",
-            "answer":"Miami Vice",
+            "question":"",
+			"image":"images/2018/lyrik/teenspirit.png",
+            "answer":"Smells like teen spirit",
             "points":500,
             "played":false
           }
         ]
       },
       {
-        "name":"Movie Themes",
+        "name":"Who Are They",
         "questions":[
           {
             "question":"",
-            "audio":"sounds/bwmoviethemes/lion_king.mp3",
-            "answer":"The lion king",
-            "audio_answer":"sounds/bwmoviethemes/lion_king_solution.mp3",
-            "image_answer":"sounds/bwmoviethemes/lion_king_solution.jpg",
+            "image":"images/2018/whoarethey/Daulet_Bodo_Andreas.jpg",
+            "answer":"Daulet, Bodo, Andreas",
+            "image_answer":"images/2018/whoarethey/Daulet_Bodo_Andreas_solution.jpg",
             "points":100,
             "played":false
           },
           {
             "question":"",
-            "audio":"sounds/bwmoviethemes/mission_impossible.mp3",
-            "answer":"Mission Impossible",
-            "audio_answer":"sounds/bwmoviethemes/mission_impossible_solution.mp3",
-            "image_answer":"sounds/bwmoviethemes/mission_impossible_solution.jpg",
+            "image":"images/2018/whoarethey/Chrstine_David_Anja.jpg",
+            "answer":"Christine, David, Anja",
+            "image_answer":"images/2018/whoarethey/Chrstine_David_Anja_solution.jpg",
             "points":200,
             "played":false
           },
           {
             "question":"",
-            "audio":"sounds/bwmoviethemes/james_bond.mp3",
-            "answer":"James Bond",
-            "audio_answer":"sounds/bwmoviethemes/james_bond_solution.mp3",
-            "image_answer":"sounds/bwmoviethemes/james_bond_solution.jpg",
+            "image":"images/2018/whoarethey/Katja_Danny_Marek.jpg",
+            "answer":"Katja, Danny, Marek",
+            "image_answer":"images/2018/whoarethey/Katja_Danny_Marek_solution.jpg",
             "points":300,
             "played":false
           },
           {
             "question":"",
-            "audio":"sounds/bwmoviethemes/jurassic_park.mp3",
-            "answer":"Jurassic Park",
-            "audio_answer":"sounds/bwmoviethemes/jurassic_park_solution.mp3",
-            "image_answer":"sounds/bwmoviethemes/jurassic_park_solution.png",
+            "image":"images/2018/whoarethey/Manuela_Maximilian_Filip.jpg",
+            "answer":"Manuela, Maximilian, Filip",
+            "image_answer":"images/2018/whoarethey/Manuela_Maximilian_Filip_solution.jpg",
             "points":400,
             "played":false
           },
           {
             "question":"",
-            "audio":"sounds/bwmoviethemes/2001_space_odyssey.mp3",
-            "answer":"2001 A Space Odyssey",
-            "audio_answer":"sounds/bwmoviethemes/2001_space_odyssey_solution.mp3",
-            "image_answer":"sounds/bwmoviethemes/2001_space_odyssey_solution.jpg",
+            "image":"images/2018/whoarethey/Paula_Raphael_Maurice.jpg",
+            "answer":"Paula, Raphael, Maurice",
+            "image_answer":"images/2018/whoarethey/Paula_Raphael_Maurice_solution.jpg",
             "points":500,
             "played":false
           }
         ]
       },
       {
-        "name":"Oracle Ports",
+        "name":"Autos",
         "questions":[
           {
-            "question":"1521",
-            "answer":"Oracle Net Listener (Database)",
+            "question":"",
+			"image":"images/2018/Autos/audir8.jpg",
+            "answer":"Audi R8",
             "points":100,
             "played":false
           },
           {
-            "question":"7001",
-            "answer":"WebLogic AdminServer",
+            "question":"",
+			"image":"images/2018/Autos/nissanqashqai.jpg",
+            "answer":"Nissan Qashqai",
             "points":200,
             "played":false
           },
           {
-            "question":"9704",
-            "answer":"BIEE Managed Server",
+            "question":"",
+			"image":"images/2018/Autos/toyotaprius.jpg",
+            "answer":"Toyota Prius",
             "points":300,
             "played":false
           },
           {
-            "question":"16200",
-            "answer":"WCC Managed Server",
+            "question":"",
+			"image":"images/2018/Autos/rollsroycephantom.jpg",
+            "answer":"Rolls Royce Phantom",
             "points":400,
             "played":false
           },
           {
-            "question":"6200",
-            "answer":"OPMN / Oracle Notification Service Remote Port",
+            "question":"",
+			"image":"images/2018/Autos/bmwi8.jpg",
+            "answer":"BMW i8",
             "points":500,
             "played":false
           }
         ]
       },
       {
-        "name":"Who Am I?",
+        "name":"Rollennamen",
         "questions":[
           {
-            "question":"Riding my motorbike and do handicraft with it",
-            "answer":"Oskar Anders",
-            "image_answer":"images/employees/oskar.jpg",
+            "question":"TODO",
+            "answer":"TODO",
             "points":100,
             "played":false
           },
           {
-            "question":"To crochet headbands and beanies, to sew Bags",
-            "answer":"Denise Bender",
-            "image_answer":"images/employees/denise.jpg",
+            "question":"TODO",
+            "answer":"TODO",
             "points":200,
             "played":false
           },
           {
-            "question":"Ask Google, They know everything!",
-            "answer":"Timo Hahn",
-            "image_answer":"images/employees/timo.jpg",
+            "question":"TODO",
+            "answer":"TODO",
             "points":300,
             "played":false
           },
           {
-            "question":"I hate cooking! It makes just everything dirty...",
-            "answer":"Marcus Hammer",
-            "image_answer":"images/employees/marcus_hammer.jpg",
+            "question":"TODO",
+            "answer":"TODO",
             "points":400,
             "played":false
           },
           {
-            "question":"I like collecting returnable bottles, as I learned, that treats might be inside",
-            "answer":"Homer",
-            "image_answer":"images/employees/homer.jpg",
+            "question":"TODO",
+            "answer":"TODO",
             "points":500,
             "played":false
           }
