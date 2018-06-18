@@ -1118,32 +1118,37 @@ games.insert(
         "name":"Rollennamen",
         "questions":[
           {
-            "question":"TODO",
-            "answer":"TODO",
+            "question":"",
+            "image":"images/2018/rollennamen/walterwhite.jpg",
+            "answer":"Walter White",
             "points":100,
             "played":false
           },
           {
-            "question":"TODO",
-            "answer":"TODO",
+            "question":"",
+            "image":"images/2018/rollennamen/daryldixon.jpg",
+            "answer":"Daryl Dixon",
             "points":200,
             "played":false
           },
           {
-            "question":"TODO",
-            "answer":"TODO",
+            "question":"",
+            "image":"images/2018/rollennamen/petyrbaelish.jpg",
+            "answer":"Petyr Baelish",
             "points":300,
             "played":false
           },
           {
-            "question":"TODO",
-            "answer":"TODO",
+            "question":"",
+            "image":"images/2018/rollennamen/jaxteller.jpg",
+            "answer":"Jax Teller",
             "points":400,
             "played":false
           },
           {
-            "question":"TODO",
-            "answer":"TODO",
+            "question":"",
+            "image":"images/2018/rollennamen/oswaldcobblepot.jpg",
+            "answer":"Oswald Cobblepot",
             "points":500,
             "played":false
           }
