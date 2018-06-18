@@ -287,7 +287,9 @@ games.insert(
         "questions":[
           {
             "question":"",
-			"image":"images/2018/lyrik/hotelcalifornia.png",
+            "image":"images/2018/lyrik/hotelcalifornia.png",
+            "image_answer":"images/2018/lyrik/hotelcalifornia.png",
+            "audio_answer":"images/2018/lyrik/hotelcaliforniasolution.mp3",
             "answer":"Hotel California",
             "points":100,
             "played":false
@@ -295,6 +297,8 @@ games.insert(
           {
             "question":"",
 			"image":"images/2018/lyrik/dancingqueen.png",
+            "image_answer":"images/2018/lyrik/dancingqueen.png",
+            "audio_answer":"images/2018/lyrik/dancingqueensolution.mp3",
             "answer":"Dancing Queen",
             "points":200,
             "played":false
@@ -302,6 +306,8 @@ games.insert(
           {
             "question":"",
 			"image":"images/2018/lyrik/smoothcriminal.png",
+            "image_answer":"images/2018/lyrik/smoothcriminal.png",
+            "audio_answer":"images/2018/lyrik/smoothcriminalsolution.mp3",
             "answer":"Smooth Criminal",
             "points":300,
             "played":false
@@ -309,6 +315,8 @@ games.insert(
           {
             "question":"",
 			"image":"images/2018/lyrik/eyeofthetiger.png",
+            "image_answer":"images/2018/lyrik/eyeofthetiger.png",
+            "audio_answer":"images/2018/lyrik/eyeofthetigersolution.mp3",
             "answer":"Eye of the tiger",
             "points":400,
             "played":false
@@ -316,6 +324,8 @@ games.insert(
           {
             "question":"",
 			"image":"images/2018/lyrik/summerjam.png",
+            "image_answer":"images/2018/lyrik/summerjam.png",
+            "audio_answer":"images/2018/lyrik/summerjamsolution.mp3",
             "answer":"Summer Jam",
             "points":500,
             "played":false
@@ -995,6 +1005,8 @@ games.insert(
           {
             "question":"",
 			"image":"images/2018/lyrik/houseoftherisingsun.png",
+            "image_answer":"images/2018/lyrik/houseoftherisingsun.png",
+            "audio_answer":"images/2018/lyrik/houseoftherisingsunsolution.mp3",
             "answer":"House of the rising Sun",
             "points":100,
             "played":false
@@ -1002,6 +1014,8 @@ games.insert(
           {
             "question":"",
 			"image":"images/2018/lyrik/everybreatheyoutake.png",
+            "image_answer":"images/2018/lyrik/everybreatheyoutake.png",
+            "audio_answer":"images/2018/lyrik/everybreatheyoutakesolution.mp3",
             "answer":"Every Breathe you take",
             "points":200,
             "played":false
@@ -1009,6 +1023,8 @@ games.insert(
           {
             "question":"",
 			"image":"images/2018/lyrik/bad.png",
+            "image_answer":"images/2018/lyrik/bad.png",
+            "audio_answer":"images/2018/lyrik/badsolution.mp3",
             "answer":"Bad",
             "points":300,
             "played":false
@@ -1016,6 +1032,8 @@ games.insert(
           {
             "question":"",
 			"image":"images/2018/lyrik/heyjude.png",
+            "image_answer":"images/2018/lyrik/heyjude.png",
+            "audio_answer":"images/2018/lyrik/heyjudesolution.mp3",
             "answer":"Hey Jude",
             "points":400,
             "played":false
@@ -1023,6 +1041,8 @@ games.insert(
           {
             "question":"",
 			"image":"images/2018/lyrik/teenspirit.png",
+            "image_answer":"images/2018/lyrik/teenspirit.png",
+            "audio_answer":"images/2018/lyrik/smellsliketeenspiritsolution.mp3",
             "answer":"Smells like teen spirit",
             "points":500,
             "played":false
