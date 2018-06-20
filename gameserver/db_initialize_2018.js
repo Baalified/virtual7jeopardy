@@ -220,22 +220,22 @@ games.insert(
     ],
     "players":[
       {
-        "name":"Player 1",
+        "name":"Hartmut",
         "score":0,
         "answers":0
       },
       {
-        "name":"Player 2",
+        "name":"Katja",
         "score":0,
         "answers":0
       },
       {
-        "name":"Player 3",
+        "name":"Björn",
         "score":0,
         "answers":0
       },
       {
-        "name":"Player 4",
+        "name":"Arne",
         "score":0,
         "answers":0
       }
@@ -452,17 +452,17 @@ games.insert(
     ],
     "players":[
       {
-        "name":"Player 1",
+        "name":"Raphael",
         "score":0,
         "answers":0
       },
       {
-        "name":"Player 2",
+        "name":"Tobi M.",
         "score":0,
         "answers":0
       },
       {
-        "name":"Player 3",
+        "name":"Selim",
         "score":0,
         "answers":0
       },
@@ -657,17 +657,17 @@ games.insert(
     ],
     "players":[
       {
-        "name":"Player 1",
+        "name":"Franja",
         "score":0,
         "answers":0
       },
       {
-        "name":"Player 2",
+        "name":"Anton",
         "score":0,
         "answers":0
       },
       {
-        "name":"Player 3",
+        "name":"Max B.",
         "score":0,
         "answers":0
       },
@@ -892,17 +892,17 @@ games.insert(
     ],
     "players":[
       {
-        "name":"Player 1",
+        "name":"Roger",
         "score":0,
         "answers":0
       },
       {
-        "name":"Player 2",
+        "name":"Dirk",
         "score":0,
         "answers":0
       },
       {
-        "name":"Player 3",
+        "name":"Miriam",
         "score":0,
         "answers":0
       },
