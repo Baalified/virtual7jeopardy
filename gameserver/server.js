@@ -81,6 +81,10 @@ io.on('connection', function(socket){
   socket.on("audioQuestionPlay", function() {
     io.emit('audioQuestionPlay');
   });
+
+  socket.on("audioQuestionReplay", function() {
+    io.emit('audioQuestionReplay');
+  });
   
   socket.on("audioQuestionStop", function() {
     io.emit('audioQuestionStop');

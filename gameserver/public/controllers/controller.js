@@ -83,8 +83,22 @@ v7jeopardy.controller('AppCtrl', ['$scope', '$http', '$location', 'socketio', fu
   $scope.audioQuestionPlay = function() {
     socketio.emit('audioQuestionPlay');
   };
+
+  $scope.audioQuestionReplay = function() {
+    socketio.emit('audioQuestionReplay');
+  };
   
   socketio.on('audioQuestionPlay', function(gm) {
+    if(disableSoundOnGm && !$scope.gamemaster) {
+      if(!questionSound.src.endsWith($scope.currentgame.activequestion.audio)) {
+        questionSound.src = $scope.currentgame.activequestion.audio;
+        questionSound.load();
+      }
+      questionSound.play();
+    }
+  });
+
+  socketio.on('audioQuestionReplay', function(gm) {
     if(disableSoundOnGm && !$scope.gamemaster) {
       questionSound.src = $scope.currentgame.activequestion.audio;
       questionSound.load();
