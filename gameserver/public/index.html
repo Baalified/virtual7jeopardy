@@ -141,7 +141,7 @@
         <img src="{{currentgame.activequestion.image}}" style="max-width:90%; max-height:90%; width:auto; height:auto; zoom:3;" ng-hide="!currentgame.activequestion.image || currentgame.activequestion.showsolution"/>
         <div class="container" ng-hide="!currentgame.activequestion.audio || !gamemaster" style="width:90%;">
           <img src="images/gameimages/play.jpg" style="width:200px; height:200px; position:absolute; left:200px;" ng-click="audioQuestionPlay()"/>
-          <img src="images/gameimages/replay.png" style="width:200px; height:200px; position:absolute; left:50%;" ng-click="audioQuestionReplay()"/>
+          <img src="images/gameimages/replay.png" style="width:200px; height:200px; position:absolute; left:400px;" ng-click="audioQuestionReplay()"/>
           <img src="images/gameimages/stop.svg" style="width:200px; height:200px; position:absolute; right:200px;" ng-click="audioQuestionStop()"/>
         </div>
         <div class="container openquestiontext" ng-hide="!currentgame.activequestion.audio || gamemaster || currentgame.activequestion.showsolution" style="width:90%;">
