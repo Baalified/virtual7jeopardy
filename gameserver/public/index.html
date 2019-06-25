@@ -222,7 +222,14 @@
           -->
           <div class="col playercol" ng-repeat="player in currentgame.players">
             <!-- TEMP click to buzz (ng-click is temp) -->
-            <div class="player" style="background-color:{{currentgame.activeplayer==player && ('green') || ('lightgrey')}};color:black;" ng-click="buzz($index)">
+            <div class="player" style="background-color:{{
+                currentgame.activeplayer==player && ('green') ||
+                currentgame.activeplayer==null && gamemaster && $index == 0 && ('orange') ||
+                currentgame.activeplayer==null && gamemaster && $index == 1 && ('lightblue') ||
+                currentgame.activeplayer==null && gamemaster && $index == 2 && ('lightgreen') ||
+                currentgame.activeplayer==null && gamemaster && $index == 3 && ('pink') ||
+                ('lightgrey')
+              }};color:black;" ng-click="buzz($index)">
               <div class="playername">{{player.name}}</div>
               <div class="playerscore">{{player.score}}<a ng-hide="!gamemaster"> ({{player.answers}})</a></div>
             </div>
