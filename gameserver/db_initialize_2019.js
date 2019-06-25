@@ -248,38 +248,48 @@ games.insert(
     "name":"Round 2",
     "categories":[
       {
-        "name":"TLDs",
+        "name":"Branding",
         "questions":[
           {
-            "question":".ca",
-            "answer":"Canada",
+            "question":"",
+            "image":"images/2019/branding/youtube-half.png",
+            "answer":"YouTube",
+            "image_answer":"images/2019/branding/youtube-full.png",
             "points":100,
             "played":false
           },
           {
-            "question":".au",
-            "answer":"Australia",
+            "question":"",
+            "image":"images/2019/branding/rayban-half.png",
+            "answer":"RayBan",
+            "image_answer":"images/2019/branding/rayban-full.png",
             "points":200,
             "played":false
           },
           {
-            "question":".br",
-            "answer":"Brazil",
+            "question":"",
+            "image":"images/2019/branding/mastercard-half Kopie.png",
+            "answer":"MasterCard",
+            "image_answer":"images/2019/branding/mastercard-full Kopie.png",
             "points":300,
             "played":false
           },
           {
-            "question":".ar",
-            "answer":"Argentinia",
+            "question":"",
+            "image":"images/2019/branding/pirelli-half Kopie.png",
+            "answer":"Pirelli",
+            "image_answer":"images/2019/branding/pirelli-full Kopie.png",
             "points":400,
             "played":false
           },
           {
-            "question":".fj",
-            "answer":"Fiji",
+            "question":"",
+            "image":"images/2019/branding/panasonic-half Kopie.png",
+            "answer":"Panasonic",
+            "image_answer":"images/2019/branding/panasonic-full Kopie.png",
             "points":500,
             "played":false
-          }
+          },
         ]
       },
       {
@@ -326,7 +336,7 @@ games.insert(
         "name":"Origin Story",
         "questions":[
           {
-            "question":"This song ended up in the top 10 of Rolling Stone Magazines '500 Greatest songs of All Time' list. Its title came from a grafiti sprayed on a wall in the singer's bedroom by a friend. The grafiti referenced the singer's gilfriend deodorant.",
+            "question":"This songs title came from a grafiti sprayed on a wall in the singer's bedroom by a friend. The grafiti referenced the singer's gilfriend deodorant.",
             "answer":"Nirvana - Smells like teen spirit",
             "image_answer":"sounds/2019/originstory/smellsliketeenspirit.jpg",
             "audio_answer":"sounds/2019/originstory/smellsliketeenspirit.mp3",
@@ -568,48 +578,38 @@ games.insert(
         ]
       },
       {
-        "name":"Branding",
+        "name":"TLDs",
         "questions":[
           {
-            "question":"",
-            "image":"images/2019/branding/youtube-half.png",
-            "answer":"YouTube",
-            "image_answer":"images/2019/branding/youtube-full.png",
+            "question":".ca",
+            "answer":"Canada",
             "points":100,
             "played":false
           },
           {
-            "question":"",
-            "image":"images/2019/branding/rayban-half.png",
-            "answer":"RayBan",
-            "image_answer":"images/2019/branding/rayban-full.png",
+            "question":".au",
+            "answer":"Australia",
             "points":200,
             "played":false
           },
           {
-            "question":"",
-            "image":"images/2019/branding/mastercard-half Kopie.png",
-            "answer":"MasterCard",
-            "image_answer":"images/2019/branding/mastercard-full Kopie.png",
+            "question":".br",
+            "answer":"Brazil",
             "points":300,
             "played":false
           },
           {
-            "question":"",
-            "image":"images/2019/branding/pirelli-half Kopie.png",
-            "answer":"Pirelli",
-            "image_answer":"images/2019/branding/pirelli-full Kopie.png",
+            "question":".ar",
+            "answer":"Argentinia",
             "points":400,
             "played":false
           },
           {
-            "question":"",
-            "image":"images/2019/branding/panasonic-half Kopie.png",
-            "answer":"Panasonic",
-            "image_answer":"images/2019/branding/panasonic-full Kopie.png",
+            "question":".fj",
+            "answer":"Fiji",
             "points":500,
             "played":false
-          },
+          }
         ]
       },
       {
@@ -710,223 +710,517 @@ games.insert(
         "answers":0
       },
       {
-        "name":"Player 4",
+        "name":"Gerhard Höll",
         "score":0,
         "answers":0
       }
     ]
   },
   /**
- * ROUND 4
+ * FIANLE
  */
   {
-    "name":"Round 4",
+    "name":"FINALE",
     "categories":[
       {
-        "name":"Bootlogos",
+        "name":"Text 2 Song",
         "questions":[
           {
             "question":"",
-            "image":"images/2018/Bootlogos/windows98.jpg",
-            "answer":"Windows 98",
+            "audio":"sounds/2019/texttosong/born_to_be_wild.mp3",
+            "answer":"Born to be wild",
+            "image_answer":"sounds/2019/texttosong/born_to_be_wild_solution.jpg",
+            "audio_answer":"sounds/2019/texttosong/born_to_be_wild_solution.mp3",
             "points":100,
             "played":false
           },
           {
             "question":"",
-            "image":"images/2018/Bootlogos/macos.jpg",
-            "answer":"Mac OS",
+            "audio":"sounds/2019/texttosong/i_dont_want_to_miss_a_thing.mp3",
+            "answer":"I dont want to miss a thing",
+            "image_answer":"sounds/2019/texttosong/i_dont_want_to_miss_a_thing_solution.jpg",
+            "audio_answer":"sounds/2019/texttosong/i_dont_want_to_miss_a_thing_solution.mp3",
             "points":200,
             "played":false
           },
           {
             "question":"",
-            "image":"images/2018/Bootlogos/ubuntu.jpg",
-            "answer":"Ubuntu",
+            "audio":"sounds/2019/texttosong/hold_the_line.mp3",
+            "answer":"Hold the line",
+            "image_answer":"sounds/2019/texttosong/hold_the_line_solution.jpg",
+            "audio_answer":"sounds/2019/texttosong/hold_the_line_solution.mp3",
             "points":300,
             "played":false
           },
           {
             "question":"",
-            "image":"images/2018/Bootlogos/cyanogenmod.jpg",
-            "answer":"Cyanogenmod",
+            "audio":"sounds/2019/texttosong/help.mp3",
+            "answer":"Help",
+            "image_answer":"sounds/2019/texttosong/help_solution.jpg",
+            "audio_answer":"sounds/2019/texttosong/help_solution.mp3",
             "points":400,
             "played":false
           },
           {
             "question":"",
-            "image":"images/2018/Bootlogos/gentoo.jpg",
-            "answer":"Gentoo",
+            "audio":"sounds/2019/texttosong/careless_whisper.mp3",
+            "answer":"Careless Whisper",
+            "image_answer":"sounds/2019/texttosong/careless_whisper_solution.jpg",
+            "audio_answer":"sounds/2019/texttosong/careless_whisper_solution.mp3",
+            "points":500,
+            "played":false
+          },
+        ]
+      },
+      {
+        "name":"Anthems",
+        "questions":[
+          {
+            "question":"",
+            "audio":"sounds/2019/anthems/USA.ogg",
+            "answer":"USA",
+            "points":100,
+            "played":false
+          },
+          {
+            "question":"",
+            "audio":"sounds/2019/anthems/Italy.ogg",
+            "answer":"Italy",
+            "points":200,
+            "played":false
+          },
+          {
+            "question":"",
+            "audio":"sounds/2019/anthems/Brazil.ogg",
+            "answer":"Brazil",
+            "points":300,
+            "played":false
+          },
+          {
+            "question":"",
+            "audio":"sounds/2019/anthems/Australia.ogg",
+            "answer":"Australia",
+            "points":400,
+            "played":false
+          },
+          {
+            "question":"",
+            "audio":"sounds/2019/anthems/Japan.ogg",
+            "answer":"Japan",
+            "points":500,
+            "played":false
+          },
+        ]
+      },
+      {
+        "name":"Branding Classic",
+        "questions":[
+          {
+            "question":"",
+            "image":"images/2019/klassischelogos/pizzahut.jpg",
+            "answer":"Pizza Hut",
+            "image_answer":"images/2019/klassischelogos/pizzahutsolution.jpg",
+            "points":100,
+            "played":false
+          },
+          {
+            "question":"",
+            "image":"images/2019/klassischelogos/audi.png",
+            "answer":"Audi",
+            "image_answer":"images/2019/klassischelogos/audisolution.png",
+            "points":200,
+            "played":false
+          },
+          {
+            "question":"",
+            "image":"images/2019/klassischelogos/ibm.jpg",
+            "answer":"IBM",
+            "image_answer":"images/2019/klassischelogos/ibmsolution.jpg",
+            "points":300,
+            "played":false
+          },
+          {
+            "question":"",
+            "image":"images/2019/klassischelogos/nintendo.jpg",
+            "answer":"Nintendo",
+            "image_answer":"images/2019/klassischelogos/nintendosolution.jpg",
+            "points":400,
+            "played":false
+          },
+          {
+            "question":"",
+            "image":"images/2019/klassischelogos/kodak.jpg",
+            "answer":"Kodak",
+            "image_answer":"images/2019/klassischelogos/kodaksolution.jpg",
+            "points":500,
+            "played":false
+          },
+        ]
+      },
+      {
+        "name":"Who am I?",
+        "questions":[
+          {
+            "question":"I'm married and have two cats, I'm a bit crazy but always passionate about the things I do!",
+            "answer":"Anja Hinlang",
+            "image_answer":"images/2019/whoami/2019-06-22 23_30_59-Programmheft_conference_19.pdf - Adobe Acrobat Pro.png",
+            "points":100,
+            "played":false
+          },
+          {
+            "question":"Because of my advances age and numerous injuries, I have been playing folg for about 5 years. I live in Eastwestfalia. They are supposed to be worse off the Swabians.",
+            "answer":"Bodo Ermshaus",
+            "image_answer":"images/2019/whoami/2019-06-22 23_25_19-Programmheft_conference_19.pdf - Adobe Acrobat Pro.png",
+            "points":200,
+            "played":false
+          },
+          {
+            "question":"Passionate about Machine Learning, AI and bringing Data into Life.",
+            "answer":"Valentin Göttisheim",
+            "image_answer":"images/2019/whoami/2019-06-22 23_28_20-Programmheft_conference_19.pdf - Adobe Acrobat Pro.png",
+            "points":300,
+            "played":false
+          },
+          {
+            "question":"I have to go immediately, otherwise I miss...",
+            "answer":"Dorin Gligor",
+            "image_answer":"images/2019/whoami/2019-06-22 23_26_41-Programmheft_conference_19.pdf - Adobe Acrobat Pro.png",
+            "points":400,
+            "played":false
+          },
+          {
+            "question":"I'm good in telling bad jokes.",
+            "answer":"Ruben Lehmann",
+            "image_answer":"images/2019/whoami/2019-06-22 23_35_32-Programmheft_conference_19.pdf - Adobe Acrobat Pro.png",
             "points":500,
             "played":false
           }
         ]
       },
       {
-        "name":"CEOs",
+        "name":"Branding",
         "questions":[
           {
-            "question":"Marcus Weiss",
-            "answer":"virtual7",
+            "question":"",
+            "image":"images/2019/branding/nissan-half Kopie.png",
+            "answer":"Nissan",
+            "image_answer":"images/2019/branding/nissan-full Kopie.png",
             "points":100,
             "played":false
           },
           {
-            "question":"Larry Page",
-            "answer":"Google",
+            "question":"",
+            "image":"images/2019/branding/bacardi-half Kopie.png",
+            "answer":"Bacardi",
+            "image_answer":"images/2019/branding/bacardi-full Kopie.png",
             "points":200,
             "played":false
           },
           {
-            "question":"Elon Musk",
-            "answer":"Paypal/Tesla/SpaceX/Hyperloop",
+            "question":"",
+            "image":"images/2019/branding/amd-half.png",
+            "answer":"AMD",
+            "image_answer":"images/2019/branding/amd-full.png",
             "points":300,
             "played":false
           },
           {
-            "question":"Jeff Bezos",
-            "answer":"Amazon",
+            "question":"",
+            "image":"images/2019/branding/poloralphlauren-half Kopie.png",
+            "answer":"Polo Ralph Lauren",
+            "image_answer":"images/2019/branding/poloralphlauren-full Kopie.png",
             "points":400,
             "played":false
           },
           {
-            "question":"Richard Branson",
-            "answer":"Virgin (Airlines/Group/Racing/...)",
+            "question":"",
+            "image":"images/2019/branding/yamaha-half Kopie.png",
+            "answer":"Yamaha",
+            "image_answer":"images/2019/branding/yamaha-full Kopie.png",
+            "points":500,
+            "played":false
+          },
+        ]
+      },
+      {
+        "name":"Lead Singers",
+        "questions":[
+          {
+            "question":"Sting",
+            "answer":"The Police",
+            "points":100,
+            "played":false
+          },
+          {
+            "question":"Jared Leto",
+            "answer":"Thirty Seconds to Mars",
+            "points":200,
+            "played":false
+          },
+          {
+            "question":"Billie Joe Armstrong",
+            "answer":"Green Day",
+            "points":300,
+            "played":false
+          },
+          {
+            "question":"Chris Martin",
+            "answer":"Coldplay",
+            "points":400,
+            "played":false
+          },
+          {
+            "question":"Syd Barrett",
+            "answer":"Pink Floyd",
             "points":500,
             "played":false
           }
         ]
       },
+    ],
+    "players":[
       {
-        "name":"T Shirts",
-        "questions":[
-          {
-            "question":"",
-            "image":"images/2018/lastexittonowhere/terminator.jpg",
-            "answer":"Terminator",
-            "points":100,
-            "played":false
-          },
-          {
-            "question":"",
-            "image":"images/2018/lastexittonowhere/2001aspaceodyssey.jpg",
-            "answer":"2001 Odyssee im Weltraum",
-            "points":200,
-            "played":false
-          },
-          {
-            "question":"",
-            "image":"images/2018/lastexittonowhere/ghostbusters.jpg",
-            "answer":"Ghostbusters",
-            "points":300,
-            "played":false
-          },
-          {
-            "question":"",
-            "image":"images/2018/lastexittonowhere/bttf2.jpg",
-            "answer":"Zurück in die Zukunft 2",
-            "points":400,
-            "played":false
-          },
-          {
-            "question":"",
-            "image":"images/2018/lastexittonowhere/strangerthings.jpg",
-            "answer":"Stranger Things",
-            "points":500,
-            "played":false
-          }
-        ]
+        "name":"Winner Round 1",
+        "score":0,
+        "answers":0
       },
       {
-        "name":"Emoji 2 Song",
-        "questions":[
-          {
-            "question":"",
-            "image":"images/2018/emojisongs/walkingonsunshine.jpg",
-            "answer":"Walking on sunshine",
-            "points":100,
-            "played":false
-          },
-          {
-            "question":"",
-            "image":"images/2018/emojisongs/einszweipolizei.jpg",
-            "answer":"Eins Zwei Polizei",
-            "points":200,
-            "played":false
-          },
-          {
-            "question":"",
-            "image":"images/2018/emojisongs/pokerface.jpg",
-            "answer":"Pokerface",
-            "points":300,
-            "played":false
-          },
-          {
-            "question":"",
-            "image":"images/2018/emojisongs/atemlosdurchdienacht.jpg",
-            "answer":"Atemlos durch die Nacht",
-            "points":400,
-            "played":false
-          },
-          {
-            "question":"",
-            "image":"images/2018/emojisongs/partyrockanthem.jpg",
-            "answer":"Party Rock Anthem",
-            "points":500,
-            "played":false
-          }
-        ]
+        "name":"Winner Round 2",
+        "score":0,
+        "answers":0
       },
       {
-        "name":"Themes",
-        "questions":[
-          {
-            "question":"",
-            "audio":"sounds/2018/themes/ghostbusters.mp3",
-            "answer":"Ghostbusters",
-            "audio_answer":"sounds/2018/themes/ghostbusters.mp3",
-            "image_answer":"sounds/2018/themes/ghostbusters.jpg",
-            "points":100,
-            "played":false
-          },
-          {
-            "question":"",
-            "audio":"sounds/2018/themes/rocky.mp3",
-            "answer":"Rocky",
-            "audio_answer":"sounds/2018/themes/rocky.mp3",
-            "image_answer":"sounds/2018/themes/rocky.jpg",
-            "points":200,
-            "played":false
-          },
-          {
-            "question":"",
-            "audio":"sounds/2018/themes/ateam.mp3",
-            "answer":"The A-Team",
-            "audio_answer":"sounds/2018/themes/ateam.mp3",
-            "image_answer":"sounds/2018/themes/ateam.jpg",
-            "points":300,
-            "played":false
-          },
-          {
-            "question":"",
-            "audio":"sounds/2018/themes/austinpowers.mp3",
-            "answer":"Austin Powers",
-            "audio_answer":"sounds/2018/themes/austinpowers.mp3",
-            "image_answer":"sounds/2018/themes/austinpowers.jpg",
-            "points":400,
-            "played":false
-          },
-          {
-            "question":"",
-            "audio":"sounds/2018/themes/dexter.mp3",
-            "answer":"Dexter",
-            "audio_answer":"sounds/2018/themes/dexter.mp3",
-            "image_answer":"sounds/2018/themes/dexter.jpg",
-            "points":500,
-            "played":false
-          }
-        ]
+        "name":"Winner Round 3",
+        "score":0,
+        "answers":0
+      },
+      {
+        "name":"Best second",
+        "score":0,
+        "answers":0
       }
+    ]
+  },
+  /**
+ * BONUS
+ */
+  {
+    "name":"Bonus",
+    "categories":[
+      {
+        "name":"Branding",
+        "questions":[
+          {
+            "question":"",
+            "image":"images/2019/branding/barbie-half Kopie.png",
+            "answer":"Barbie",
+            "image_answer":"images/2019/branding/barbie-full Kopie.png",
+            "points":100,
+            "played":false
+          },
+          {
+            "question":"",
+            "image":"images/2019/branding/oreo-half Kopie.png",
+            "answer":"Oreo",
+            "image_answer":"images/2019/branding/oreo-full Kopie.png",
+            "points":200,
+            "played":false
+          },
+          {
+            "question":"",
+            "image":"images/2019/branding/pokemon-half Kopie.png",
+            "answer":"Pokemon",
+            "image_answer":"images/2019/branding/pokemon-full Kopie.png",
+            "points":300,
+            "played":false
+          },
+          {
+            "question":"",
+            "image":"images/2019/branding/skoda-half Kopie.png",
+            "answer":"Skoda",
+            "image_answer":"images/2019/branding/skoda-full Kopie.png",
+            "points":400,
+            "played":false
+          },
+          {
+            "question":"",
+            "image":"images/2019/branding/dreamworks-half Kopie.png",
+            "answer":"Dreamworks",
+            "image_answer":"images/2019/branding/dreamworks-full Kopie.png",
+            "points":500,
+            "played":false
+          },
+        ]
+      },
+      {
+        "name":"Under the cover",
+        "questions":[
+          {
+            "question":"",
+            "audio":"sounds/2019/underthecover/final_countdown.mp3",
+            "answer":"Europe - The final countdown",
+            "audio_answer":"sounds/2019/underthecover/final_countdown_sol.mp3",
+            "points":100,
+            "played":false
+          },
+          {
+            "question":"",
+            "audio":"sounds/2019/underthecover/all_star.mp3",
+            "answer":"Smashmouth - All Star",
+            "audio_answer":"sounds/2019/underthecover/all_star_sol.mp3",
+            "points":200,
+            "played":false
+          },
+          {
+            "question":"",
+            "audio":"sounds/2019/underthecover/thriller.mp3",
+            "answer":"Michael Jackson - Thriller",
+            "audio_answer":"sounds/2019/underthecover/thriller_sol.mp3",
+            "points":300,
+            "played":false
+          },
+          {
+            "question":"",
+            "audio":"sounds/2019/underthecover/hipsdontlie.mp3",
+            "answer":"Shakira - Hips dont lie",
+            "audio_answer":"sounds/2019/underthecover/hipsdontlie_sol.mp3",
+            "points":400,
+            "played":false
+          },
+          {
+            "question":"",
+            "audio":"sounds/2019/underthecover/videokilledtheradiostar.mp3",
+            "answer":"The Buggles - Video killed the radio star",
+            "audio_answer":"sounds/2019/underthecover/videokilledtheradiostar_sol.mp3",
+            "points":500,
+            "played":false
+          },
+        ]
+      },
+      {
+        "name":"Lead Singers",
+        "questions":[
+          {
+            "question":"Freddie Mercury",
+            "answer":"Queen",
+            "points":100,
+            "played":false
+          },
+          {
+            "question":"Angus Young",
+            "answer":"AC/DC",
+            "points":200,
+            "played":false
+          },
+          {
+            "question":"Steven Tyler",
+            "answer":"Aerosmith",
+            "points":300,
+            "played":false
+          },
+          {
+            "question":"Mick Jagger",
+            "answer":"The Rolling Stones",
+            "points":400,
+            "played":false
+          },
+          {
+            "question":"Bono",
+            "answer":"U2",
+            "points":500,
+            "played":false
+          }
+        ]
+      },
+      {
+        "name":"Text 2 Song",
+        "questions":[
+          {
+            "question":"",
+            "audio":"sounds/2019/texttosong/blue_suede_shoes.mp3",
+            "answer":"Blue Suede Shoes",
+            "image_answer":"sounds/2019/texttosong/blue_suede_shoes_solution.jpg",
+            "audio_answer":"sounds/2019/texttosong/blue_suede_shoes_solution.mp3",
+            "points":100,
+            "played":false
+          },
+          {
+            "question":"",
+            "audio":"sounds/2019/texttosong/mad_world.mp3",
+            "answer":"Mad World",
+            "image_answer":"sounds/2019/texttosong/mad_world_solution.jpg",
+            "audio_answer":"sounds/2019/texttosong/mad_world_solution.mp3",
+            "points":200,
+            "played":false
+          },
+          {
+            "question":"",
+            "audio":"sounds/2019/texttosong/my_way.mp3",
+            "answer":"My Way",
+            "image_answer":"sounds/2019/texttosong/my_way_solution.jpg",
+            "audio_answer":"sounds/2019/texttosong/my_way_solution.mp3",
+            "points":300,
+            "played":false
+          },
+          {
+            "question":"",
+            "audio":"sounds/2019/texttosong/something_stupid.mp3",
+            "answer":"Something Stupid",
+            "audio_answer":"sounds/2019/texttosong/something_stupid_solution.mp3",
+            "points":400,
+            "played":false
+          },
+          {
+            "question":"",
+            "audio":"sounds/2019/texttosong/sandstorm.mp3",
+            "answer":"Sandstorm",
+            "image_answer":"sounds/2019/texttosong/sandstorm_solution.jpg",
+            "audio_answer":"sounds/2019/texttosong/sandstorm_solution.mp3",
+            "points":500,
+            "played":false
+          },
+        ]
+      },
+      {
+        "name":"Doctor Who?",
+        "questions":[
+          {
+            "question":"",
+            "image":"images/2019/doctorwho/Doctor Evil.png",
+            "answer":"Doctor Evil",
+            "points":100,
+            "played":false
+          },
+          {
+            "question":"",
+            "image":"images/2019/doctorwho/Hannibal_Lecter.png",
+            "answer":"Hannibal Lecter",
+            "points":200,
+            "played":false
+          },
+          {
+            "question":"",
+            "image":"images/2019/doctorwho/Doctor Dolittle.jpg",
+            "answer":"Doctor Dolittle",
+            "points":300,
+            "played":false
+          },
+          {
+            "question":"",
+            "image":"images/2019/doctorwho/Doctor Cox.jpg",
+            "answer":"Doctor Cox",
+            "points":400,
+            "played":false
+          },
+          {
+            "question":"",
+            "image":"images/2019/doctorwho/Doctor McCoy.jpg",
+            "answer":"Doctor McCoy",
+            "points":500,
+            "played":false
+          },
+        ]
+      },
     ],
     "players":[
       {
@@ -951,290 +1245,5 @@ games.insert(
       }
     ]
   },
-  /**
- * FIANLE
- */
-  {
-    "name":"FINALE",
-    "categories":[
-      {
-        "name":"Sidekicks",
-        "questions":[
-          {
-            "question":"Ratchet",
-            "answer":"Clank",
-            "points":100,
-            "played":false
-          },
-          {
-            "question":"War Machine",
-            "answer":"Iron Man",
-            "points":200,
-            "played":false
-          },
-          {
-            "question":"Bucky",
-            "answer":"Captain America",
-            "points":300,
-            "played":false
-          },
-          {
-            "question":"Alyx Vance",
-            "answer":"Gordon Freeman",
-            "points":400,
-            "played":false
-          },
-          {
-            "question":"Hit-Girl",
-            "answer":"Big Daddy (Kickass)",
-            "points":500,
-            "played":false
-          }
-        ]
-      },
-      {
-        "name":"Logos",
-        "questions":[
-          {
-            "question":"",
-            "image":"images/2018/KlassischeLogos/playboy.jpg",
-            "answer":"Playboy",
-			"image_answer":"images/2018/KlassischeLogos/playboysolution.jpg",
-            "points":100,
-            "played":false
-          },
-          {
-            "question":"",
-            "image":"images/2018/KlassischeLogos/ard.jpg",
-            "answer":"ARD",
-			"image_answer":"images/2018/KlassischeLogos/ardsolution.jpg",
-            "points":200,
-            "played":false
-          },
-          {
-            "question":"",
-            "image":"images/2018/KlassischeLogos/canon.jpg",
-            "answer":"Canon",
-			"image_answer":"images/2018/KlassischeLogos/canonsolution.jpg",
-            "points":300,
-            "played":false
-          },
-          {
-            "question":"",
-            "image":"images/2018/KlassischeLogos/Apple.jpg",
-            "answer":"Apple",
-			"image_answer":"images/2018/KlassischeLogos/AppleSolution.jpg",
-            "points":400,
-            "played":false
-          },
-          {
-            "question":"",
-            "image":"images/2018/KlassischeLogos/nokia.jpg",
-            "answer":"Nokia",
-			"image_answer":"images/2018/KlassischeLogos/nokiasolution.jpg",
-            "points":500,
-            "played":false
-          }
-        ]
-      },
-      {
-        "name":"Lyrik",
-        "questions":[
-          {
-            "question":"",
-			"image":"images/2018/lyrik/houseoftherisingsun.png",
-            "image_answer":"images/2018/lyrik/houseoftherisingsun.png",
-            "audio_answer":"images/2018/lyrik/houseoftherisingsunsolution.mp3",
-            "answer":"House of the rising Sun",
-            "points":100,
-            "played":false
-          },
-          {
-            "question":"",
-			"image":"images/2018/lyrik/everybreatheyoutake.png",
-            "image_answer":"images/2018/lyrik/everybreatheyoutake.png",
-            "audio_answer":"images/2018/lyrik/everybreatheyoutakesolution.mp3",
-            "answer":"Every Breathe you take",
-            "points":200,
-            "played":false
-          },
-          {
-            "question":"",
-			"image":"images/2018/lyrik/bad.png",
-            "image_answer":"images/2018/lyrik/bad.png",
-            "audio_answer":"images/2018/lyrik/badsolution.mp3",
-            "answer":"Bad",
-            "points":300,
-            "played":false
-          },
-          {
-            "question":"",
-			"image":"images/2018/lyrik/heyjude.png",
-            "image_answer":"images/2018/lyrik/heyjude.png",
-            "audio_answer":"images/2018/lyrik/heyjudesolution.mp3",
-            "answer":"Hey Jude",
-            "points":400,
-            "played":false
-          },
-          {
-            "question":"",
-			"image":"images/2018/lyrik/teenspirit.png",
-            "image_answer":"images/2018/lyrik/teenspirit.png",
-            "audio_answer":"images/2018/lyrik/smellsliketeenspiritsolution.mp3",
-            "answer":"Smells like teen spirit",
-            "points":500,
-            "played":false
-          }
-        ]
-      },
-      {
-        "name":"Who Are They",
-        "questions":[
-          {
-            "question":"",
-            "image":"images/2018/whoarethey/Daulet_Bodo_Andreas.jpg",
-            "answer":"Daulet, Bodo, Andreas",
-            "image_answer":"images/2018/whoarethey/Daulet_Bodo_Andreas_solution.jpg",
-            "points":100,
-            "played":false
-          },
-          {
-            "question":"",
-            "image":"images/2018/whoarethey/Chrstine_David_Anja.jpg",
-            "answer":"Christine, David, Anja",
-            "image_answer":"images/2018/whoarethey/Chrstine_David_Anja_solution.jpg",
-            "points":200,
-            "played":false
-          },
-          {
-            "question":"",
-            "image":"images/2018/whoarethey/Katja_Danny_Marek.jpg",
-            "answer":"Katja, Danny, Marek",
-            "image_answer":"images/2018/whoarethey/Katja_Danny_Marek_solution.jpg",
-            "points":300,
-            "played":false
-          },
-          {
-            "question":"",
-            "image":"images/2018/whoarethey/Manuela_Maximilian_Filip.jpg",
-            "answer":"Manuela, Maximilian, Filip",
-            "image_answer":"images/2018/whoarethey/Manuela_Maximilian_Filip_solution.jpg",
-            "points":400,
-            "played":false
-          },
-          {
-            "question":"",
-            "image":"images/2018/whoarethey/Paula_Raphael_Maurice.jpg",
-            "answer":"Paula, Raphael, Maurice",
-            "image_answer":"images/2018/whoarethey/Paula_Raphael_Maurice_solution.jpg",
-            "points":500,
-            "played":false
-          }
-        ]
-      },
-      {
-        "name":"Autos",
-        "questions":[
-          {
-            "question":"",
-			"image":"images/2018/Autos/audir8.jpg",
-            "answer":"Audi R8",
-            "points":100,
-            "played":false
-          },
-          {
-            "question":"",
-			"image":"images/2018/Autos/nissanqashqai.jpg",
-            "answer":"Nissan Qashqai",
-            "points":200,
-            "played":false
-          },
-          {
-            "question":"",
-			"image":"images/2018/Autos/toyotaprius.jpg",
-            "answer":"Toyota Prius",
-            "points":300,
-            "played":false
-          },
-          {
-            "question":"",
-			"image":"images/2018/Autos/rollsroycephantom.jpg",
-            "answer":"Rolls Royce Phantom",
-            "points":400,
-            "played":false
-          },
-          {
-            "question":"",
-			"image":"images/2018/Autos/bmwi8.jpg",
-            "answer":"BMW i8",
-            "points":500,
-            "played":false
-          }
-        ]
-      },
-      {
-        "name":"Rollennamen",
-        "questions":[
-          {
-            "question":"",
-            "image":"images/2018/rollennamen/walterwhite.jpg",
-            "answer":"Walter White",
-            "points":100,
-            "played":false
-          },
-          {
-            "question":"",
-            "image":"images/2018/rollennamen/daryldixon.jpg",
-            "answer":"Daryl Dixon",
-            "points":200,
-            "played":false
-          },
-          {
-            "question":"",
-            "image":"images/2018/rollennamen/petyrbaelish.jpg",
-            "answer":"Petyr Baelish",
-            "points":300,
-            "played":false
-          },
-          {
-            "question":"",
-            "image":"images/2018/rollennamen/jaxteller.jpg",
-            "answer":"Jax Teller",
-            "points":400,
-            "played":false
-          },
-          {
-            "question":"",
-            "image":"images/2018/rollennamen/oswaldcobblepot.jpg",
-            "answer":"Oswald Cobblepot",
-            "points":500,
-            "played":false
-          }
-        ]
-      }
-    ],
-    "players":[
-      {
-        "name":"Winner Round 1",
-        "score":0,
-        "answers":0
-      },
-      {
-        "name":"Winner Round 2",
-        "score":0,
-        "answers":0
-      },
-      {
-        "name":"Winner Round 3",
-        "score":0,
-        "answers":0
-      },
-      {
-        "name":"Winner Round 4",
-        "score":0,
-        "answers":0
-      }
-    ]
-  }
 ]
 );
