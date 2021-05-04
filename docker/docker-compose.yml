@@ -1,0 +1,11 @@
+version: "2"
+services:
+  jeopardy:
+    restart: unless-stopped
+    build: '.'
+    ports:
+      - "3000:3000"
+    environment:
+      INITDB: 2019
+    volumes:
+      - ./db:/opt/jeopardy/virtual7jeopardy/gameserver/db/
