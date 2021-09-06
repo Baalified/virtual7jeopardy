@@ -27,8 +27,19 @@ app.use(express.static(__dirname + "/public"));
 app.use(bodyParser.json());
 
 // Define GameMaster view at /gm
+
 app.get("/gm", function(req, res) {
-  res.sendFile(__dirname + "/public/index.html");
+  if(process.env.MULTI)
+    res.sendFile(__dirname + "/public/index_multi.html");
+  else
+    res.sendFile(__dirname + "/public/index_4pl.html");
+});
+
+app.get("/", function(req, res) {
+  if(process.env.MULTI)
+    res.sendFile(__dirname + "/public/index_multi.html");
+  else
+    res.sendFile(__dirname + "/public/index_4pl.html");
 });
 
 // Initialize Socket.IO connection and setup Socket
@@ -40,7 +51,7 @@ io.on('connection', function(socket){
     // Initialize Games List
     socket.emit('initGamesList', docs);
     // Set Gamemaster Mode based on URI
-    socket.emit('setgm', socket.handshake.headers.referer && socket.handshake.headers.referer.endsWith("/gm"));
+    socket.emit('setgm', socket.handshake.headers.referer && (socket.handshake.headers.referer.endsWith("/gm") || socket.handshake.headers.referer.endsWith("/multigm")));
     // Send current Game State
     socket.emit('gamedata', curGameData);
   });

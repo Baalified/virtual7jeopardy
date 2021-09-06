@@ -2,10 +2,15 @@ version: "2"
 services:
   jeopardy:
     restart: unless-stopped
-    build: '.'
+    build:
+      context: '..'
+      dockerfile: 'docker/Dockerfile'
     ports:
       - "3000:3000"
     environment:
       INITDB: 2019
+      MULTI: 1
     volumes:
+      - ../gameserver/public:/opt/jeopardy/virtual7jeopardy/gameserver/public
+      - ../gameserver/server.js:/opt/jeopardy/virtual7jeopardy/gameserver/server.js
       - ./db:/opt/jeopardy/virtual7jeopardy/gameserver/db/

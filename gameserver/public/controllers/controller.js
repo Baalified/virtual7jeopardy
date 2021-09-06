@@ -8,7 +8,8 @@ var disableSoundOnGm = true;
 
 v7jeopardy.controller('AppCtrl', ['$scope', '$http', '$location', 'socketio', function($scope, $http, $location, socketio) {
   $scope.gamemaster=false;
-
+  $scope.currentplayer=false;
+  $scope.hidejoin = false;
 
   $scope.themePlay = function() {
     socketio.emit("themePlay");
@@ -176,6 +177,9 @@ v7jeopardy.controller('AppCtrl', ['$scope', '$http', '$location', 'socketio', fu
   });
   
   $scope.loadGame = function(selgame) {
+    if($scope.currentgame && $scope.currentgame.players) {
+      selgame.players = $scope.currentgame.players
+    }
     $scope.currentgame = selgame;
     emitGameData();
     $scope.showloadgame = false;
@@ -184,6 +188,36 @@ v7jeopardy.controller('AppCtrl', ['$scope', '$http', '$location', 'socketio', fu
   $scope.saveGame = function() {
     $scope.showeditplayers = false;
     emitGameData();
+  }
+
+  $scope.joinGame = function() {
+    if($scope.currentgame) {
+      if($scope.currentgame.players) {
+        for(i=0; i < $scope.currentgame.players.length; i++) {
+          if($scope.currentgame.players[i].name.toLowerCase() == $scope.newplayer.name.toLowerCase()) {
+            $scope.showRejoin=true;
+            return;
+          }
+        }
+      }
+      $scope.newplayer.score = 0;
+      $scope.currentgame.players.push($scope.newplayer);
+      $scope.rejoinGame();
+    }
+  }
+
+  $scope.rejoinGame = function() {
+    if($scope.currentgame) {
+      if($scope.currentgame.players) {
+        for(i=0; i < $scope.currentgame.players.length; i++) {
+          if($scope.currentgame.players[i].name.toLowerCase() == $scope.newplayer.name.toLowerCase()) {
+            $scope.currentplayer = i;
+            $scope.hidejoin = true;
+            return;
+          }
+        }
+      }
+    }
   }
   
   $scope.addPlayer = function() {
@@ -196,6 +230,16 @@ v7jeopardy.controller('AppCtrl', ['$scope', '$http', '$location', 'socketio', fu
 
   $scope.reloadGames = function() {
     socketio.emit("getGameList");
+  }
+
+  $scope.getSortedPlayers = function() {
+    ret = Array.from($scope.currentgame.players);
+    return ret.sort($scope.scoreComparator);
+  }
+
+  $scope.scoreComparator = function(v1,v2) {
+    console.log(v1.score+"::"+v2.score);
+    return (parseInt(v1.score) > parseInt(v2.score)) ? -1 : 1;
   }
   
   $scope.buzzerTest = function() {
