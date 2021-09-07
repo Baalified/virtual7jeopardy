@@ -213,6 +213,7 @@ v7jeopardy.controller('AppCtrl', ['$scope', '$http', '$location', 'socketio', fu
           if($scope.currentgame.players[i].name.toLowerCase() == $scope.newplayer.name.toLowerCase()) {
             $scope.currentplayer = i;
             $scope.hidejoin = true;
+            emitGameData();
             return;
           }
         }
