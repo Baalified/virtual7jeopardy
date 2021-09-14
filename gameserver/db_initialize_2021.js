@@ -993,6 +993,8 @@ games.insert(
             "points":500,
             "played":false
           },
+        ]
+      }
     ],
     "players":[]
   },
