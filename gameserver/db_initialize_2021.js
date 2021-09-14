@@ -112,7 +112,7 @@ games.insert(
             "played":false
           },
           {
-            "question":"I would be challenging you – give me a word or a scene and with almost 100% certainty I will find you a fitting song for it. And heads up – most likely I will also perform the song for you right away so that you can’t get it out of your head anymore.",
+            "question":"I would be challenging you – give me a word or a scene and with almost 100% certainty I will find you a fitting song for it.",
             "answer":"Micha Prinz-Hübert",
             "points":300,
             "played":false
@@ -403,7 +403,7 @@ games.insert(
           {
             "question":"",
             "image":"images/2018/KlassischeLogos/pizzahut.jpg",
-            "answer":"Burger King",
+            "answer":"Pizza Hut",
             "image_answer":"images/2018/KlassischeLogos/pizzahutsolution.jpg",
             "points":200,
             "played":false
@@ -439,41 +439,41 @@ games.insert(
         "questions":[
           {
             "question":"",
-            "image":"images/2021/genderbender/andreas_staerkel.png",
+            "image":"images/2021/genderbender/andreas_staerkel.jpg",
             "answer":"Andreas Stärkel",
-            "image_answer":"images/2021/genderbender/andreas_staerkel_solution.png",
+            "image_answer":"images/2021/genderbender/andreas_staerkel_solution.jpg",
             "points":100,
             "played":false
           },
           {
             "question":"",
-            "image":"images/2021/genderbender/anja_hinlang.png",
+            "image":"images/2021/genderbender/anja_hinlang.jpg",
             "answer":"Anja Hinlang",
-            "image_answer":"images/2021/genderbender/anja_hinlang_solution.png",
+            "image_answer":"images/2021/genderbender/anja_hinlang_solution.jpg",
             "points":200,
             "played":false
           },
           {
             "question":"",
-            "image":"images/2021/genderbender/bogdan_moza.png",
+            "image":"images/2021/genderbender/bogdan_moza.jpg",
             "answer":"Bogdan Moza",
-            "image_answer":"images/2021/genderbender/bogdan_moza_solution.png",
+            "image_answer":"images/2021/genderbender/bogdan_moza_solution.jpg",
             "points":300,
             "played":false
           },
           {
             "question":"",
-            "image":"images/2021/genderbender/christopher_lienemann.png",
+            "image":"images/2021/genderbender/christopher_lienemann.jpg",
             "answer":"Christopher Lienemann",
-            "image_answer":"images/2021/genderbender/christopher_lienemann_solution.png",
+            "image_answer":"images/2021/genderbender/christopher_lienemann_solution.jpg",
             "points":400,
             "played":false
           },
           {
             "question":"",
-            "image":"images/2021/genderbender/cosmin_giru.png",
+            "image":"images/2021/genderbender/cosmin_giru.jpg",
             "answer":"Cosmin Giru",
-            "image_answer":"images/2021/genderbender/cosmin_giru_solution.png",
+            "image_answer":"images/2021/genderbender/cosmin_giru_solution.jpg",
             "points":500,
             "played":false
           },
