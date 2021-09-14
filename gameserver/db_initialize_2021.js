@@ -435,55 +435,50 @@ games.insert(
         ]
       },
       {
-        "name":"Themes",
+        "name":"Gender Bender",
         "questions":[
           {
             "question":"",
-            "audio":"sounds/2018/themes/ghostbusters.mp3",
-            "answer":"Ghostbusters",
-            "audio_answer":"sounds/2018/themes/ghostbusters.mp3",
-            "image_answer":"sounds/2018/themes/ghostbusters.jpg",
+            "image":"images/2021/genderbender/andreas_staerkel.png",
+            "answer":"Andreas Stärkel",
+            "image_answer":"images/2021/genderbender/andreas_staerkel_solution.png",
             "points":100,
             "played":false
           },
           {
             "question":"",
-            "audio":"sounds/2018/themes/rocky.mp3",
-            "answer":"Rocky",
-            "audio_answer":"sounds/2018/themes/rocky.mp3",
-            "image_answer":"sounds/2018/themes/rocky.jpg",
+            "image":"images/2021/genderbender/anja_hinlang.png",
+            "answer":"Anja Hinlang",
+            "image_answer":"images/2021/genderbender/anja_hinlang_solution.png",
             "points":200,
             "played":false
           },
           {
             "question":"",
-            "audio":"sounds/2018/themes/ateam.mp3",
-            "answer":"The A-Team",
-            "audio_answer":"sounds/2018/themes/ateam.mp3",
-            "image_answer":"sounds/2018/themes/ateam.jpg",
+            "image":"images/2021/genderbender/bogdan_moza.png",
+            "answer":"Bogdan Moza",
+            "image_answer":"images/2021/genderbender/bogdan_moza_solution.png",
             "points":300,
             "played":false
           },
           {
             "question":"",
-            "audio":"sounds/2018/themes/austinpowers.mp3",
-            "answer":"Austin Powers",
-            "audio_answer":"sounds/2018/themes/austinpowers.mp3",
-            "image_answer":"sounds/2018/themes/austinpowers.jpg",
+            "image":"images/2021/genderbender/christopher_lienemann.png",
+            "answer":"Christopher Lienemann",
+            "image_answer":"images/2021/genderbender/christopher_lienemann_solution.png",
             "points":400,
             "played":false
           },
           {
             "question":"",
-            "audio":"sounds/2018/themes/dexter.mp3",
-            "answer":"Dexter",
-            "audio_answer":"sounds/2018/themes/dexter.mp3",
-            "image_answer":"sounds/2018/themes/dexter.jpg",
+            "image":"images/2021/genderbender/cosmin_giru.png",
+            "answer":"Cosmin Giru",
+            "image_answer":"images/2021/genderbender/cosmin_giru_solution.png",
             "points":500,
             "played":false
-          }
+          },
         ]
-      }
+      },
     ],
     "players":[]
   },
@@ -650,6 +645,56 @@ games.insert(
           }
         ]
       },
+      {
+        "name":"Themes",
+        "questions":[
+          {
+            "question":"",
+            "audio":"sounds/2018/themes/ghostbusters.mp3",
+            "answer":"Ghostbusters",
+            "audio_answer":"sounds/2018/themes/ghostbusters.mp3",
+            "image_answer":"sounds/2018/themes/ghostbusters.jpg",
+            "points":100,
+            "played":false
+          },
+          {
+            "question":"",
+            "audio":"sounds/2018/themes/rocky.mp3",
+            "answer":"Rocky",
+            "audio_answer":"sounds/2018/themes/rocky.mp3",
+            "image_answer":"sounds/2018/themes/rocky.jpg",
+            "points":200,
+            "played":false
+          },
+          {
+            "question":"",
+            "audio":"sounds/2018/themes/ateam.mp3",
+            "answer":"The A-Team",
+            "audio_answer":"sounds/2018/themes/ateam.mp3",
+            "image_answer":"sounds/2018/themes/ateam.jpg",
+            "points":300,
+            "played":false
+          },
+          {
+            "question":"",
+            "audio":"sounds/2018/themes/austinpowers.mp3",
+            "answer":"Austin Powers",
+            "audio_answer":"sounds/2018/themes/austinpowers.mp3",
+            "image_answer":"sounds/2018/themes/austinpowers.jpg",
+            "points":400,
+            "played":false
+          },
+          {
+            "question":"",
+            "audio":"sounds/2018/themes/dexter.mp3",
+            "answer":"Dexter",
+            "audio_answer":"sounds/2018/themes/dexter.mp3",
+            "image_answer":"sounds/2018/themes/dexter.jpg",
+            "points":500,
+            "played":false
+          }
+        ]
+      }
     ],
     "players":[]
   },
