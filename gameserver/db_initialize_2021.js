@@ -96,10 +96,10 @@ games.insert(
         "name":"My Talent",
         "questions":[
           {
-            "question":"a + b = c\
-            3a-2a+3b-2b = 3c-2c\
-            3a+3b-3c = 2a+2b-2c\
-            3(a+b-c) = 2(a+b-c)\
+            "question":"a + b = c\n\
+            3a-2a+3b-2b = 3c-2c\n\
+            3a+3b-3c = 2a+2b-2c\n\
+            3(a+b-c) = 2(a+b-c)\n\
             3 = 2",
             "answer":"Jonas Köster",
             "points":100,

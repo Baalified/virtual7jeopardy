@@ -8,9 +8,10 @@ services:
     ports:
       - "3000:3000"
     environment:
-      INITDB: 2019
+      INITDB: 2021
       MULTI: 1
     volumes:
       - ../gameserver/public:/opt/jeopardy/virtual7jeopardy/gameserver/public
       - ../gameserver/server.js:/opt/jeopardy/virtual7jeopardy/gameserver/server.js
+      - ../gameserver/db_initialize_2021.js:/opt/jeopardy/virtual7jeopardy/gameserver/db_initialize_2021.js
       - ./db:/opt/jeopardy/virtual7jeopardy/gameserver/db/
