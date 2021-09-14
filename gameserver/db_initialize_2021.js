@@ -204,38 +204,43 @@ games.insert(
         ]
       },
       {
-        "name":"Those Guys",
+        "name":"Movie Stills",
         "questions":[
           {
-            "question":"Leslie Winkle, Stuart Bloom, Penny, Howard Wolowitz, Leonard Hofstadter, Sheldon Cooper",
-            "answer":"The Big Bang Theory",
+            "question":"",
+            "image":"images/2021/moviestills/forrestgump.jpg",
+            "answer":"Forrest Gump",
             "points":100,
             "played":false
           },
           {
-            "question":"Stella Zinman, Quinn Garvey, Lily Aldrin, Marshall Eriksen, Robin Schebartsky, Barney Stinson",
-            "answer":"How I met your mother",
+            "question":"",
+            "image":"images/2021/moviestills/coco.png",
+            "answer":"Coco",
             "points":200,
             "played":false
           },
           {
-            "question":"Ethan Kanin, James Heller, Morris O'Brian, Nina Myers, David Palmer, Jack Bauer",
-            "answer":"24",
+            "question":"",
+            "image":"images/2021/moviestills/braveheart.jpg",
+            "answer":"Braveheart",
             "points":300,
             "played":false
           },
           {
-            "question":"Dorothy Halligan, Lucky, Trevor Ochmonek, Brian Tanner, William Tanner, Gordon Shumway",
-            "answer":"ALF",
+            "question":"",
+            "image":"images/2021/moviestills/prettywoman.jpg",
+            "answer":"Pretty Woman",
             "points":400,
             "played":false
           },
           {
-            "question":"Steve Harrington, Barbara Holland, Dustin Henderson, Jim Hopper, Will Byers, Jane Ives",
-            "answer":"Stranger Things",
+            "question":"",
+            "image":"images/2021/moviestills/inception.jpg",
+            "answer":"Inception",
             "points":500,
             "played":false
-          }
+          },
         ]
       },
     ],
@@ -486,45 +491,40 @@ games.insert(
     "name":"Round 3",
     "categories":[
       {
-        "name":"Hair",
+        "name":"Movie Stills",
         "questions":[
           {
             "question":"",
-            "image":"images/2019/hair/Julia.png",
-            "answer":"Julia",
-            "image_answer":"images/2019/hair/Julia_Sol.png",
+            "image":"images/2021/moviestills/trumanshow.jpg",
+            "answer":"The Truman Show",
             "points":100,
             "played":false
           },
           {
             "question":"",
-            "image":"images/2019/hair/Michael.png",
-            "answer":"Michael Augustin",
-            "image_answer":"images/2019/hair/MichaelSol.jpg",
+            "image":"images/2021/moviestills/titanic.jpg",
+            "answer":"Titanic",
             "points":200,
             "played":false
           },
           {
             "question":"",
-            "image":"images/2019/hair/PeterMeissner.png",
-            "answer":"Peter Meissner",
-            "image_answer":"images/2019/hair/PeterMeissnerSol.png",
+            "image":"images/2021/moviestills/psycho.jpg",
+            "answer":"Psycho",
             "points":300,
             "played":false
           },
           {
             "question":"",
-            "image":"images/2019/hair/TobiWeigel.png",
-            "answer":"Tobias Weigel",
-            "image_answer":"images/2019/hair/TobiWeigel_Sol.png",
+            "image":"images/2021/moviestills/groundhogday.jpg",
+            "answer":"Groundhog Day",
             "points":400,
             "played":false
           },
           {
             "question":"",
-            "image":"images/2019/hair/Michaela.png",
-            "answer":"Michaela Hahn",
-            "image_answer":"images/2019/hair/MichaelaSol.png",
+            "image":"images/2021/moviestills/getout.jpg",
+            "answer":"Get Out",
             "points":500,
             "played":false
           },
@@ -694,13 +694,7 @@ games.insert(
             "played":false
           }
         ]
-      }
-    ],
-    "players":[]
-  },
-  {
-    "name":"Round 4",
-    "categories":[
+      },
       {
         "name":"Emoji 2 Song",
         "questions":[
@@ -741,6 +735,264 @@ games.insert(
           },
         ]
       },
+    ],
+    "players":[]
+  },
+  {
+    "name":"Round 4",
+    "categories":[
+      {
+        "name":"Hair",
+        "questions":[
+          {
+            "question":"",
+            "image":"images/2019/hair/Julia.png",
+            "answer":"Julia",
+            "image_answer":"images/2019/hair/Julia_Sol.png",
+            "points":100,
+            "played":false
+          },
+          {
+            "question":"",
+            "image":"images/2019/hair/Michael.png",
+            "answer":"Michael Augustin",
+            "image_answer":"images/2019/hair/MichaelSol.jpg",
+            "points":200,
+            "played":false
+          },
+          {
+            "question":"",
+            "image":"images/2019/hair/PeterMeissner.png",
+            "answer":"Peter Meissner",
+            "image_answer":"images/2019/hair/PeterMeissnerSol.png",
+            "points":300,
+            "played":false
+          },
+          {
+            "question":"",
+            "image":"images/2019/hair/TobiWeigel.png",
+            "answer":"Tobias Weigel",
+            "image_answer":"images/2019/hair/TobiWeigel_Sol.png",
+            "points":400,
+            "played":false
+          },
+          {
+            "question":"",
+            "image":"images/2019/hair/Michaela.png",
+            "answer":"Michaela Hahn",
+            "image_answer":"images/2019/hair/MichaelaSol.png",
+            "points":500,
+            "played":false
+          },
+        ]
+      },
+      {
+        "name":"Movie Stills",
+        "questions":[
+          {
+            "question":"",
+            "image":"images/2021/moviestills/thelionking.jpg",
+            "answer":"The Lion King",
+            "points":100,
+            "played":false
+          },
+          {
+            "question":"",
+            "image":"images/2021/moviestills/meninblack.jpg",
+            "answer":"Men In Black",
+            "points":200,
+            "played":false
+          },
+          {
+            "question":"",
+            "image":"images/2021/moviestills/therevenant.jpg",
+            "answer":"The Revenant",
+            "points":300,
+            "played":false
+          },
+          {
+            "question":"",
+            "image":"images/2021/moviestills/truelies.jpg",
+            "answer":"True Lies",
+            "points":400,
+            "played":false
+          },
+          {
+            "question":"",
+            "image":"images/2021/moviestills/waynesworld.jpg",
+            "answer":"Waynes World",
+            "points":500,
+            "played":false
+          },
+        ]
+      },
+      {
+        "name":"Those Guys",
+        "questions":[
+          {
+            "question":"Leslie Winkle, Stuart Bloom, Penny, Howard Wolowitz, Leonard Hofstadter, Sheldon Cooper",
+            "answer":"The Big Bang Theory",
+            "points":100,
+            "played":false
+          },
+          {
+            "question":"Stella Zinman, Quinn Garvey, Lily Aldrin, Marshall Eriksen, Robin Schebartsky, Barney Stinson",
+            "answer":"How I met your mother",
+            "points":200,
+            "played":false
+          },
+          {
+            "question":"Ethan Kanin, James Heller, Morris O'Brian, Nina Myers, David Palmer, Jack Bauer",
+            "answer":"24",
+            "points":300,
+            "played":false
+          },
+          {
+            "question":"Dorothy Halligan, Lucky, Trevor Ochmonek, Brian Tanner, William Tanner, Gordon Shumway",
+            "answer":"ALF",
+            "points":400,
+            "played":false
+          },
+          {
+            "question":"Steve Harrington, Barbara Holland, Dustin Henderson, Jim Hopper, Will Byers, Jane Ives",
+            "answer":"Stranger Things",
+            "points":500,
+            "played":false
+          }
+        ]
+      },
+      {
+        "name":"Branding",
+        "questions":[
+          {
+            "question":"",
+            "image":"images/2019/branding/barbie-half Kopie.png",
+            "answer":"Barbie",
+            "image_answer":"images/2019/branding/barbie-full Kopie.png",
+            "points":100,
+            "played":false
+          },
+          {
+            "question":"",
+            "image":"images/2019/branding/oreo-half Kopie.png",
+            "answer":"Oreo",
+            "image_answer":"images/2019/branding/oreo-full Kopie.png",
+            "points":200,
+            "played":false
+          },
+          {
+            "question":"",
+            "image":"images/2019/branding/pokemon-half Kopie.png",
+            "answer":"Pokemon",
+            "image_answer":"images/2019/branding/pokemon-full Kopie.png",
+            "points":300,
+            "played":false
+          },
+          {
+            "question":"",
+            "image":"images/2019/branding/skoda-half Kopie.png",
+            "answer":"Skoda",
+            "image_answer":"images/2019/branding/skoda-full Kopie.png",
+            "points":400,
+            "played":false
+          },
+          {
+            "question":"",
+            "image":"images/2019/branding/dreamworks-half Kopie.png",
+            "answer":"Dreamworks",
+            "image_answer":"images/2019/branding/dreamworks-full Kopie.png",
+            "points":500,
+            "played":false
+          },
+        ]
+      },
+      {
+        "name":"Doctor Who?",
+        "questions":[
+          {
+            "question":"",
+            "image":"images/2019/doctorwho/Doctor Evil.png",
+            "answer":"Doctor Evil",
+            "points":100,
+            "played":false
+          },
+          {
+            "question":"",
+            "image":"images/2019/doctorwho/Hannibal_Lecter.png",
+            "answer":"Hannibal Lecter",
+            "points":200,
+            "played":false
+          },
+          {
+            "question":"",
+            "image":"images/2019/doctorwho/Doctor Dolittle.jpg",
+            "answer":"Doctor Dolittle",
+            "points":300,
+            "played":false
+          },
+          {
+            "question":"",
+            "image":"images/2019/doctorwho/Doctor Cox.jpg",
+            "answer":"Doctor Cox",
+            "points":400,
+            "played":false
+          },
+          {
+            "question":"",
+            "image":"images/2019/doctorwho/Doctor McCoy.jpg",
+            "answer":"Doctor McCoy",
+            "points":500,
+            "played":false
+          },
+        ]
+      },
+      {
+        "name":"Text 2 Song",
+        "questions":[
+          {
+            "question":"",
+            "audio":"sounds/2019/texttosong/blue_suede_shoes.mp3",
+            "answer":"Blue Suede Shoes",
+            "image_answer":"sounds/2019/texttosong/blue_suede_shoes_solution.jpg",
+            "audio_answer":"sounds/2019/texttosong/blue_suede_shoes_solution.mp3",
+            "points":100,
+            "played":false
+          },
+          {
+            "question":"",
+            "audio":"sounds/2019/texttosong/mad_world.mp3",
+            "answer":"Mad World",
+            "image_answer":"sounds/2019/texttosong/mad_world_solution.jpg",
+            "audio_answer":"sounds/2019/texttosong/mad_world_solution.mp3",
+            "points":200,
+            "played":false
+          },
+          {
+            "question":"",
+            "audio":"sounds/2019/texttosong/my_way.mp3",
+            "answer":"My Way",
+            "image_answer":"sounds/2019/texttosong/my_way_solution.jpg",
+            "audio_answer":"sounds/2019/texttosong/my_way_solution.mp3",
+            "points":300,
+            "played":false
+          },
+          {
+            "question":"",
+            "audio":"sounds/2019/texttosong/something_stupid.mp3",
+            "answer":"Something Stupid",
+            "audio_answer":"sounds/2019/texttosong/something_stupid_solution.mp3",
+            "points":400,
+            "played":false
+          },
+          {
+            "question":"",
+            "audio":"sounds/2019/texttosong/sandstorm.mp3",
+            "answer":"Sandstorm",
+            "image_answer":"sounds/2019/texttosong/sandstorm_solution.jpg",
+            "audio_answer":"sounds/2019/texttosong/sandstorm_solution.mp3",
+            "points":500,
+            "played":false
+          },
     ],
     "players":[]
   },
