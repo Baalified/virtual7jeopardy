@@ -58,6 +58,14 @@ v7jeopardy.controller('AppCtrl', ['$scope', '$http', '$location', 'socketio', fu
         questionSound.load();
         questionSound.play();
       }
+    }else if($scope.currentgame.activequestion.video_answer) {
+      if(disableSoundOnGm && !$scope.gamemaster) {
+        const video = document.getElementById('videoQuestion');
+        const source = document.getElementById('mp4_src');
+        source.src = $scope.currentgame.activequestion.video_answer;
+        video.load();
+        video.play();
+      }
     }
     $scope.currentgame.activequestion.showsolution=true;
   });
@@ -79,6 +87,47 @@ v7jeopardy.controller('AppCtrl', ['$scope', '$http', '$location', 'socketio', fu
     $scope.currentgame.activequestion = question;
     
     emitGameData();
+  };
+
+  $scope.videoQuestionPlay = function() {
+    socketio.emit('videoQuestionPlay');
+  };
+
+  $scope.videoQuestionReplay = function() {
+    socketio.emit('videoQuestionReplay');
+  };
+  
+  socketio.on('videoQuestionPlay', function(gm) {
+    const video = document.getElementById('videoQuestion');
+    const source = document.getElementById('mp4_src');
+    if(disableSoundOnGm && !$scope.gamemaster) {
+      console.log('SRC: '+source.src);
+      if(!source.src.endsWith($scope.currentgame.activequestion.video)) {
+        source.src = $scope.currentgame.activequestion.video;
+        video.load();
+      }
+      video.play();
+    }
+  });
+
+  socketio.on('videoQuestionReplay', function(gm) {
+    const video = document.getElementById('videoQuestion');
+    const source = document.getElementById('mp4_src');
+    if(disableSoundOnGm && !$scope.gamemaster) {
+      source.src = $scope.currentgame.activequestion.video;
+      console.log('SRC: '+source.src);
+      video.load();
+      video.play();
+    }
+  });
+  
+  socketio.on('videoQuestionStop', function(gm) {
+    const video = document.getElementById('videoQuestion');
+    video.pause();
+  });
+  
+  $scope.videoQuestionStop = function() {
+    socketio.emit('videoQuestionStop');
   };
   
   $scope.audioQuestionPlay = function() {
@@ -116,6 +165,8 @@ v7jeopardy.controller('AppCtrl', ['$scope', '$http', '$location', 'socketio', fu
   };
   
   $scope.closeQuestion = function() {
+    $scope.audioQuestionStop();
+    $scope.videoQuestionStop();
     delete $scope.currentgame.activequestion;
     delete $scope.currentgame.activeplayer;
     emitGameData();
@@ -155,8 +206,13 @@ v7jeopardy.controller('AppCtrl', ['$scope', '$http', '$location', 'socketio', fu
   
   socketio.on('gamedata', function(game) {
     $scope.currentgame = game;
-    if(!game.activequestion)
+    if(!game.activequestion) {
       questionSound.pause();
+      const video = document.getElementById('videoQuestion');
+      const source = document.getElementById('mp4_src');
+      source.src = "";
+      video.load();
+    }
   });
 
   socketio.on('buzz', function(buzzdata) {
@@ -165,6 +221,7 @@ v7jeopardy.controller('AppCtrl', ['$scope', '$http', '$location', 'socketio', fu
       $scope.currentgame.activeplayer = $scope.currentgame.players[buzzdata.player];
       console.log('Active player set.');
       $scope.audioQuestionStop();
+      $scope.videoQuestionStop();
       if(disableSoundOnGm && !$scope.gamemaster) {
         buzzerSound.play();
       }

@@ -88,6 +88,18 @@ io.on('connection', function(socket){
       io.emit('initGamesList', docs);
     });
   });
+
+  socket.on("videoQuestionPlay", function() {
+    io.emit('videoQuestionPlay');
+  });
+
+  socket.on("videoQuestionReplay", function() {
+    io.emit('videoQuestionReplay');
+  });
+  
+  socket.on("videoQuestionStop", function() {
+    io.emit('videoQuestionStop');
+  });
   
   socket.on("audioQuestionPlay", function() {
     io.emit('audioQuestionPlay');
