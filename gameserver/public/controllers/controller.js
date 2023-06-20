@@ -233,6 +233,23 @@ v7jeopardy.controller('AppCtrl', ['$scope', '$http', '$location', 'socketio', fu
     $scope.gamemaster=gm;
   });
   
+  var preloadImages = function() {
+    if($scope.currentgame) {
+      $scope.currentgame.categories.forEach(category => {
+        category.questions.forEach(question => {
+          if(question.image) {
+            console.log("Preloading image: "+question.image);
+            (new Image()).src = question.image;
+          }
+          if(question.image_answer) {
+            console.log("Preloading image: "+question.image_answer);
+            (new Image()).src = question.image_answer;
+          }
+        })
+      });
+    }
+  }
+
   $scope.loadGame = function(selgame) {
     /*if($scope.currentgame && $scope.currentgame.players) {
       selgame.players = $scope.currentgame.players
@@ -240,6 +257,7 @@ v7jeopardy.controller('AppCtrl', ['$scope', '$http', '$location', 'socketio', fu
     $scope.currentgame = selgame;
     emitGameData();
     $scope.showloadgame = false;
+    preloadImages()
   }
   
   $scope.saveGame = function() {
