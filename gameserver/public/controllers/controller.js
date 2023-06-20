@@ -234,9 +234,9 @@ v7jeopardy.controller('AppCtrl', ['$scope', '$http', '$location', 'socketio', fu
   });
   
   $scope.loadGame = function(selgame) {
-    if($scope.currentgame && $scope.currentgame.players) {
+    /*if($scope.currentgame && $scope.currentgame.players) {
       selgame.players = $scope.currentgame.players
-    }
+    }*/
     $scope.currentgame = selgame;
     emitGameData();
     $scope.showloadgame = false;
